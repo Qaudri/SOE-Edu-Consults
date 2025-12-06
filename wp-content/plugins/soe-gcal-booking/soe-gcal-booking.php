@@ -97,7 +97,16 @@ class SOE_GCal_Booking {
             'dashicons-calendar-alt',
             30
         );
-        
+
+        add_submenu_page(
+            'soe-gcal-booking',
+            __('Classes', 'soe-gcal-booking'),
+            __('Classes', 'soe-gcal-booking'),
+            'manage_options',
+            'soe-gcal-classes',
+            ['SOE_GCal_Admin', 'render_classes_page']
+        );
+
         add_submenu_page(
             'soe-gcal-booking',
             __('Bookings', 'soe-gcal-booking'),

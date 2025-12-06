@@ -10,6 +10,16 @@ wp-config.php
 *.local.php
 local-*.php
 
+# Backups (large files)
+wp-content/ai1wm-backups/
+wp-content/updraft/
+*.wpress
+*.sql
+*.sql.gz
+
+# Large media files (optional)
+# wp-content/uploads/*.zip
+
 # IDE
 .idea/
 .vscode/

@@ -1,0 +1,220 @@
+/* SOE GCal Booking - Frontend Styles */
+
+.soe-gcal-booking-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.soe-gcal-booking-container h2 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.soe-no-classes {
+    text-align: center;
+    padding: 40px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    color: #666;
+}
+
+/* Class Cards */
+.soe-classes-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.soe-class-card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    transition: box-shadow 0.2s ease;
+}
+
+.soe-class-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.soe-class-info {
+    flex: 1;
+}
+
+.soe-class-title {
+    margin: 0 0 12px 0;
+    font-size: 1.3em;
+    color: #333;
+}
+
+.soe-class-datetime {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.soe-class-location {
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.soe-class-description {
+    color: #777;
+    font-size: 0.95em;
+    margin-top: 12px;
+}
+
+.soe-book-btn {
+    background: #0073aa;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    white-space: nowrap;
+}
+
+.soe-book-btn:hover {
+    background: #005a87;
+}
+
+/* Modal */
+.soe-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.soe-modal-content {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 450px;
+    width: 90%;
+    position: relative;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.soe-modal-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 28px;
+    cursor: pointer;
+    color: #999;
+    line-height: 1;
+}
+
+.soe-modal-close:hover {
+    color: #333;
+}
+
+.soe-modal-content h3 {
+    margin: 0 0 10px 0;
+}
+
+.soe-modal-class-name {
+    color: #0073aa;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Form */
+.soe-form-group {
+    margin-bottom: 18px;
+}
+
+.soe-form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #333;
+}
+
+.soe-form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+.soe-form-group input:focus {
+    outline: none;
+    border-color: #0073aa;
+    box-shadow: 0 0 0 2px rgba(0, 115, 170, 0.2);
+}
+
+.soe-form-actions {
+    margin-top: 24px;
+}
+
+.soe-submit-btn {
+    width: 100%;
+    background: #0073aa;
+    color: #fff;
+    border: none;
+    padding: 14px;
+    border-radius: 6px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.soe-submit-btn:hover {
+    background: #005a87;
+}
+
+.soe-submit-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.soe-form-message {
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.soe-form-message.success {
+    background: #d4edda;
+    color: #155724;
+}
+
+.soe-form-message.error {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .soe-class-card {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .soe-book-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+

@@ -1,0 +1,44 @@
+# WordPress sensitive files
+wp-config.php
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# Local development
+*.local.php
+local-*.php
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+debug.log
+
+# Uploads (optional - uncomment if you don't want to track uploads)
+# wp-content/uploads/
+
+# Cache
+wp-content/cache/
+wp-content/advanced-cache.php
+wp-content/wp-cache-config.php
+
+# Backup files
+*.bak
+*.backup
+
+# Node modules (if using build tools)
+node_modules/
+
+# Composer vendor (if using composer)
+vendor/
+

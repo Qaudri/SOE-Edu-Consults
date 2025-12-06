@@ -1,0 +1,37 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "bookster/customer-dashboard",
+  "version": "0.1.0",
+  "title": "Bookster Customer Dashboard",
+  "category": "widgets",
+  "keywords": [
+    "bookster",
+    "customer",
+    "dashboard"
+  ],
+  "icon": "dashboard",
+  "description": "Bookster Customer Dashboard.",
+  "example": {},
+  "attributes": {
+    "width": {
+      "type": "number",
+      "default": "auto"
+    },
+    "height": {
+      "type": "number",
+      "default": 640
+    }
+  },
+  "supports": {
+    "anchor": true,
+    "html": true,
+    "spacing": {
+      "margin": true,
+      "padding": true
+    }
+  },
+  "textdomain": "bookster",
+  "editorScript": "file:./index.js",
+  "styles": []
+}

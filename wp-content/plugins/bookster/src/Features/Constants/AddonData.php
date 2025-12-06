@@ -1,0 +1,173 @@
+<?php
+namespace Bookster\Features\Constants;
+
+use Bookster\Features\Enums\AddonStatusEnum;
+
+/**
+ * Addon Data
+ */
+class AddonData {
+
+    const SUPPORTED_ADDONS = [
+        [
+            'slug'          => 'bookster-stripe',
+            'title'         => 'Payment Gateway Stripe',
+            'description'   => 'Accept Payment with Stripe Gateway.',
+            'cover'         => BOOKSTER_PLUGIN_URL . 'assets/images/addons-cover/payment.jpg',
+            'tags'          => [ 'Payment', 'Integration' ],
+            'releaseStatus' => AddonStatusEnum::RELEASED,
+        ],
+        [
+            'slug'          => 'bookster-paypal',
+            'title'         => 'Payment Gateway Paypal',
+            'description'   => 'Accept Payment with Paypal Gateway.',
+            'cover'         => BOOKSTER_PLUGIN_URL . 'assets/images/addons-cover/payment.jpg',
+            'tags'          => [ 'Payment', 'Integration' ],
+            'releaseStatus' => AddonStatusEnum::RELEASED,
+        ],
+        [
+            'slug'          => 'bookster-taxation',
+            'title'         => 'Tax',
+            'description'   => 'Calculate Tax Rates for Services and Appointments.',
+            'cover'         => BOOKSTER_PLUGIN_URL . 'assets/images/addons-cover/pricing.jpg',
+            'tags'          => [ 'Booking' ],
+            'releaseStatus' => AddonStatusEnum::RELEASED,
+        ],
+        [
+            'slug'          => 'bookster-discounts-fees',
+            'title'         => 'Discounts and Fees',
+            'description'   => 'Add Discounts, Fees, Happy Hours, and more to your Customers.',
+            'cover'         => BOOKSTER_PLUGIN_URL . 'assets/images/addons-cover/pricing.jpg',
+            'tags'          => [ 'Booking' ],
+            'releaseStatus' => AddonStatusEnum::RELEASED,
+        ],
+        [
+            'slug'          => 'bookster-extra-options',
+            'title'         => 'Bookster Extra Options',
+            'description'   => 'Offer Extra Products, Equipment, Variances to your Customers with Additional Fees.',
+            'cover'         => BOOKSTER_PLUGIN_URL . 'assets/images/addons-cover/addon.jpg',
+            'tags'          => [ 'Booking' ],
+            'releaseStatus' => AddonStatusEnum::RELEASED,
+        ],
+        [
+            'slug'          => 'bookster-custom-fields',
+            'title'         => 'Custom Fields',
+            'description'   => 'Gather Additional Information from your Customers with Custom Fields.',
+            'cover'         => BOOKSTER_PLUGIN_URL . 'assets/images/addons-cover/addon.jpg',
+            'tags'          => [ 'Booking' ],
+            'releaseStatus' => AddonStatusEnum::RELEASED,
+        ],
+        [
+            'slug'          => 'bookster-themes',
+            'title'         => 'Themes',
+            'description'   => 'Customize the Look and Feel of your Booking Page.',
+            'cover'         => BOOKSTER_PLUGIN_URL . 'assets/images/addons-cover/design.jpg',
+            'tags'          => [ 'Design', 'Customize' ],
+            'releaseStatus' => AddonStatusEnum::RELEASED,
+        ],
+        [
+            'slug'          => 'bookster-location',
+            'title'         => 'Location',
+            'description'   => 'Offer Services at Multiple Locations with Maps Integration.',
+            'cover'         => BOOKSTER_PLUGIN_URL . 'assets/images/addons-cover/addon.jpg',
+            'tags'          => [ 'Booking' ],
+            'releaseStatus' => AddonStatusEnum::COMING_SOON,
+        ],
+        [
+            'slug'          => 'bookster-reminder',
+            'title'         => 'Reminder',
+            'description'   => 'Send Reminder Emails to your Customers for their Appointments.',
+            'cover'         => BOOKSTER_PLUGIN_URL . 'assets/images/addons-cover/notification.jpg',
+            'tags'          => [ 'Integration' ],
+            'releaseStatus' => AddonStatusEnum::COMING_SOON,
+        ],
+        [
+            'slug'          => 'bookster-process',
+            'title'         => 'Booking Process',
+            'description'   => 'Change the Steps Order, Auto select specific Services, Agents, and Locations.',
+            'cover'         => BOOKSTER_PLUGIN_URL . 'assets/images/addons-cover/addon.jpg',
+            'tags'          => [ 'Booking' ],
+            'releaseStatus' => AddonStatusEnum::COMING_SOON,
+        ],
+        [
+            'slug'          => 'bookster-template',
+            'title'         => 'Booking Template',
+            'description'   => 'Customize each booking form step Layout, and Design.',
+            'cover'         => BOOKSTER_PLUGIN_URL . 'assets/images/addons-cover/design.jpg',
+            'tags'          => [ 'Design' ],
+            'releaseStatus' => AddonStatusEnum::COMING_SOON,
+        ],
+        [
+            'slug'          => 'bookster-deposit',
+            'title'         => 'Deposit Payment',
+            'description'   => 'Accept partial payment from your Customers.',
+            'cover'         => BOOKSTER_PLUGIN_URL . 'assets/images/addons-cover/payment.jpg',
+            'tags'          => [ 'Booking', 'Payment' ],
+            'releaseStatus' => AddonStatusEnum::COMING_SOON,
+        ],
+        [
+            'slug'          => 'bookster-quickstart',
+            'title'         => 'Quickstart',
+            'description'   => 'Import prebuilt templates to your Booking website, and get started in minutes.',
+            'cover'         => BOOKSTER_PLUGIN_URL . 'assets/images/addons-cover/design.jpg',
+            'tags'          => [ 'Design' ],
+            'releaseStatus' => AddonStatusEnum::COMING_SOON,
+        ],
+        [
+            'slug'          => 'bookster-coupon',
+            'title'         => 'Coupon',
+            'description'   => 'Offer Coupons to your Customers with Discounts and Special Offers.',
+            'cover'         => BOOKSTER_PLUGIN_URL . 'assets/images/addons-cover/coupon.jpg',
+            'tags'          => [ 'Booking', 'Marketing' ],
+            'releaseStatus' => AddonStatusEnum::COMING_SOON,
+        ],
+        [
+            'slug'          => 'bookster-group',
+            'title'         => 'Group Booking',
+            'description'   => 'Timeslot accepts multiple bookings. Useful for classes, workshops, and events.',
+            'cover'         => BOOKSTER_PLUGIN_URL . 'assets/images/addons-cover/addon.jpg',
+            'tags'          => [ 'Booking' ],
+            'releaseStatus' => AddonStatusEnum::COMING_SOON,
+        ],
+        [
+            'slug'          => 'bookster-toolkit-block',
+            'title'         => 'Design Toolkit Block Editor',
+            'description'   => 'Design Toolkit for Block Editor. Various Patterns, Blocks to Design your Booking Page.',
+            'cover'         => BOOKSTER_PLUGIN_URL . 'assets/images/addons-cover/design.jpg',
+            'tags'          => [ 'Design' ],
+            'releaseStatus' => AddonStatusEnum::COMING_SOON,
+        ],
+        [
+            'slug'          => 'bookster-toolkit-elementor',
+            'title'         => 'Design Toolkit Elementor',
+            'description'   => 'Design Toolkit for Elementor. Various Template, Widgets to Design your Booking Page.',
+            'cover'         => BOOKSTER_PLUGIN_URL . 'assets/images/addons-cover/design.jpg',
+            'tags'          => [ 'Design' ],
+            'releaseStatus' => AddonStatusEnum::COMING_SOON,
+        ],
+        [
+            'slug'          => 'bookster-google',
+            'title'         => 'Google Calendar and Meet',
+            'description'   => 'Sync Agent Bookings with Google Calendar and Meet.',
+            'cover'         => BOOKSTER_PLUGIN_URL . 'assets/images/addons-cover/addon.jpg',
+            'tags'          => [ 'Integration' ],
+            'releaseStatus' => AddonStatusEnum::COMING_SOON,
+        ],
+        [
+            'slug'          => 'bookster-twilio',
+            'title'         => 'SMS Notifications via Twilio',
+            'description'   => 'Support SMS Notifications with Twilio',
+            'cover'         => BOOKSTER_PLUGIN_URL . 'assets/images/addons-cover/notification.jpg',
+            'tags'          => [ 'Integration' ],
+            'releaseStatus' => AddonStatusEnum::COMING_SOON,
+        ],
+        [
+            'slug'          => 'bookster-webhook',
+            'title'         => 'Webhook',
+            'description'   => 'Integrate with external functionalities using Webhook.',
+            'cover'         => BOOKSTER_PLUGIN_URL . 'assets/images/addons-cover/addon.jpg',
+            'tags'          => [ 'Integration' ],
+            'releaseStatus' => AddonStatusEnum::COMING_SOON,
+        ],
+    ];
+}

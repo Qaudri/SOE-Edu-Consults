@@ -1,0 +1,128 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "bookster/booking-button",
+  "version": "0.1.0",
+  "title": "Bookster Booking Button",
+  "category": "widgets",
+  "keywords": [
+    "bookster",
+    "booking",
+    "button"
+  ],
+  "icon": "button",
+  "description": "Bookster Booking Button.",
+  "example": {},
+  "usesContext": [
+    "bookster/serviceId",
+    "bookster/agentId",
+    "bookster/locationId"
+  ],
+  "attributes": {
+    "tagName": {
+      "type": "string",
+      "enum": [
+        "button"
+      ],
+      "default": "button"
+    },
+    "type": {
+      "type": "string",
+      "default": "button"
+    },
+    "textAlign": {
+      "type": "string"
+    },
+    "text": {
+      "type": "string"
+    },
+    "placeholder": {
+      "type": "string"
+    },
+    "backgroundColor": {
+      "type": "string"
+    },
+    "textColor": {
+      "type": "string"
+    }
+  },
+  "supports": {
+    "anchor": true,
+    "align": false,
+    "alignWide": false,
+    "color": {
+      "__experimentalSkipSerialization": true,
+      "gradients": true,
+      "__experimentalDefaultControls": {
+        "background": true,
+        "text": true
+      }
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true,
+      "__experimentalFontFamily": true,
+      "__experimentalFontWeight": true,
+      "__experimentalFontStyle": true,
+      "__experimentalTextTransform": true,
+      "__experimentalTextDecoration": true,
+      "__experimentalLetterSpacing": true,
+      "__experimentalDefaultControls": {
+        "fontSize": true
+      }
+    },
+    "reusable": false,
+    "shadow": {
+      "__experimentalSkipSerialization": true
+    },
+    "spacing": {
+      "__experimentalSkipSerialization": true,
+      "padding": [
+        "horizontal",
+        "vertical"
+      ],
+      "margin": [
+        "horizontal",
+        "vertical"
+      ],
+      "__experimentalDefaultControls": {
+        "padding": true,
+        "margin": true
+      }
+    },
+    "__experimentalBorder": {
+      "color": true,
+      "radius": true,
+      "style": true,
+      "width": true,
+      "__experimentalSkipSerialization": true,
+      "__experimentalDefaultControls": {
+        "color": true,
+        "radius": true,
+        "style": true,
+        "width": true
+      }
+    },
+    "__experimentalSelector": ".wp-block-button .wp-block-button__link",
+    "interactivity": {
+      "clientNavigation": true
+    }
+  },
+  "textdomain": "bookster",
+  "editorScript": "file:./index.js",
+  "styles": [
+    {
+      "name": "fill",
+      "label": "Fill",
+      "isDefault": true
+    },
+    {
+      "name": "outline",
+      "label": "Outline"
+    }
+  ],
+  "style": [
+    "wp-block-button",
+    "wp-block-buttons"
+  ]
+}

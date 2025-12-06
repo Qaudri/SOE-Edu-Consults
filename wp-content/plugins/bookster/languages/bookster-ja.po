@@ -1,0 +1,2564 @@
+# Copyright (C) 2025 WPBookster
+# This file is distributed under the GPL v3 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Bookster 2.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/bookster\n"
+"POT-Creation-Date: 2025-02-17T01:57:32+00:00\n"
+"PO-Revision-Date: 2025-02-25 11:20+0700\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.5\n"
+"X-Domain: bookster\n"
+
+#. Plugin Name of the plugin
+#: bookster.php src/Engine/BEPages/ManagerPage.php:45
+#: src/Engine/BEPages/ManagerPage.php:91 src/Engine/BEPages/ManagerPage.php:92
+#: src/Engine/BEPages/ManagerPage.php:102
+#: src/Engine/BEPages/ManagerPage.php:111
+#: src/Engine/BEPages/ManagerPage.php:122
+#: src/Engine/BEPages/ManagerPage.php:131
+#: src/Engine/BEPages/ManagerPage.php:140
+#: src/Engine/BEPages/ManagerPage.php:149
+#: src/Engine/BEPages/ManagerPage.php:158
+#: src/Engine/BEPages/ManagerPage.php:167
+#: src/Engine/BEPages/ManagerPage.php:176
+#: src/Engine/BEPages/ManagerPage.php:185
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Bookster"
+msgstr "Bookster"
+
+#. Plugin URI of the plugin
+#: bookster.php
+msgid "https://wpbookster.com/"
+msgstr "https://wpbookster.com/"
+
+#. Description of the plugin
+#: bookster.php
+msgid "An awesome Booking system for WordPress."
+msgstr "WordPressの素晴らしい予約システム。"
+
+#. Author of the plugin
+#: bookster.php
+msgid "WPBookster"
+msgstr "WPBookster"
+
+#. Author URI of the plugin
+#: bookster.php
+msgid "https://wpbookster.com/about"
+msgstr "https://wpbookster.com/about"
+
+#. translators: %s: Bookster Minimum php version
+#: bookster.php:73
+msgid "\"Bookster Plugin\" requires PHP %s or newer."
+msgstr "「Bookster Plugin」はPHP%s以上が必要です。"
+
+#. translators: %s: Bookster Minimum WordPress version
+#: bookster.php:91
+msgid "\"Bookster Plugin\" requires WordPress %s or newer."
+msgstr "「Bookster Plugin」はWordPress %s以上が必要です。"
+
+#: src/Engine/Admin.php:31
+msgid "Bookster Customer Dashboard Page"
+msgstr "Bookster Customer Dashboardページ"
+
+#: src/Engine/BEPages/AgentPage.php:44 src/Engine/BEPages/AgentPage.php:94
+#: src/Engine/BEPages/AgentPage.php:95 src/Engine/BEPages/AgentPage.php:105
+#: src/Engine/BEPages/AgentPage.php:114 src/Engine/BEPages/AgentPage.php:125
+#: src/Engine/BEPages/AgentPage.php:134 src/Engine/BEPages/AgentPage.php:143
+msgid "My Bookster"
+msgstr "マイブックスター"
+
+#: src/Engine/BEPages/AgentPage.php:57 src/Engine/BEPages/AgentPage.php:106
+#: src/Engine/BEPages/ManagerPage.php:58 src/Engine/BEPages/ManagerPage.php:103
+#: assets/dist/bookster/page-agent.js:1 assets/dist/bookster/page-manager.js:1
+msgid "Dashboard"
+msgstr "ダッシュボード"
+
+#: src/Engine/BEPages/AgentPage.php:65 src/Engine/BEPages/AgentPage.php:115
+#: src/Engine/BEPages/ManagerPage.php:66 src/Engine/BEPages/ManagerPage.php:112
+#: assets/dist/bookster/page-agent.js:1 assets/dist/bookster/page-manager.js:1
+msgid "Calendar"
+msgstr "カレンダー"
+
+#: src/Engine/BEPages/AgentPage.php:75 src/Engine/BEPages/AgentPage.php:126
+#: assets/dist/bookster/AgentAppointmentsPage-0008a26b.js:1
+msgid "My Appointments"
+msgstr "予約一覧"
+
+#: src/Engine/BEPages/AgentPage.php:135
+#: assets/dist/bookster/AgentProfilePage-464de6d5.js:1
+#: assets/dist/bookster/page-agent.js:1
+msgid "Profile"
+msgstr "プロフィール"
+
+#: src/Engine/BEPages/AgentPage.php:144 src/Engine/BEPages/ManagerPage.php:159
+#: assets/dist/bookster/AgentSettingsPage-44a463b6.js:1
+#: assets/dist/bookster/page-agent.js:1 assets/dist/bookster/page-manager.js:1
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Settings"
+msgstr "設定"
+
+#: src/Engine/BEPages/IntroPage.php:43
+msgid "Bookster Setup Walkthrough"
+msgstr "Bookster セットアップのチュートリアル"
+
+#: src/Engine/BEPages/IntroPage.php:44
+msgid "Bookster Tours"
+msgstr "ブックスターツアー"
+
+#: src/Engine/BEPages/IntroPage.php:93
+msgid "Booking"
+msgstr "予約"
+
+#: src/Engine/BEPages/IntroPage.php:96
+msgid "Customer Dashboard"
+msgstr "顧客ダッシュボード"
+
+#: src/Engine/BEPages/ManagerPage.php:76 src/Engine/BEPages/ManagerPage.php:123
+#: assets/dist/bookster/AgentDashboardPage-0cf05306.js:1
+#: assets/dist/bookster/AppointmentsPage-81a8618e.js:1
+#: assets/dist/bookster/DashboardPage-157d9686.js:1
+#: assets/dist/bookster/page-agent.js:1 assets/dist/bookster/page-manager.js:1
+#: assets/dist/bookster/StatsRate-1e67a7a4.js:1
+msgid "Appointments"
+msgstr "予約"
+
+#: src/Engine/BEPages/ManagerPage.php:132 src/Services/LocalizeService.php:136
+msgid "Agents"
+msgstr "担当者"
+
+#: src/Engine/BEPages/ManagerPage.php:141 src/Services/LocalizeService.php:134
+msgid "Services"
+msgstr "サービス"
+
+#: src/Engine/BEPages/ManagerPage.php:150 src/Services/LocalizeService.php:138
+#: assets/dist/bookster/DashboardPage-157d9686.js:1
+msgid "Customers"
+msgstr "顧客"
+
+#: src/Engine/BEPages/ManagerPage.php:168
+#: assets/dist/bookster/CustomizePage-4e0c1c26.js:1
+#: assets/dist/bookster/page-manager.js:1
+msgid "Customize"
+msgstr "カスタマイズ"
+
+#: src/Engine/BEPages/ManagerPage.php:177
+#: assets/dist/bookster/page-manager.js:1
+msgid "Integrations"
+msgstr "統合"
+
+#: src/Engine/BEPages/ManagerPage.php:186
+#: assets/dist/bookster/page-manager.js:1
+msgid "Addons"
+msgstr "アドオン"
+
+#: src/Engine/BEPages/ManagerPage.php:211
+msgid "Manage"
+msgstr "管理"
+
+#: src/Engine/FEBlocks/BookingFormShortcode.php:49
+msgid "Book Now"
+msgstr "今すぐ予約"
+
+#: src/Engine/Tasks/RegisterTasks.php:23
+msgid "Every 5 Minutes"
+msgstr "5分ごと"
+
+#: src/Engine/Tasks/RegisterTasks.php:27
+msgid "Once Monthly"
+msgstr "月1回"
+
+#: src/Features/Auth/AuthFns.php:12
+msgid "Bookster Manager"
+msgstr "ブックスターマネージャー"
+
+#: src/Features/Auth/AuthFns.php:17
+msgid "Bookster Agent"
+msgstr "ブックスターエージェント"
+
+#: src/Features/Auth/RestAuth.php:16
+msgid "Sorry, you need to Login to do this!!!."
+msgstr "申し訳ございませんが、これを行うにはログインする必要があります!!."
+
+#: src/Features/Auth/RestAuth.php:28 src/Features/Auth/RestAuth.php:40
+msgid "Sorry, you need to be Manager to do this!!!."
+msgstr ""
+"申し訳ございませんが、これを行うにはマネージャーである必要があります!!."
+
+#: src/Features/Auth/RestAuth.php:52 src/Features/Auth/RestAuth.php:64
+#: src/Features/Auth/RestAuth.php:76
+msgid "Sorry, you need to be Agent to do this!!!."
+msgstr ""
+"申し訳ございませんが、これを行うにはエージェントである必要があります!!."
+
+#: src/Features/Auth/RestAuth.php:104
+msgid "Sorry, you don't have Permission to do this!!!."
+msgstr "申し訳ございませんが、これを行うための権限がありません!!."
+
+#: src/Features/Constants/SettingsData.php:165
+msgid "Service Selection"
+msgstr "サービスを選択してください"
+
+#: src/Features/Constants/SettingsData.php:166
+msgid "Please select a service for your appointment"
+msgstr "ご予約のサービスを選択してください"
+
+#: src/Features/Constants/SettingsData.php:169
+#: src/Services/LocalizeService.php:135
+#: templates/emails/appt-notification/appt-summary.php:50
+msgid "Agent"
+msgstr "担当者"
+
+#: src/Features/Constants/SettingsData.php:170
+msgid "Please select an agent for your appointment"
+msgstr "ご予約の担当者をお選びください"
+
+#: src/Features/Constants/SettingsData.php:173
+msgid "Date & Time"
+msgstr "日付と時間"
+
+#: src/Features/Constants/SettingsData.php:174
+msgid "Please select a date and time for your appointment"
+msgstr "ご予約の日時をお選びください"
+
+#: src/Features/Constants/SettingsData.php:177
+msgid "Contact"
+msgstr "お問い合わせ"
+
+#: src/Features/Constants/SettingsData.php:178
+msgid "Please enter your contact information"
+msgstr "連絡先情報を入力してください"
+
+#: src/Features/Constants/SettingsData.php:181
+msgid "Checkout"
+msgstr "チェックアウト"
+
+#: src/Features/Constants/SettingsData.php:182
+msgid "Please enter your payment information"
+msgstr "お支払い情報を入力してください"
+
+#: src/Features/Constants/SettingsData.php:185
+msgid "Confimation"
+msgstr "コンフィメーション"
+
+#: src/Features/Constants/SettingsData.php:186
+msgid "Your appointment has been booked"
+msgstr "予約が済ませました"
+
+#: src/Features/Constants/SettingsData.php:189
+msgid "Need help? Call Us Now"
+msgstr "ヘルプが必要ですか?今すぐお電話ください"
+
+#: src/Features/Enums/BookStatusEnum.php:16
+#: assets/dist/bookster/page-intro.js:1
+#: assets/dist/bookster/prefetch.helper-f488c823.js:1
+#: assets/dist/bookster/ReloadButton-631bf244.js:1
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Approved"
+msgstr "承認済み"
+
+#: src/Features/Enums/BookStatusEnum.php:18
+#: assets/dist/bookster/prefetch.helper-f488c823.js:1
+#: assets/dist/bookster/ReloadButton-631bf244.js:1
+msgid "Canceled"
+msgstr "キャンセル"
+
+#: src/Features/Enums/BookStatusEnum.php:21
+#: assets/dist/bookster/prefetch.helper-f488c823.js:1
+msgid "Pending Approval"
+msgstr "承認を保留中"
+
+#: src/Features/Enums/PaymentStatusEnum.php:17
+#: assets/dist/bookster/prefetch.helper-f488c823.js:1
+msgid "Unpaid"
+msgstr "未払い"
+
+#: src/Features/Enums/PaymentStatusEnum.php:19
+#: assets/dist/bookster/prefetch.helper-f488c823.js:1
+msgid "Refunded"
+msgstr "返金済み"
+
+#: src/Features/Enums/PaymentStatusEnum.php:21
+#: assets/dist/bookster/prefetch.helper-f488c823.js:1
+msgid "Completed"
+msgstr "完了"
+
+#: src/Features/Enums/PaymentStatusEnum.php:24
+#: assets/dist/bookster/prefetch.helper-f488c823.js:1
+msgid "Incomplete"
+msgstr "未完了"
+
+#: src/Services/BookingRequestService.php:59
+msgid "Sorry. The Service is not available for Booking!"
+msgstr "すみません。このサービスは予約にはご利用いただけません!"
+
+#: src/Services/BookingRequestService.php:62
+msgid "Sorry. The Agent is not available for Booking!"
+msgstr "すみません。エージェントは予約できません!"
+
+#: src/Services/BookingRequestService.php:79
+msgid "Sorry. Invalid datetime format!"
+msgstr "すみません。日付時刻形式が無効です。"
+
+#: src/Services/BookingRequestService.php:206
+#: src/Services/BookingRequestService.php:217
+msgid ""
+"Sorry. Your Booking Time is no longer Valid. Please select another "
+"Appointment Time!"
+msgstr ""
+"すみません。ご予約時間は無効になりました。別の予約時間を選択してください!"
+
+#: src/Services/EmailSettingsService.php:62
+msgid "[{site_title}]: New booking #{appt_number}"
+msgstr "[{site_title}]:新規予約 #{appt_number}"
+
+#: src/Services/EmailSettingsService.php:63
+msgid "New Booking: #{appt_number}"
+msgstr "新規予約: #{appt_number}"
+
+#: src/Services/EmailSettingsService.php:64
+msgid ""
+"Hi <strong>Manager</strong>,\n"
+"You have received the following booking from {customer_name}."
+msgstr ""
+"<strong>こんにちはマネージャー</strong>、\n"
+"{customer_name}から以下の予約を受け取りました。"
+
+#: src/Services/EmailSettingsService.php:69
+msgid "Your {site_title} booking has been received!"
+msgstr "{site_title}の予約を受け取りました!"
+
+#: src/Services/EmailSettingsService.php:70
+msgid "Booking received #{appt_number}"
+msgstr "予約受付済み #{appt_number}"
+
+#: src/Services/EmailSettingsService.php:71
+msgid ""
+"Hi <strong>{customer_name}</strong>,\n"
+"Thank you for your booking. We are working on your schedule."
+msgstr ""
+"こんにちは <strong>{customer_name}</strong>、\n"
+"この度はご予約いただき誠にありがとうございます。私たちはあなたのスケジュール"
+"に取り組んでいます。"
+
+#: src/Services/EmailSettingsService.php:75
+msgid "Your {site_title} appointment has been confirmed!"
+msgstr "{site_title}の予約が確定しました!"
+
+#: src/Services/EmailSettingsService.php:76
+msgid "Appointment confirmed #{appt_number}"
+msgstr "予約確認 #{appt_number}"
+
+#: src/Services/EmailSettingsService.php:77
+msgid ""
+"Hi <strong>{customer_name}</strong>,\n"
+"Your {service_name} appointment has been confirmed."
+msgstr ""
+"こんにちは <strong>{customer_name}</strong>、\n"
+" {service_name} の予約が確定しました。"
+
+#: src/Services/EmailSettingsService.php:82
+msgid "[{site_title}]: Approved appointment #{appt_number}"
+msgstr "[{site_title}]:承認された任命 #{appt_number}"
+
+#: src/Services/EmailSettingsService.php:83
+msgid "Approved appointment: #{appt_number}"
+msgstr "承認された任命:#{appt_number}"
+
+#: src/Services/EmailSettingsService.php:84
+msgid ""
+"Hi <strong>{agent_name}</strong>,\n"
+"Congratulation on the {service_name} appointment with {customer_name}!"
+msgstr ""
+"こんにちは<strong>{agent_name}</strong>、\n"
+"{customer_name}との{service_name}アポイントメントおめでとうございます!"
+
+#: src/Services/EmailSettingsService.php:88
+msgid "[{site_title}]: Canceled appointment #{appt_number}"
+msgstr "[{site_title}]:予約をキャンセルしました#{appt_number}"
+
+#: src/Services/EmailSettingsService.php:89
+msgid "Canceled appointment: #{appt_number}"
+msgstr "キャンセルされた予定:#{appt_number}"
+
+#: src/Services/EmailSettingsService.php:90
+msgid ""
+"Hi <strong>{agent_name}</strong>,\n"
+"Your {service_name} appointment with {customer_name} has been canceled."
+msgstr ""
+"こんにちは<strong>{agent_name}</strong>、\n"
+"{customer_name}との{service_name}の予定がキャンセルされました。"
+
+#: src/Services/EmailSettingsService.php:94
+msgid "Details for appointment #{appt_number} on {site_title}"
+msgstr "{site_title}の予約#{appt_number}の詳細"
+
+#: src/Services/EmailSettingsService.php:95
+#: src/Services/EmailSettingsService.php:100
+msgid "Details for appointment #{appt_number}"
+msgstr "予約の詳細 #{appt_number}"
+
+#: src/Services/EmailSettingsService.php:96
+msgid ""
+"Hi <strong>{customer_name}</strong>,\n"
+"You have a {service_name} appointment with {agent_name}."
+msgstr ""
+"こんにちは<strong>{customer_name}</strong>、\n"
+"{agent_name}との{service_name}の予定があります。"
+
+#: src/Services/EmailSettingsService.php:99
+msgid "[{site_title}]: Details for appointment #{appt_number}"
+msgstr "[{site_title}]:予約内容 #{appt_number}"
+
+#: src/Services/EmailSettingsService.php:101
+msgid ""
+"Hi <strong>{agent_name}</strong>,\n"
+"You have a {service_name} appointment with {customer_name}."
+msgstr ""
+"こんにちは<strong>{agent_name}</strong>、\n"
+"{customer_name}との{service_name}の予定があります。"
+
+#: src/Services/LocalizeService.php:133
+msgid "Service"
+msgstr "サービス"
+
+#: src/Services/LocalizeService.php:137
+#: templates/emails/appt-notification/appt-summary.php:42
+msgid "Customer"
+msgstr "顧客"
+
+#: src/Services/LocalizeService.php:139
+msgid "Location"
+msgstr "場所"
+
+#: src/Services/LocalizeService.php:140
+msgid "Locations"
+msgstr "地域"
+
+#: templates/emails/appt-notification/appt-booking-details.php:23
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Booking Details"
+msgstr "予約の詳細"
+
+#: templates/emails/appt-notification/appt-booking-details.php:68
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Subtotal"
+msgstr "小計"
+
+#: templates/emails/appt-notification/appt-booking-details.php:98
+#: assets/dist/bookster/AgentAppointmentsPage-0008a26b.js:1
+#: assets/dist/bookster/AppointmentsPage-81a8618e.js:1
+#: assets/dist/bookster/apptDataTable-18ba107e.js:1
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Total"
+msgstr "合計"
+
+#: templates/emails/appt-notification/appt-summary.php:23
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Appointment"
+msgstr "予約"
+
+#: assets/dist/bookster/AgentAppointmentsPage-0008a26b.js:1
+#: assets/dist/bookster/AppointmentsPage-81a8618e.js:1
+#: assets/dist/bookster/apptDataTable-18ba107e.js:1
+#: assets/dist/bookster/ReloadButton-631bf244.js:1
+msgid "Status"
+msgstr "ステータス"
+
+#: assets/dist/bookster/AgentAppointmentsPage-0008a26b.js:1
+#: assets/dist/bookster/AgentsList-074745cd.js:1
+#: assets/dist/bookster/CustomersPage-12f1c628.js:1
+#: assets/dist/bookster/ReloadButton-631bf244.js:1
+msgid "Loading"
+msgstr "読み込み中"
+
+#: assets/dist/bookster/AgentAppointmentsPage-0008a26b.js:1
+#: assets/dist/bookster/AgentsList-074745cd.js:1
+#: assets/dist/bookster/CustomersPage-12f1c628.js:1
+#: assets/dist/bookster/ReloadButton-631bf244.js:1
+msgid "No Data Found"
+msgstr "データが見つかりませんでした"
+
+#: assets/dist/bookster/AgentAppointmentsPage-0008a26b.js:1
+#: assets/dist/bookster/AgentsList-074745cd.js:1
+#: assets/dist/bookster/CustomersPage-12f1c628.js:1
+#: assets/dist/bookster/ReloadButton-631bf244.js:1
+msgid "Selected"
+msgstr "選択中"
+
+#: assets/dist/bookster/AgentAppointmentsPage-0008a26b.js:1
+#: assets/dist/bookster/AppointmentsPage-81a8618e.js:1
+msgid "Columns"
+msgstr "カラム"
+
+#: assets/dist/bookster/AgentAppointmentsPage-0008a26b.js:1
+#: assets/dist/bookster/AppointmentsPage-81a8618e.js:1
+#: assets/dist/bookster/apptDataTable-18ba107e.js:1
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+#: assets/dist/bookster/CalendarContent-7a4b8ea6.js:1
+#: assets/dist/bookster/page-manager.js:1
+#: assets/dist/bookster/ReloadButton-631bf244.js:1
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Payment"
+msgstr "支払い"
+
+#: assets/dist/bookster/AgentAppointmentsPage-0008a26b.js:1
+#: assets/dist/bookster/AppointmentsPage-81a8618e.js:1
+#: assets/dist/bookster/apptDataTable-18ba107e.js:1
+msgid "Date / Time"
+msgstr "日時"
+
+#: assets/dist/bookster/AgentAppointmentsPage-0008a26b.js:1
+#: assets/dist/bookster/AppointmentsPage-81a8618e.js:1
+msgid "Payment Incomplete"
+msgstr "支払いが完了していません"
+
+#: assets/dist/bookster/AgentAppointmentsPage-0008a26b.js:1
+#: assets/dist/bookster/AgentCalendarPage-d0b6396b.js:1
+#: assets/dist/bookster/AppointmentsPage-81a8618e.js:1
+#: assets/dist/bookster/CalendarPage-f0916903.js:1
+msgid "Filters"
+msgstr "フィルター"
+
+#: assets/dist/bookster/AgentCalendarPage-d0b6396b.js:1
+#: assets/dist/bookster/AgentDashboardPage-0cf05306.js:1
+#: assets/dist/bookster/CalendarPage-f0916903.js:1
+#: assets/dist/bookster/DashboardPage-157d9686.js:1
+msgid "Day Schedule"
+msgstr "デイスケジュール"
+
+#: assets/dist/bookster/AgentCalendarPage-d0b6396b.js:1
+#: assets/dist/bookster/CalendarPage-f0916903.js:1
+msgid "Week Schedule"
+msgstr "週間スケジュール"
+
+#: assets/dist/bookster/AgentCalendarPage-d0b6396b.js:1
+#: assets/dist/bookster/CalendarPage-f0916903.js:1
+msgid "Month Schedule"
+msgstr "月間スケジュール"
+
+#: assets/dist/bookster/AgentCalendarPage-d0b6396b.js:1
+#: assets/dist/bookster/block-customer-dashboard.js:1
+#: assets/dist/bookster/CalendarPage-f0916903.js:1
+#: assets/dist/bookster/ReloadButton-631bf244.js:1
+msgid "Today"
+msgstr "今日"
+
+#: assets/dist/bookster/AgentCalendarPage-d0b6396b.js:1
+#: assets/dist/bookster/AgentDashboardPage-0cf05306.js:1
+#: assets/dist/bookster/CalendarPage-f0916903.js:1
+#: assets/dist/bookster/DashboardPage-157d9686.js:1
+msgid "Week"
+msgstr "週"
+
+#: assets/dist/bookster/AgentCalendarPage-d0b6396b.js:1
+#: assets/dist/bookster/AgentDashboardPage-0cf05306.js:1
+#: assets/dist/bookster/CalendarPage-f0916903.js:1
+#: assets/dist/bookster/DashboardPage-157d9686.js:1
+msgid "Month"
+msgstr "月"
+
+#: assets/dist/bookster/AgentDashboardPage-0cf05306.js:1
+#: assets/dist/bookster/DashboardPage-157d9686.js:1
+msgid "Performance"
+msgstr "パフォーマンス"
+
+#: assets/dist/bookster/AgentDashboardPage-0cf05306.js:1
+#: assets/dist/bookster/CalendarPage-f0916903.js:1
+#: assets/dist/bookster/DashboardPage-157d9686.js:1
+msgid "Day"
+msgstr "日"
+
+#: assets/dist/bookster/AgentDashboardPage-0cf05306.js:1
+#: assets/dist/bookster/DashboardPage-157d9686.js:1
+#: assets/dist/bookster/StatsRate-1e67a7a4.js:1
+msgid "Revenue"
+msgstr "収入"
+
+#: assets/dist/bookster/AgentDashboardPage-0cf05306.js:1
+#: assets/dist/bookster/DashboardPage-157d9686.js:1
+msgid "View Appointment"
+msgstr "予定の表示"
+
+#: assets/dist/bookster/AgentDashboardPage-0cf05306.js:1
+#: assets/dist/bookster/DashboardPage-157d9686.js:1
+msgid "View Calendar"
+msgstr "カレンダーを表示"
+
+#: assets/dist/bookster/AgentDashboardPage-0cf05306.js:1
+#: assets/dist/bookster/DashboardPage-157d9686.js:1
+msgid "New Customers"
+msgstr "新規のお客様"
+
+#: assets/dist/bookster/AgentDashboardPage-0cf05306.js:1
+#: assets/dist/bookster/DashboardPage-157d9686.js:1
+msgid "Total New %(customers)s in the Last 30 Days"
+msgstr "過去 30 日間の新規%(customers)s合計"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+#: assets/dist/bookster/AgentsPage-1c6eacac.js:1
+#: assets/dist/bookster/CustomersPage-12f1c628.js:1
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid "Search"
+msgstr "検索"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+msgid "Selected %(services)s"
+msgstr "選択された%(services)s"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "No %(services)s found."
+msgstr "%(services)s見つかりませんでした。"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid ""
+"Available only apply to %(customer)s Booking Form. For Manager, there is no "
+"restriction."
+msgstr ""
+"予約フォームのみ%(customer)s対象となります。Manager の場合、制限はありませ"
+"ん。"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+msgid "This %(agent)s is available for all %(services)s"
+msgstr "この%(agent)sは、すべての%(services)sで使用できます"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid "Active"
+msgstr "有効"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+msgid ""
+"Archiving %(agent)s to avoid Deleting referencing Appointment, Analytics "
+"Data in the past."
+msgstr ""
+"アーカイブ%(agent)s、過去の予定、分析データを参照して削除することを避けること"
+"ができます。"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+msgid "Active %(agents)s are available for booking."
+msgstr "アクティブ%(agents)sの予約が可能です。"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+#: assets/dist/bookster/page-manager.js:1
+msgid "Wordpress User"
+msgstr "ワードプレスユーザー"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+msgid ""
+"Link %(agent)s with WP User to allow them to login and browse Working "
+"Calendar."
+msgstr ""
+"%(agent)sをWPユーザーとリンクして、ログインして作業カレンダーを閲覧できるよう"
+"にします。"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+#: assets/dist/bookster/page-manager.js:1
+msgid "Linked to the WP User"
+msgstr "WPユーザーへのリンク"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+#: assets/dist/bookster/page-manager.js:1
+msgid "Not Linked to any WP User."
+msgstr "WPユーザーにリンクされていません。"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+#: assets/dist/bookster/page-manager.js:1
+msgid "Unlink Now"
+msgstr "今すぐリンクを解除"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+#: assets/dist/bookster/page-manager.js:1
+msgid "Link Now"
+msgstr "リンク"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+#: assets/dist/bookster/AgentProfilePage-464de6d5.js:1
+#: assets/dist/bookster/block-customer-dashboard.js:1
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+#: assets/dist/bookster/page-manager.js:1
+msgid "First Name"
+msgstr "名"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+#: assets/dist/bookster/AgentProfilePage-464de6d5.js:1
+#: assets/dist/bookster/page-manager.js:1
+msgid "Please enter First Name"
+msgstr "名を入力してください"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+#: assets/dist/bookster/AgentProfilePage-464de6d5.js:1
+#: assets/dist/bookster/block-customer-dashboard.js:1
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+#: assets/dist/bookster/page-manager.js:1
+msgid "Last Name"
+msgstr "姓"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+#: assets/dist/bookster/AgentProfilePage-464de6d5.js:1
+#: assets/dist/bookster/page-manager.js:1
+msgid "Please enter Last Name"
+msgstr "姓を入力してください"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+#: assets/dist/bookster/AgentProfilePage-464de6d5.js:1
+#: assets/dist/bookster/AgentsList-074745cd.js:1
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+#: assets/dist/bookster/CustomersPage-12f1c628.js:1
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+#: assets/dist/bookster/page-manager.js:1
+msgid "Email"
+msgstr "メールアドレス"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+#: assets/dist/bookster/page-manager.js:1
+msgid "Please change Email from"
+msgstr "メールアドレスの差出人"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+#: assets/dist/bookster/page-manager.js:1
+msgid "Wordpress Profile"
+msgstr "ワードプレスのプロフィール"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+#: assets/dist/bookster/page-manager.js:1
+msgid "Please enter Email"
+msgstr "メールアドレスを入力してください"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+#: assets/dist/bookster/AgentProfilePage-464de6d5.js:1
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+#: assets/dist/bookster/CustomersPage-12f1c628.js:1
+#: assets/dist/bookster/page-manager.js:1
+msgid "Phone"
+msgstr "電話番号"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+#: assets/dist/bookster/AgentsList-074745cd.js:1
+msgid "Priority"
+msgstr "優先"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+msgid "Display priority (from 0 to 100)"
+msgstr "表示優先度 (0 から 100)"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+#: assets/dist/bookster/AgentsList-074745cd.js:1
+#: assets/dist/bookster/AgentsPage-1c6eacac.js:1
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid "Visibility"
+msgstr "表示状態"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+msgid "Private %(agents)s are visible to Staff only."
+msgstr "プライベート%(agents)sはスタッフのみが見ることができます。"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+#: assets/dist/bookster/AgentsList-074745cd.js:1
+#: assets/dist/bookster/AgentsPage-1c6eacac.js:1
+#: assets/dist/bookster/ServiceCard-a501175b.js:1
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid "Public"
+msgstr "公開"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+#: assets/dist/bookster/AgentsList-074745cd.js:1
+#: assets/dist/bookster/AgentsPage-1c6eacac.js:1
+#: assets/dist/bookster/ServiceCard-a501175b.js:1
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid "Private"
+msgstr "プライベート"
+
+#: assets/dist/bookster/AgentProfilePage-464de6d5.js:1
+msgid "%(agent)s Profile"
+msgstr "%(agent)sプロフィール"
+
+#: assets/dist/bookster/AgentProfilePage-464de6d5.js:1
+msgid "You can change your personal information here. "
+msgstr "ここで個人情報を変更することができます。"
+
+#: assets/dist/bookster/AgentProfilePage-464de6d5.js:1
+msgid "%(customers)s will see this information when they contact you."
+msgstr "この情報は、%(customers)sから連絡を受けたときに表示されます。"
+
+#: assets/dist/bookster/AgentProfilePage-464de6d5.js:1
+msgid "Change Photo"
+msgstr "画像を変更する"
+
+#: assets/dist/bookster/AgentProfilePage-464de6d5.js:1
+msgid "Remove"
+msgstr "削除"
+
+#: assets/dist/bookster/AgentProfilePage-464de6d5.js:1
+msgid "Upload a 256x256 Jpeg or Png (max 2MB)"
+msgstr "256x256 の JPEG または PNG をアップロード (最大 2MB)"
+
+#: assets/dist/bookster/AgentProfilePage-464de6d5.js:1
+msgid "Bio"
+msgstr "自己紹介"
+
+#: assets/dist/bookster/AgentScheduleTab-a7146e7f.js:1
+msgid "Custom"
+msgstr "カスタム"
+
+#: assets/dist/bookster/AgentScheduleTab-a7146e7f.js:1
+msgid "Add More Custom Days Off for this Agent"
+msgstr "このエージェントのカスタム休日を追加"
+
+#: assets/dist/bookster/AgentScheduleTab-a7146e7f.js:1
+msgid "Use Custom Weekly Schedule for this Agent"
+msgstr "このエージェントのカスタム週次スケジュールを使用する"
+
+#: assets/dist/bookster/AgentScheduleTab-a7146e7f.js:1
+msgid "Work Schedule"
+msgstr "勤務スケジュール"
+
+#: assets/dist/bookster/AgentSettingsPage-44a463b6.js:1
+#: assets/dist/bookster/EditAgentDrawer-72f3e86c.js:1
+#: assets/dist/bookster/NewAgentDrawer-e2a05c5d.js:1
+#: assets/dist/bookster/page-agent.js:1 assets/dist/bookster/page-manager.js:1
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Schedule"
+msgstr "スケジュール"
+
+#: assets/dist/bookster/AgentSettingsPage-44a463b6.js:1
+#: assets/dist/bookster/EditAgentDrawer-72f3e86c.js:1
+#: assets/dist/bookster/NewAgentDrawer-e2a05c5d.js:1
+#: assets/dist/bookster/page-agent.js:1
+msgid "Days Off"
+msgstr "休日"
+
+#: assets/dist/bookster/AgentSettingsPage-44a463b6.js:1
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "Day off"
+msgstr "休暇"
+
+#: assets/dist/bookster/AgentsList-074745cd.js:1
+#: assets/dist/bookster/AgentsPage-1c6eacac.js:1
+#: assets/dist/bookster/ServiceCard-a501175b.js:1
+msgid "Inactive"
+msgstr "非アクティブ"
+
+#: assets/dist/bookster/AgentsList-074745cd.js:1
+#: assets/dist/bookster/CustomersPage-12f1c628.js:1
+msgid "Name"
+msgstr "名前"
+
+#: assets/dist/bookster/AgentsList-074745cd.js:1
+#: assets/dist/bookster/CustomersPage-12f1c628.js:1
+msgid "WP User"
+msgstr "WP ユーザー"
+
+#: assets/dist/bookster/AgentsList-074745cd.js:1
+#: assets/dist/bookster/CustomersPage-12f1c628.js:1
+msgid "Not Linked"
+msgstr "リンクされてない"
+
+#: assets/dist/bookster/AgentsList-074745cd.js:1
+#: assets/dist/bookster/CustomersPage-12f1c628.js:1
+#: assets/dist/bookster/ReloadButton-631bf244.js:1
+msgid "Delete Data"
+msgstr "データの削除"
+
+#: assets/dist/bookster/AgentsList-074745cd.js:1
+msgid "Delete Multiple Agents"
+msgstr "複数のエージェントの削除"
+
+#: assets/dist/bookster/AgentsList-074745cd.js:1
+msgid ""
+"This action cannot be undone. This will permanently delete %s agents and "
+"their %s appointments."
+msgstr ""
+"この操作は元に戻せません。これにより、%sエージェントとその%s予定が完全に削除"
+"されます。"
+
+#: assets/dist/bookster/AgentsList-074745cd.js:1
+#: assets/dist/bookster/BEConfigProvider-180a6f55.js:1
+#: assets/dist/bookster/CustomersPage-12f1c628.js:1
+#: assets/dist/bookster/EditAgentDrawer-72f3e86c.js:1
+#: assets/dist/bookster/EditCustomerDrawer-d63054df.js:1
+#: assets/dist/bookster/EditServiceDrawer-952650b8.js:1
+#: assets/dist/bookster/NewAgentDrawer-e2a05c5d.js:1
+#: assets/dist/bookster/NewCustomerDrawer-dc3f3f3e.js:1
+#: assets/dist/bookster/NewServiceDrawer-7ac694aa.js:1
+#: assets/dist/bookster/page-agent.js:1 assets/dist/bookster/page-manager.js:1
+#: assets/dist/bookster/ReloadButton-631bf244.js:1
+#: assets/dist/bookster/ServiceFormDrawer-0cf878e9.js:1
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "Cancel"
+msgstr "キャンセル"
+
+#: assets/dist/bookster/AgentsList-074745cd.js:1
+#: assets/dist/bookster/CustomersPage-12f1c628.js:1
+#: assets/dist/bookster/EditAgentDrawer-72f3e86c.js:1
+#: assets/dist/bookster/EditCustomerDrawer-d63054df.js:1
+#: assets/dist/bookster/EditServiceDrawer-952650b8.js:1
+#: assets/dist/bookster/ReloadButton-631bf244.js:1
+msgid "Confirm Delete"
+msgstr "削除を確認"
+
+#: assets/dist/bookster/AgentsPage-1c6eacac.js:1
+#: assets/dist/bookster/ReloadButton-631bf244.js:1
+msgid "No results found."
+msgstr "見つかりませんでした。"
+
+#: assets/dist/bookster/AgentsPage-1c6eacac.js:1
+#: assets/dist/bookster/NewAgentDrawer-e2a05c5d.js:1
+#: assets/dist/bookster/page-intro.js:1
+msgid "New %(agent)s"
+msgstr "新しい%(agent)s"
+
+#: assets/dist/bookster/apptDataTable-18ba107e.js:1
+msgid "Paid"
+msgstr "支払い済み"
+
+#: assets/dist/bookster/apptDataTable-18ba107e.js:1
+msgid "Due"
+msgstr "期日"
+
+#: assets/dist/bookster/apptDataTable-18ba107e.js:1
+msgid "ID"
+msgstr "ID"
+
+#: assets/dist/bookster/ApptsFilterAgent-e1bebc11.js:1
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "No %(agents)s found."
+msgstr "%(agents)s見つかりませんでした。"
+
+#: assets/dist/bookster/ApptsFilterService-713c7df7.js:1
+msgid "Clear Filters"
+msgstr "絞り込み条件を解除する"
+
+#: assets/dist/bookster/ApptsFilterService-713c7df7.js:1
+msgid "No %(customer)s found."
+msgstr "%(customer)s見つかりませんでした。"
+
+#: assets/dist/bookster/ApptsFilterService-713c7df7.js:1
+msgid "No %(services)s found"
+msgstr "%(services)s見つかりませんでした"
+
+#: assets/dist/bookster/BEConfigProvider-180a6f55.js:1
+#: assets/dist/bookster/ServiceFormDrawer-0cf878e9.js:1
+msgid "Closing"
+msgstr "終了"
+
+#: assets/dist/bookster/BEConfigProvider-180a6f55.js:1
+#: assets/dist/bookster/CustomizePage-4e0c1c26.js:1
+#: assets/dist/bookster/EditAgentDrawer-72f3e86c.js:1
+#: assets/dist/bookster/EditCustomerDrawer-d63054df.js:1
+#: assets/dist/bookster/EditServiceDrawer-952650b8.js:1
+#: assets/dist/bookster/NewAgentDrawer-e2a05c5d.js:1
+#: assets/dist/bookster/NewCustomerDrawer-dc3f3f3e.js:1
+#: assets/dist/bookster/NewServiceDrawer-7ac694aa.js:1
+#: assets/dist/bookster/page-agent.js:1 assets/dist/bookster/page-manager.js:1
+#: assets/dist/bookster/ServiceFormDrawer-0cf878e9.js:1
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "Save"
+msgstr "保存"
+
+#: assets/dist/bookster/block-customer-dashboard.js:1
+msgid "Upcoming"
+msgstr "開催予定"
+
+#: assets/dist/bookster/block-customer-dashboard.js:1
+msgid "History"
+msgstr "履歴"
+
+#: assets/dist/bookster/block-customer-dashboard.js:1
+msgid "All %(services)s"
+msgstr "すべての%(services)s"
+
+#: assets/dist/bookster/block-customer-dashboard.js:1
+msgid "Book Appointment"
+msgstr "予約する"
+
+#: assets/dist/bookster/block-customer-dashboard.js:1
+msgid "Sign in to your account"
+msgstr "サインインする"
+
+#: assets/dist/bookster/block-customer-dashboard.js:1
+msgid "Please input your Username or Email Address!"
+msgstr "ユーザー名またはメールアドレスを入力してください。"
+
+#: assets/dist/bookster/block-customer-dashboard.js:1
+msgid "Username or Email Address"
+msgstr "ユーザー名またはメールアドレス"
+
+#: assets/dist/bookster/block-customer-dashboard.js:1
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Please input your password!"
+msgstr "パスワードを入力してください。"
+
+#: assets/dist/bookster/block-customer-dashboard.js:1
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Password"
+msgstr "パスワード"
+
+#: assets/dist/bookster/block-customer-dashboard.js:1
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Remember me"
+msgstr "ログイン状態を保存する"
+
+#: assets/dist/bookster/block-customer-dashboard.js:1
+msgid "Forgot password?"
+msgstr "パスワードをお忘れですか?"
+
+#: assets/dist/bookster/block-customer-dashboard.js:1
+msgid "Log in"
+msgstr "ログイン"
+
+#: assets/dist/bookster/block-customer-dashboard.js:1
+msgid "Or Register Now"
+msgstr "または、今すぐ登録"
+
+#: assets/dist/bookster/block-customer-dashboard.js:1
+msgid "%(customer)s has been saved successfully!"
+msgstr "%(customer)sは正常に保存されました!"
+
+#: assets/dist/bookster/block-customer-dashboard.js:1
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Please enter first name"
+msgstr "名前（姓）を入力してください"
+
+#: assets/dist/bookster/block-customer-dashboard.js:1
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Please enter last name"
+msgstr "名前（名）を入力してください"
+
+#: assets/dist/bookster/block-customer-dashboard.js:1
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Email Address"
+msgstr "メールアドレス"
+
+#: assets/dist/bookster/block-customer-dashboard.js:1
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Please enter email"
+msgstr "Eメールを入力してください"
+
+#: assets/dist/bookster/block-customer-dashboard.js:1
+msgid "Phone Number"
+msgstr "電話番号"
+
+#: assets/dist/bookster/block-customer-dashboard.js:1
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Save Changes"
+msgstr "変更を保存"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Free"
+msgstr "無料"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+#: assets/dist/libs/booking.js:1
+msgid "Summary"
+msgstr "概要"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Confirm free booking"
+msgstr "無料予約の確認"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Pay Later"
+msgstr "後で支払う"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Pay Now"
+msgstr "今すぐ支払う"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Booking your Appointment!"
+msgstr "アポイントメントを予約してください!"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Booking Complete"
+msgstr "レンタルが完了しました"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Payment:"
+msgstr "支払い:"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Will Pay Locally"
+msgstr "現地で支払います"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Pay in Full"
+msgstr "全額支払う"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "New Account Created. Please check your email to verify account."
+msgstr ""
+"新しいアカウントが作成されました。アカウントを確認するには、メールを確認して"
+"ください。"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Book Another Appointment"
+msgstr "別の予約"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Comments"
+msgstr "コメント"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Add comments"
+msgstr "コメントを追加"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Submit"
+msgstr "送信"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Please input your email address!"
+msgstr "メールアドレスを入力してください!"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Your Email Address"
+msgstr "メールアドレス"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Forgot password"
+msgstr "パスワードをお忘れですか"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "First Name is required"
+msgstr "お名前(名)は必須です"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Your Last Name"
+msgstr "あなたの姓"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Last Name is required"
+msgstr "姓は必須です"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Your First Name"
+msgstr "あなたの名前"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Email Address is required"
+msgstr "メールアドレスは必須です"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Please enter valid email!"
+msgstr "有効なメールアドレスを入力してください。"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Add Comments"
+msgstr "コメント"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+#: assets/dist/bookster/page-manager.js:1
+msgid "New %(customer)s"
+msgstr "新しい%(customer)s"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Already have an account?"
+msgstr "すでにアカウントをお持ちですか ?"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Login"
+msgstr "ログイン"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid ""
+"The Form is not working correctly. %(agent)s and %(service)s need to be "
+"selected first!"
+msgstr ""
+"フォームが正しく機能していません。%(agent)sと%(service)sを最初に選択する必要"
+"があります!"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:1
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "Day Off"
+msgstr "休日"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Fully Booked"
+msgstr "満席"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Available Time Slots"
+msgstr "利用可能な時間枠"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Pick Appointment Time"
+msgstr "アポイントメントタイムのピック"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Confirm"
+msgstr "確認する"
+
+#: assets/dist/bookster/CoverPicker-1f60dfd1.js:1
+msgid "Upload Image"
+msgstr "画像をアップロード"
+
+#: assets/dist/bookster/CoverPicker-1f60dfd1.js:1
+msgid "%(service)s cover"
+msgstr "%(service)sカバー"
+
+#: assets/dist/bookster/CustomersPage-12f1c628.js:1
+msgid "Delete Multiple Customers"
+msgstr "複数の顧客を削除する"
+
+#: assets/dist/bookster/CustomersPage-12f1c628.js:1
+msgid ""
+"This action cannot be undone. This will permanently delete %s customers and "
+"their %s appointments."
+msgstr ""
+"この操作は元に戻せません。これにより、%s顧客とその%s予定が完全に削除されま"
+"す。"
+
+#: assets/dist/bookster/CustomersPage-12f1c628.js:1
+msgid "New Customer"
+msgstr "新しい顧客"
+
+#: assets/dist/bookster/CustomizePage-4e0c1c26.js:1
+msgid "Booking %(service)s title"
+msgstr "タイトル%(service)sブッキング"
+
+#: assets/dist/bookster/CustomizePage-4e0c1c26.js:1
+msgid "Booking %(service)s description"
+msgstr "予約%(service)sの説明"
+
+#: assets/dist/bookster/CustomizePage-4e0c1c26.js:1
+msgid "Help"
+msgstr "ヘルプ"
+
+#: assets/dist/bookster/CustomizePage-4e0c1c26.js:1
+msgid "Styler"
+msgstr "スタイラー"
+
+#: assets/dist/bookster/CustomizePage-4e0c1c26.js:1
+msgid "Desciption"
+msgstr "説明"
+
+#: assets/dist/bookster/CustomizePage-4e0c1c26.js:1
+msgid "Title"
+msgstr "タイトル"
+
+#: assets/dist/bookster/CustomizePage-4e0c1c26.js:1
+msgid "Please enter Title!"
+msgstr "タイトルを入力してください!"
+
+#: assets/dist/bookster/CustomizePage-4e0c1c26.js:1
+msgid "Description"
+msgstr "説明"
+
+#: assets/dist/bookster/CustomizePage-4e0c1c26.js:1
+msgid "Step booking"
+msgstr "ステップブッキング"
+
+#: assets/dist/bookster/CustomizePage-4e0c1c26.js:1
+msgid "Previous step"
+msgstr "前のステップ"
+
+#: assets/dist/bookster/CustomizePage-4e0c1c26.js:1
+msgid "Next step"
+msgstr "次のステップ"
+
+#: assets/dist/bookster/DashboardPage-157d9686.js:1
+msgid "NO"
+msgstr "いいえ"
+
+#: assets/dist/bookster/DashboardPage-157d9686.js:1
+msgid "Agent name"
+msgstr "担当者名"
+
+#: assets/dist/bookster/DashboardPage-157d9686.js:1
+msgid "% of Sales"
+msgstr "% セールス"
+
+#: assets/dist/bookster/DashboardPage-157d9686.js:1
+msgid "Total revenue"
+msgstr "収入合計"
+
+#: assets/dist/bookster/DashboardPage-157d9686.js:1
+msgid "Service name"
+msgstr "サービス名"
+
+#: assets/dist/bookster/DashboardPage-157d9686.js:1
+msgid "View Customers"
+msgstr "顧客を表示"
+
+#: assets/dist/bookster/EditAgentDrawer-72f3e86c.js:1
+msgid "Delete Agent"
+msgstr "担当者を削除します"
+
+#: assets/dist/bookster/EditAgentDrawer-72f3e86c.js:1
+#: assets/dist/bookster/EditCustomerDrawer-d63054df.js:1
+#: assets/dist/bookster/EditServiceDrawer-952650b8.js:1
+msgid ""
+"This action cannot be undone. This will permanently delete this %s and %s "
+"appointments."
+msgstr ""
+"この操作は元に戻せません。これにより、この%sと%s予定が完全に削除されます。"
+
+#: assets/dist/bookster/EditAgentDrawer-72f3e86c.js:1
+msgid "Edit %(agent)s"
+msgstr "編集%(agent)s"
+
+#: assets/dist/bookster/EditAgentDrawer-72f3e86c.js:1
+#: assets/dist/bookster/EditServiceDrawer-952650b8.js:1
+#: assets/dist/bookster/NewAgentDrawer-e2a05c5d.js:1
+#: assets/dist/bookster/NewServiceDrawer-7ac694aa.js:1
+#: assets/dist/bookster/page-manager.js:1
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "General"
+msgstr "一般"
+
+#: assets/dist/bookster/EditAgentDrawer-72f3e86c.js:1
+#: assets/dist/bookster/EditServiceDrawer-952650b8.js:1
+#: assets/dist/bookster/NewAgentDrawer-e2a05c5d.js:1
+#: assets/dist/bookster/NewServiceDrawer-7ac694aa.js:1
+msgid "Available"
+msgstr "利用可能"
+
+#: assets/dist/bookster/EditCustomerDrawer-d63054df.js:1
+msgid "Delete Customer"
+msgstr "お客様を削除"
+
+#: assets/dist/bookster/EditCustomerDrawer-d63054df.js:1
+#: assets/dist/bookster/page-manager.js:1
+msgid "Edit %(customer)s"
+msgstr "編集%(customer)s"
+
+#: assets/dist/bookster/EditCustomerDrawer-d63054df.js:1
+msgid "%(customer)s has been Deleted Successfully!"
+msgstr "%(customer)sが正常に削除されました!"
+
+#: assets/dist/bookster/EditServiceDrawer-952650b8.js:1
+msgid "Delete Service"
+msgstr "サービスの削除"
+
+#: assets/dist/bookster/EditServiceDrawer-952650b8.js:1
+msgid "Edit %(service)s"
+msgstr "編集%(service)s"
+
+#: assets/dist/bookster/EditServiceDrawer-952650b8.js:1
+#: assets/dist/bookster/NewServiceDrawer-7ac694aa.js:1
+msgid "%(service)s has been Saved Successfully!"
+msgstr "%(service)sは正常に保存されました!"
+
+#: assets/dist/bookster/EditServiceDrawer-952650b8.js:1
+msgid "%(service)s has been Deleted Successfully!"
+msgstr "%(service)sが正常に削除されました!"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Best %(service)s Ever"
+msgstr "史上最高の%(service)s"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "copied"
+msgstr "コピー"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Site"
+msgstr "サイト"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Appointment Number"
+msgstr "予約番号"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "%(customer)s Full Name"
+msgstr "%(customer)sフルネーム"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "%(agent)s Full Name"
+msgstr "%(agent)sフルネーム"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid "%(service)s Name"
+msgstr "%(service)s名"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Appointment Date & Time"
+msgstr "予約日時"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Appointment Book Status"
+msgstr "アポイントメントブックのステータス"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Appointment Payment Status"
+msgstr "アポイントメントの支払い状況"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Appointment URL"
+msgstr "アポイントメントURL"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Bookster Credit Link"
+msgstr "ブックスタークレジットリンク"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "%(customer)s:"
+msgstr "%(customer)s:"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Preview"
+msgstr "プレビュー"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Placeholders"
+msgstr "プレースホルダー"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Send Test Email"
+msgstr "テストメールを送信"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Email Options has been Saved Successfully!"
+msgstr "メールオプションが正常に保存されました!"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Email Options"
+msgstr "メールオプション"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid ""
+"Customize your email appearance and test your server with 'Send Test Email'"
+msgstr ""
+"メールの外観をカスタマイズし、「テストメールを送信」でサーバーをテストします"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Content"
+msgstr "コンテンツ"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Sender Name"
+msgstr "送信者名"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Sender Email"
+msgstr "送信者メール"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Mail Footer"
+msgstr "メールフッター"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Style"
+msgstr "スタイル"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Primary Color"
+msgstr "プライマリカラー"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Text Color"
+msgstr "テキストカラー"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Mail Background"
+msgstr "メールの背景"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Body Background"
+msgstr "ボディ背景"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Reset To Default"
+msgstr "デフォルトにリセット"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Test Email has been Sent Successfully!"
+msgstr "テストメールが正常に送信されました!"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Event name is not defined"
+msgstr "イベント名が定義されていません"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Preview Email has been Sent Successfully!"
+msgstr "プレビューメールが正常に送信されました!"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Turn on to send this notification"
+msgstr "オンにすると、この通知が送信されます"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "automatically in the background"
+msgstr "バックグラウンドで自動的に"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Approved Appointment"
+msgstr "承認済みの予定"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "to %(agent)s"
+msgstr "%(agent)sへ"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Notification Configuration has been Saved Successfully!"
+msgstr "通知設定が正常に保存されました!"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Subject"
+msgstr "件名"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Heading"
+msgstr "見出し"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Message"
+msgstr "メッセージ"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "to %(customer)s"
+msgstr "%(customer)sへ"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Canceled Appointment"
+msgstr "キャンセルされた予約"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "New Booking"
+msgstr "新規レンタル予約"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "to Manager"
+msgstr "マネージャーへ"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Recipient"
+msgstr "受信者"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "New Pending Booking"
+msgstr "新規予約保留中"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "TO %(customer)s"
+msgstr "%(customer)sへ"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Resend Appointment"
+msgstr "アポイントメントの再送信"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Email Notifications"
+msgstr "メール通知"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "The notifications from Bookster are listed below."
+msgstr "Booksterからの通知は以下のとおりです。"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Options"
+msgstr "オプション"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Notifications"
+msgstr "通知"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Coming soon"
+msgstr "準備中"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Download Now"
+msgstr "すぐにダウンロード"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Activate Now"
+msgstr "今すぐ有効化"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Automation and Integrations"
+msgstr "自動化と統合"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid ""
+"Install Addons and extend your workflow, connect with other tools and "
+"automate your tasks."
+msgstr ""
+"アドオンをインストールしてワークフローを拡張し、他のツールと接続してタスクを"
+"自動化します。"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "The default notifications channel for Bookster."
+msgstr "Bookster のデフォルトの通知チャネル。"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Configure"
+msgstr "定義設定"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Payment Gateways"
+msgstr "決済ゲートウェイ"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid ""
+"Accept payments from your %(customers)s using popular online payment "
+"%(services)s."
+msgstr ""
+"人気のオンライン決済%(services)sを使用して、%(customers)sからの支払いを受け付"
+"けます。"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Stripe"
+msgstr "Stripe"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Secure checkout via Stripe payment"
+msgstr "Stripe 決済による安全なチェックアウト"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Paypal"
+msgstr "Paypal"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Pay easily with PayPal checkout."
+msgstr "PayPalチェックアウトで簡単にお支払いいただけます。"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Google Calendar and Meet"
+msgstr "Google カレンダーと Meet"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "%(agent)s could connect appointments with Google Calendar and Meet."
+msgstr "%(agent)s予定をGoogleカレンダーやMeetと接続できます。"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Intergrations"
+msgstr "統合"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+#: assets/dist/bookster/page-manager.js:1
+msgid "Overview"
+msgstr "概要"
+
+#: assets/dist/bookster/NewAgentDrawer-e2a05c5d.js:1
+msgid "%(agent)s has been Saved Successfully!"
+msgstr "%(agent)sは正常に保存されました!"
+
+#: assets/dist/bookster/NewCustomerDrawer-dc3f3f3e.js:1
+msgid "New %(customer)s "
+msgstr "新しい%(customer)s"
+
+#: assets/dist/bookster/NewCustomerDrawer-dc3f3f3e.js:1
+#: assets/dist/bookster/page-manager.js:1
+msgid "%(customer)s has been Saved Successfully!"
+msgstr "%(customer)sは正常に保存されました!"
+
+#: assets/dist/bookster/NewServiceDrawer-7ac694aa.js:1
+msgid "New %(service)s"
+msgstr "新しい%(service)s"
+
+#: assets/dist/bookster/page-agent.js:1
+msgid "Sorry, Your %(agent)s Record is Not Existed."
+msgstr "申し訳ございませんが、%(agent)sレコードは存在しません。"
+
+#: assets/dist/bookster/page-agent.js:1 assets/dist/bookster/page-manager.js:1
+msgid "Management"
+msgstr "マネジメント"
+
+#: assets/dist/bookster/page-agent.js:1 assets/dist/bookster/page-manager.js:1
+msgid "Records"
+msgstr "記録"
+
+#: assets/dist/bookster/page-agent.js:1 assets/dist/bookster/page-manager.js:1
+msgid "Administration"
+msgstr "行政"
+
+#: assets/dist/bookster/page-agent.js:1 assets/dist/bookster/page-manager.js:1
+msgid "Edit Appointment"
+msgstr "予約を編集"
+
+#: assets/dist/bookster/page-agent.js:1 assets/dist/bookster/page-manager.js:1
+msgid "New Appointment"
+msgstr "新規予約"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid "Skip Setup"
+msgstr "セットアップをスキップ"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid "Are you sure?"
+msgstr "本当に実行しますか ?"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid "No"
+msgstr "いいえ"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid "Yes"
+msgstr "はい"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid "Set up your %(agents)s"
+msgstr "%(agents)sを設定する"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid ""
+"Tell us about the %(agents)s working with you. Please add at least some "
+"%(agents)s."
+msgstr ""
+"一緒に働いている%(agents)sについて教えてください。少なくともいくつか"
+"の%(agents)sを追加してください。"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid "Continue"
+msgstr "続ける"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid "Welcome to Bookster"
+msgstr "Booksterへようこそ"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid "Tell us about your business, configure the currency, phone code."
+msgstr "あなたのビジネスについて教えてください、通貨、電話コードを設定します。"
+
+#: assets/dist/bookster/page-intro.js:1
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Default Time Slot Step"
+msgstr "デフォルト時間枠のステップ"
+
+#: assets/dist/bookster/page-intro.js:1
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Default Appointment Status"
+msgstr "既定の予定のステータス"
+
+#: assets/dist/bookster/page-intro.js:1
+#: assets/dist/bookster/prefetch.helper-f488c823.js:1
+#: assets/dist/bookster/ReloadButton-631bf244.js:1
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Pending"
+msgstr "保留中"
+
+#: assets/dist/bookster/page-intro.js:1
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Default Phone Country"
+msgstr "デフォルトの電話の国"
+
+#: assets/dist/bookster/page-intro.js:1
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Default Items Per Page"
+msgstr "ページごとのデフォルトアイテム"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid "Formats"
+msgstr "フォーマット"
+
+#: assets/dist/bookster/page-intro.js:1
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Time Format"
+msgstr "時間の書式"
+
+#: assets/dist/bookster/page-intro.js:1
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Date Format"
+msgstr "日付フォーマット"
+
+#: assets/dist/bookster/page-intro.js:1
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Restrictions"
+msgstr "制限事項"
+
+#: assets/dist/bookster/page-intro.js:1
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Earliest Possible Booking Time"
+msgstr "可能な限り早い予約時間"
+
+#: assets/dist/bookster/page-intro.js:1
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Please select"
+msgstr "選択してください"
+
+#: assets/dist/bookster/page-intro.js:1
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Latest Possible Booking Time"
+msgstr "最も遅い予約可能な時間"
+
+#: assets/dist/bookster/page-intro.js:1
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Currency Options"
+msgstr "通貨オプション"
+
+#: assets/dist/bookster/page-intro.js:1
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Currency"
+msgstr "通貨"
+
+#: assets/dist/bookster/page-intro.js:1
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Please select currency!"
+msgstr "通貨を選択してください!"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid "Shortcode has been copied!"
+msgstr "ショートコードがコピーされました!"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid "Publish Bookster for your %(customer)s"
+msgstr "あなたの%(customer)sのためにBooksterを出版する"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid "Add a Booking Form Page"
+msgstr "予約フォームページを追加する"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid "Add Class to Button"
+msgstr "ボタンにクラスを追加"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid "Class has been copied!"
+msgstr "授業がコピーされました!"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid "Using Bookster Shortcodes"
+msgstr "Bookster ショートコードの使用"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid "Using Bookster Blocks"
+msgstr "ブックスターブロックの使用"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid "Block name has been copied!"
+msgstr "ブロック名がコピーされました!"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid "Edit %(customer)s Dashboard Page"
+msgstr "ダッシュボードページの編集%(customer)s"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid "Set up your %(services)s"
+msgstr "%(services)sを設定する"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid ""
+"Tell us about the %(services)s that your business provides. Please add at "
+"least some."
+msgstr ""
+"御社のビジネスが提供する%(services)sについて教えてください。少なくともいくつ"
+"か追加してください。"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid "General Settings"
+msgstr "一般設定"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid "Schedule Settings"
+msgstr "スケジュール設定"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid "Publish"
+msgstr "公開"
+
+#: assets/dist/bookster/page-manager.js:1
+msgid "No Matched %(agent)s found!"
+msgstr "一致した%(agent)s見つかりませんでした!"
+
+#: assets/dist/bookster/page-manager.js:1
+msgid "No Matched %(customer)s found!"
+msgstr "一致した%(customer)s見つかりませんでした!"
+
+#: assets/dist/bookster/page-manager.js:1
+msgid "No Matched %(service)s found!"
+msgstr "一致した%(service)s見つかりませんでした!"
+
+#: assets/dist/bookster/page-manager.js:1
+msgid ""
+"Link Customer with WP User to allow them to login and browse Appointment "
+"History."
+msgstr ""
+"お客様とWPユーザーをリンクして、ログインして予約履歴を閲覧できるようにしま"
+"す。"
+
+#: assets/dist/bookster/page-manager.js:1
+msgid "Notes by Staff"
+msgstr "スタッフによるメモ"
+
+#: assets/dist/bookster/page-manager.js:1
+msgid "Please enter Note"
+msgstr "ご入力ください 注"
+
+#: assets/dist/bookster/page-manager.js:1
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Create New"
+msgstr "新規作成"
+
+#: assets/dist/bookster/page-manager.js:1
+msgid "All Appointments"
+msgstr "全ての予約"
+
+#: assets/dist/bookster/page-manager.js:1
+msgid "List"
+msgstr "リスト"
+
+#: assets/dist/bookster/page-manager.js:1
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "Holiday"
+msgstr "休日"
+
+#: assets/dist/bookster/page-manager.js:1
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Permissions"
+msgstr "権限"
+
+#: assets/dist/bookster/page-manager.js:1
+#: assets/dist/bookster/ServiceFormDrawer-0cf878e9.js:1
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "More Actions"
+msgstr "その他のアクション"
+
+#: assets/dist/bookster/page-manager.js:1
+msgid "Email Notification has been Sent Successfully!"
+msgstr "メール通知が正常に送信されました!"
+
+#: assets/dist/bookster/page-manager.js:1
+msgid "Resend Email to %(customer)s"
+msgstr "%(customer)sにメールを再送信する"
+
+#: assets/dist/bookster/page-manager.js:1
+msgid "Resend Email to %(agent)s"
+msgstr "%(agent)sにメールを再送信する"
+
+#: assets/dist/bookster/page-manager.js:1
+msgid "Delete"
+msgstr "削除"
+
+#: assets/dist/bookster/ReloadButton-631bf244.js:1
+msgid "Delete Multiple Appointments"
+msgstr "複数の予定を削除する"
+
+#: assets/dist/bookster/ReloadButton-631bf244.js:1
+msgid ""
+"This action cannot be undone. This will permanently delete %s appointments."
+msgstr "この操作は元に戻せません。これにより、%s予定が完全に削除されます。"
+
+#: assets/dist/bookster/ReloadButton-631bf244.js:1
+msgid "Search by ID"
+msgstr "IDで検索"
+
+#: assets/dist/bookster/ReloadButton-631bf244.js:1
+msgid "This week"
+msgstr "今週"
+
+#: assets/dist/bookster/ReloadButton-631bf244.js:1
+msgid "This month"
+msgstr "今月"
+
+#: assets/dist/bookster/ReloadButton-631bf244.js:1
+msgid "Next 7 days"
+msgstr "次の7日間"
+
+#: assets/dist/bookster/ReloadButton-631bf244.js:1
+msgid "Next 30 days"
+msgstr "次の30日間"
+
+#: assets/dist/bookster/ServiceFormDrawer-0cf878e9.js:1
+msgid "Add new %(service)s"
+msgstr "新しい%(service)sを追加"
+
+#: assets/dist/bookster/ServiceFormDrawer-0cf878e9.js:1
+msgid "Edit category"
+msgstr "カテゴリーの編集"
+
+#: assets/dist/bookster/ServiceFormDrawer-0cf878e9.js:1
+msgid "Delete category"
+msgstr "カテゴリを削除"
+
+#: assets/dist/bookster/ServiceFormDrawer-0cf878e9.js:1
+msgid "New Category"
+msgstr "新カテゴリーを追加する"
+
+#: assets/dist/bookster/ServiceFormDrawer-0cf878e9.js:1
+msgid "Category Name"
+msgstr "カテゴリー名"
+
+#: assets/dist/bookster/ServiceFormDrawer-0cf878e9.js:1
+msgid "Please enter category name"
+msgstr "カテゴリ名を入力してください"
+
+#: assets/dist/bookster/ServiceFormDrawer-0cf878e9.js:1
+msgid "Category Description"
+msgstr "カテゴリの説明"
+
+#: assets/dist/bookster/ServiceFormDrawer-0cf878e9.js:1
+msgid "Please enter category description"
+msgstr "カテゴリの説明を入力してください"
+
+#: assets/dist/bookster/ServiceFormDrawer-0cf878e9.js:1
+msgid "Edit %(service)s Category"
+msgstr "%(service)sカテゴリの編集"
+
+#: assets/dist/bookster/ServiceFormDrawer-0cf878e9.js:1
+msgid "New %(service)s Category"
+msgstr "新しい%(service)sカテゴリー"
+
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid "Selected %(agents)s"
+msgstr "選択された%(agents)s"
+
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid "This %(service)s is available for all %(agents)s"
+msgstr "この%(service)sは、すべての%(agents)sで使用できます"
+
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid "Select Category"
+msgstr "カテゴリを選択"
+
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid "Search categories..."
+msgstr "検索カテゴリ..."
+
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid "No Categories found."
+msgstr "カテゴリが見つかりません."
+
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid "Please enter %(service)s Name"
+msgstr "名前%(service)sを入力してください"
+
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid "%(service)s Category"
+msgstr "%(service)sカテゴリー"
+
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid "%(service)s Price"
+msgstr "%(service)s価格"
+
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid "%(service)s Price can not be negative"
+msgstr "%(service)s 価格をマイナスにすることはできません"
+
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Buffer Before"
+msgstr "バッファビフォア"
+
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Buffer time to prepare before the appointment start."
+msgstr "予約開始前に準備する時間を確保します。"
+
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid "Theme Color"
+msgstr "テーマ色"
+
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid "%(service)s Duration"
+msgstr "%(service)s期間"
+
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid "%(service)s Duration must be greater than 0"
+msgstr "%(service)s 期間は 0 より大きくする必要があります"
+
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Buffer After"
+msgstr "バッファ後"
+
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Buffer time to rest/clean after the appointment end."
+msgstr "予約終了後に休息/掃除をするためのバッファ時間。"
+
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid "%(service)s Description"
+msgstr "%(service)s説明"
+
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid "Please enter %(service)s description"
+msgstr "%(service)s説明を入力してください"
+
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid "The %(service)s is available for booking."
+msgstr "%(service)sは予約可能です。"
+
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid "Private %(services)s are visible to Staff only."
+msgstr "プライベート%(services)sはスタッフのみが見ることができます。"
+
+#: assets/dist/bookster/settings.constants-ec898673.js:1
+msgid "Items"
+msgstr "アイテム"
+
+#: assets/dist/bookster/settings.constants-ec898673.js:1
+msgid "Currency Format"
+msgstr "通貨のフォーマット"
+
+#: assets/dist/bookster/settings.constants-ec898673.js:1
+msgid "Currency position:"
+msgstr "通貨の位置:"
+
+#: assets/dist/bookster/settings.constants-ec898673.js:1
+msgid "Please select Currency Position"
+msgstr "通貨ポジションを選択してください"
+
+#: assets/dist/bookster/settings.constants-ec898673.js:1
+msgid "Before"
+msgstr "前"
+
+#: assets/dist/bookster/settings.constants-ec898673.js:1
+msgid "After"
+msgstr "後"
+
+#: assets/dist/bookster/settings.constants-ec898673.js:1
+msgid "Before With Space"
+msgstr "Before With Space"
+
+#: assets/dist/bookster/settings.constants-ec898673.js:1
+msgid "After With Space"
+msgstr "アフター・ウィズ・スペース"
+
+#: assets/dist/bookster/settings.constants-ec898673.js:1
+msgid "Thousand separator:"
+msgstr "サウザンドセパレーター:"
+
+#: assets/dist/bookster/settings.constants-ec898673.js:1
+msgid "Please select Thousand Separator"
+msgstr "サウザンドセパレーターを選択してください"
+
+#: assets/dist/bookster/settings.constants-ec898673.js:1
+msgid "No Separator"
+msgstr "区切りなし"
+
+#: assets/dist/bookster/settings.constants-ec898673.js:1
+msgid "Decimal separator:"
+msgstr "小数点記号:"
+
+#: assets/dist/bookster/settings.constants-ec898673.js:1
+msgid "Please select Decimal Separator"
+msgstr "小数点記号を選択してください"
+
+#: assets/dist/bookster/settings.constants-ec898673.js:1
+msgid "Number of decimals:"
+msgstr "小数点以下の桁数:"
+
+#: assets/dist/bookster/settings.constants-ec898673.js:1
+msgid "Please enter Number of Decimal"
+msgstr "小数点以下の桁数を入力してください"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Booking Options"
+msgstr "予約オプション"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Interval between time slots in booking form, time picker and calendar."
+msgstr "予約フォーム、タイムピッカー、カレンダーの時間枠の間隔。"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Apply to records pages."
+msgstr "レコード ページに適用します。"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Datetime Formats"
+msgstr "日時形式"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "How to display time in Bookster, also apply to time picker."
+msgstr "Booksterで時間を表示する方法は、タイムピッカーにも適用されます。"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "How to display date in Bookster."
+msgstr "Booksterで日付を表示する方法。"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Time Slots before this time will not be available for booking."
+msgstr "この時間より前の時間枠は予約できません。"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Time Slots after this time will not be available for booking."
+msgstr "この時間以降の時間枠は予約できません。"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Payment Method"
+msgstr "支払い方法"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "No payment method available"
+msgstr "利用可能な支払い方法はありません"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Pay Later/Locally"
+msgstr "後払い/現地払い"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "%(agent)s Permissions"
+msgstr "%(agent)s 権限"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Create and Link WP User to %(agent)s"
+msgstr "WPユーザーを作成して%(agent)sにリンクする"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "%(agent)s would not be able to login to Bookster if WP User not linked."
+msgstr ""
+"WPユーザーがリンクされていない場合、Booksterにログインできない%(agent)s。"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Auto"
+msgstr "自動"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "This means a WP User is created simultaneously with the Agent"
+msgstr "これは、WP ユーザーがエージェントと同時に作成されることを意味します"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Manual"
+msgstr "手動"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "This means the WP User is created separately"
+msgstr "これは、WPユーザーが個別に作成されることを意味します"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Appointment Time & Status"
+msgstr "予約時間とステータス"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Allow %(agent)s to edit his/her appointment time and status"
+msgstr "%(agent)sが自分の予定の時間とステータスを編集できるようにする"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Working Schedule"
+msgstr "勤務スケジュール"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Allow %(agent)s to edit his/her working schedule"
+msgstr "%(agent)s自分の勤務スケジュールを編集できるようにする"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "%(customer)s Permissions"
+msgstr "%(customer)s 権限"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Create and Link WP User to %(customer)s"
+msgstr "WPユーザーを作成して%(customer)sにリンクする"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid ""
+"%(customer)s would not be able to login to Bookster if WP User not linked."
+msgstr ""
+"WPユーザーがリンクされていない場合、Booksterにログインできない%(customer)s。"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "This means WP User is created together with %(customer)s"
+msgstr "これは、WP Userが%(customer)sと一緒に作成されることを意味します"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Cancel Appointment"
+msgstr "予約をキャンセルする"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Allow %(customer)s to cancel his/her appointment"
+msgstr "%(customer)sが予約をキャンセルすることを許可する"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "%(customer)s Dashboard Page"
+msgstr "%(customer)sダッシュボードページ"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "%(customer)s dashboard page"
+msgstr "%(customer)sダッシュボードページ"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "My account"
+msgstr "マイアカウント"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Explore Addon"
+msgstr "Addonを探索する"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Support"
+msgstr "サポート"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Logout"
+msgstr "ログアウト"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Hide navigation"
+msgstr "ナビゲーション範囲の表示オフ"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Show navigation"
+msgstr "ナビゲーションの表示"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Back to WP"
+msgstr "WPに戻る"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "%(service)s search e.g:"
+msgstr "%(service)s検索 例:"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "%(service)s name"
+msgstr "%(service)s名"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "%(customer)s or %(agent)s search e.g:"
+msgstr "%(customer)sまたは%(agent)s検索 (例:"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "%(customer)s or %(agent)s phone search e.g:"
+msgstr "%(customer)sまたは%(agent)s電話検索(例:"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Select"
+msgstr "選択"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Select a %(service)s name"
+msgstr "%(service)s名を選択します"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "%(customer)s with this email already exists!"
+msgstr "このメールの%(customer)sはすでに存在します!"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Select Customer"
+msgstr "顧客を選択してください"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Balance Due"
+msgstr "未払い残高"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Total Paid"
+msgstr "支払総額"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Payment Status"
+msgstr "支払い状況"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Booking Detail"
+msgstr "予約の詳細"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Recalculate"
+msgstr "再計算"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Please select a %(service)s name"
+msgstr "%(service)s名を選択してください"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Select a %(service)s to begin edit datetime, price, payment..."
+msgstr "編集を開始する%(service)s、日時、価格、支払い..."
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Please select a service"
+msgstr "メニューを選択してください"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Invalid %(service)s id"
+msgstr "無効な%(service)s ID"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Book Date"
+msgstr "予約日"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Book Status"
+msgstr "書籍のステータス"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Book Time"
+msgstr "予約時間"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "End Time"
+msgstr "終了時間"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Information"
+msgstr "インフォメーション"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Additional"
+msgstr "追加"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "More"
+msgstr "もっと"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+#: assets/dist/libs/booking.js:1
+msgid "Back"
+msgstr "戻る"
+
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:1
+msgid "Name Holiday"
+msgstr "名前 休日"
+
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:1
+msgid "Enable"
+msgstr "有効"
+
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:1
+msgid "Holiday status is active"
+msgstr "休日ステータスがアクティブである"
+
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:1
+msgid "Repeat"
+msgstr "繰り返し"
+
+#. translators: %s: day off or working day.
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "Select “Repeat yearly” to apply the chosen %s to every year."
+msgstr "「毎年繰り返す」を選択すると、選択した%sが毎年適用されます。"
+
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "day off"
+msgstr "休暇"
+
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "working day"
+msgstr "営業日"
+
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "Once off"
+msgstr "一度オフにしたら"
+
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "Working day"
+msgstr "営業日"
+
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "Repeat yearly"
+msgstr "毎年リピート"
+
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "Once Off"
+msgstr "臨時休業"
+
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "Agent Day Off"
+msgstr "エージェントの休日"
+
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "Repeat Yearly"
+msgstr "毎年繰り返し"
+
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "Shop Day Off"
+msgstr "ショップの休日"
+
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "Day Range"
+msgstr "日の範囲"
+
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "New Holiday"
+msgstr "新しい休日"
+
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "New Day Off"
+msgstr "新しい休日"
+
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "New"
+msgstr "New"
+
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "Edit"
+msgstr "編集"
+
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "Apply to every day"
+msgstr "毎日適用する"
+
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "Delete all time period"
+msgstr "すべての期間を削除"
+
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "Add Work Period"
+msgstr "作業期間を追加"
+
+#: assets/dist/blocks/booking-button/block.json
+msgctxt "block title"
+msgid "Bookster Booking Button"
+msgstr "ブックスター予約ボタン"
+
+#: assets/dist/blocks/booking-button/block.json
+#: assets/dist/blocks/booking-form/block.json
+#: assets/dist/blocks/customer-dashboard/block.json
+msgctxt "block keyword"
+msgid "bookster"
+msgstr "ブックスター"
+
+#: assets/dist/blocks/booking-button/block.json
+#: assets/dist/blocks/booking-form/block.json
+msgctxt "block keyword"
+msgid "booking"
+msgstr "予約"
+
+#: assets/dist/blocks/booking-button/block.json
+msgctxt "block keyword"
+msgid "button"
+msgstr "ボタン"
+
+#: assets/dist/blocks/booking-button/block.json
+msgctxt "block description"
+msgid "Bookster Booking Button."
+msgstr "ブックスター予約ボタン。"
+
+#: assets/dist/blocks/booking-button/block.json
+msgctxt "block style label"
+msgid "Fill"
+msgstr "塗りつぶし"
+
+#: assets/dist/blocks/booking-button/block.json
+msgctxt "block style label"
+msgid "Outline"
+msgstr "アウトライン"
+
+#: assets/dist/blocks/booking-form/block.json
+msgctxt "block title"
+msgid "Bookster Booking Form"
+msgstr "ブックスター予約フォーム"
+
+#: assets/dist/blocks/booking-form/block.json
+msgctxt "block keyword"
+msgid "form"
+msgstr "フォーム"
+
+#: assets/dist/blocks/booking-form/block.json
+msgctxt "block description"
+msgid "Bookster Booking Form."
+msgstr "ブックスター予約フォーム。"
+
+#: assets/dist/blocks/customer-dashboard/block.json
+msgctxt "block title"
+msgid "Bookster Customer Dashboard"
+msgstr "Booksterカスタマーダッシュボード"
+
+#: assets/dist/blocks/customer-dashboard/block.json
+msgctxt "block keyword"
+msgid "customer"
+msgstr "顧客"
+
+#: assets/dist/blocks/customer-dashboard/block.json
+msgctxt "block keyword"
+msgid "dashboard"
+msgstr "ダッシュボード"
+
+#: assets/dist/blocks/customer-dashboard/block.json
+msgctxt "block description"
+msgid "Bookster Customer Dashboard."
+msgstr "Bookster カスタマー ダッシュボード。"

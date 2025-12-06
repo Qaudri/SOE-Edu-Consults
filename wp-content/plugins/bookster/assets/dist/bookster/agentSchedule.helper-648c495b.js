@@ -1,0 +1,1 @@
+const e=window.booksterPublicData.scheduleSettings.weekly,l=window.booksterPublicData.holidaysSettings;function d(d){const o=(null==d?void 0:d.weekly_schedule_enabled)&&d.weekly_schedule?d.weekly_schedule:e,s=(null==d?void 0:d.dayoff_schedule_enabled)&&d.dayoff_schedule?d.dayoff_schedule:{};return{weekly:o,holiday:l,dayoff:s}}export{d as g};

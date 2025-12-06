@@ -1,0 +1,2572 @@
+# Copyright (C) 2025 WPBookster
+# This file is distributed under the GPL v3 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Bookster 2.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/bookster\n"
+"POT-Creation-Date: 2025-02-17T01:57:32+00:00\n"
+"PO-Revision-Date: 2025-02-25 11:03+0700\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: nl_BE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.5\n"
+"X-Domain: bookster\n"
+
+#. Plugin Name of the plugin
+#: bookster.php src/Engine/BEPages/ManagerPage.php:45
+#: src/Engine/BEPages/ManagerPage.php:91 src/Engine/BEPages/ManagerPage.php:92
+#: src/Engine/BEPages/ManagerPage.php:102
+#: src/Engine/BEPages/ManagerPage.php:111
+#: src/Engine/BEPages/ManagerPage.php:122
+#: src/Engine/BEPages/ManagerPage.php:131
+#: src/Engine/BEPages/ManagerPage.php:140
+#: src/Engine/BEPages/ManagerPage.php:149
+#: src/Engine/BEPages/ManagerPage.php:158
+#: src/Engine/BEPages/ManagerPage.php:167
+#: src/Engine/BEPages/ManagerPage.php:176
+#: src/Engine/BEPages/ManagerPage.php:185
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Bookster"
+msgstr "Boekster"
+
+#. Plugin URI of the plugin
+#: bookster.php
+msgid "https://wpbookster.com/"
+msgstr "https://wpbookster.com/"
+
+#. Description of the plugin
+#: bookster.php
+msgid "An awesome Booking system for WordPress."
+msgstr "Een geweldig boekingssysteem voor WordPress."
+
+#. Author of the plugin
+#: bookster.php
+msgid "WPBookster"
+msgstr "WPBookster"
+
+#. Author URI of the plugin
+#: bookster.php
+msgid "https://wpbookster.com/about"
+msgstr "https://wpbookster.com/about"
+
+#. translators: %s: Bookster Minimum php version
+#: bookster.php:73
+msgid "\"Bookster Plugin\" requires PHP %s or newer."
+msgstr "\"Bookster Plugin\" vereist PHP %s of nieuwer."
+
+#. translators: %s: Bookster Minimum WordPress version
+#: bookster.php:91
+msgid "\"Bookster Plugin\" requires WordPress %s or newer."
+msgstr "\"Bookster Plugin\" vereist WordPress %s of nieuwer."
+
+#: src/Engine/Admin.php:31
+msgid "Bookster Customer Dashboard Page"
+msgstr "Bookster Klant Dashboard Pagina"
+
+#: src/Engine/BEPages/AgentPage.php:44 src/Engine/BEPages/AgentPage.php:94
+#: src/Engine/BEPages/AgentPage.php:95 src/Engine/BEPages/AgentPage.php:105
+#: src/Engine/BEPages/AgentPage.php:114 src/Engine/BEPages/AgentPage.php:125
+#: src/Engine/BEPages/AgentPage.php:134 src/Engine/BEPages/AgentPage.php:143
+msgid "My Bookster"
+msgstr "Mijn boekster"
+
+#: src/Engine/BEPages/AgentPage.php:57 src/Engine/BEPages/AgentPage.php:106
+#: src/Engine/BEPages/ManagerPage.php:58 src/Engine/BEPages/ManagerPage.php:103
+#: assets/dist/bookster/page-agent.js:1 assets/dist/bookster/page-manager.js:1
+msgid "Dashboard"
+msgstr "Dashboard"
+
+#: src/Engine/BEPages/AgentPage.php:65 src/Engine/BEPages/AgentPage.php:115
+#: src/Engine/BEPages/ManagerPage.php:66 src/Engine/BEPages/ManagerPage.php:112
+#: assets/dist/bookster/page-agent.js:1 assets/dist/bookster/page-manager.js:1
+msgid "Calendar"
+msgstr "Kalender"
+
+#: src/Engine/BEPages/AgentPage.php:75 src/Engine/BEPages/AgentPage.php:126
+#: assets/dist/bookster/AgentAppointmentsPage-0008a26b.js:1
+msgid "My Appointments"
+msgstr "Mijn afspraken"
+
+#: src/Engine/BEPages/AgentPage.php:135
+#: assets/dist/bookster/AgentProfilePage-464de6d5.js:1
+#: assets/dist/bookster/page-agent.js:1
+msgid "Profile"
+msgstr "Profiel"
+
+#: src/Engine/BEPages/AgentPage.php:144 src/Engine/BEPages/ManagerPage.php:159
+#: assets/dist/bookster/AgentSettingsPage-44a463b6.js:1
+#: assets/dist/bookster/page-agent.js:1 assets/dist/bookster/page-manager.js:1
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Settings"
+msgstr "Instellingen"
+
+#: src/Engine/BEPages/IntroPage.php:43
+msgid "Bookster Setup Walkthrough"
+msgstr "Bookster Setup Walkthrough"
+
+#: src/Engine/BEPages/IntroPage.php:44
+msgid "Bookster Tours"
+msgstr "Boek rondleidingen"
+
+#: src/Engine/BEPages/IntroPage.php:93
+msgid "Booking"
+msgstr "Reservering"
+
+#: src/Engine/BEPages/IntroPage.php:96
+msgid "Customer Dashboard"
+msgstr "Klanten Dashboard"
+
+#: src/Engine/BEPages/ManagerPage.php:76 src/Engine/BEPages/ManagerPage.php:123
+#: assets/dist/bookster/AgentDashboardPage-0cf05306.js:1
+#: assets/dist/bookster/AppointmentsPage-81a8618e.js:1
+#: assets/dist/bookster/DashboardPage-157d9686.js:1
+#: assets/dist/bookster/page-agent.js:1 assets/dist/bookster/page-manager.js:1
+#: assets/dist/bookster/StatsRate-1e67a7a4.js:1
+msgid "Appointments"
+msgstr "Afspraken"
+
+#: src/Engine/BEPages/ManagerPage.php:132 src/Services/LocalizeService.php:136
+msgid "Agents"
+msgstr "Makelaars"
+
+#: src/Engine/BEPages/ManagerPage.php:141 src/Services/LocalizeService.php:134
+msgid "Services"
+msgstr "Diensten"
+
+#: src/Engine/BEPages/ManagerPage.php:150 src/Services/LocalizeService.php:138
+#: assets/dist/bookster/DashboardPage-157d9686.js:1
+msgid "Customers"
+msgstr "Klanten"
+
+#: src/Engine/BEPages/ManagerPage.php:168
+#: assets/dist/bookster/CustomizePage-4e0c1c26.js:1
+#: assets/dist/bookster/page-manager.js:1
+msgid "Customize"
+msgstr "Aanpassen"
+
+#: src/Engine/BEPages/ManagerPage.php:177
+#: assets/dist/bookster/page-manager.js:1
+msgid "Integrations"
+msgstr "Integraties"
+
+#: src/Engine/BEPages/ManagerPage.php:186
+#: assets/dist/bookster/page-manager.js:1
+msgid "Addons"
+msgstr "Opties"
+
+#: src/Engine/BEPages/ManagerPage.php:211
+msgid "Manage"
+msgstr "Beheren"
+
+#: src/Engine/FEBlocks/BookingFormShortcode.php:49
+msgid "Book Now"
+msgstr "Boek Nu"
+
+#: src/Engine/Tasks/RegisterTasks.php:23
+msgid "Every 5 Minutes"
+msgstr "Elke 5 minuten"
+
+#: src/Engine/Tasks/RegisterTasks.php:27
+msgid "Once Monthly"
+msgstr "Eenmaal per maand"
+
+#: src/Features/Auth/AuthFns.php:12
+msgid "Bookster Manager"
+msgstr "Boekster Manager"
+
+#: src/Features/Auth/AuthFns.php:17
+msgid "Bookster Agent"
+msgstr "Boekster Agent"
+
+#: src/Features/Auth/RestAuth.php:16
+msgid "Sorry, you need to Login to do this!!!."
+msgstr "Sorry, u moet inloggen om dit te doen!!."
+
+#: src/Features/Auth/RestAuth.php:28 src/Features/Auth/RestAuth.php:40
+msgid "Sorry, you need to be Manager to do this!!!."
+msgstr "Sorry, je moet hiervoor manager zijn!!."
+
+#: src/Features/Auth/RestAuth.php:52 src/Features/Auth/RestAuth.php:64
+#: src/Features/Auth/RestAuth.php:76
+msgid "Sorry, you need to be Agent to do this!!!."
+msgstr "Sorry, je moet hiervoor een agent zijn!!."
+
+#: src/Features/Auth/RestAuth.php:104
+msgid "Sorry, you don't have Permission to do this!!!."
+msgstr "Sorry, je hebt geen toestemming om dit te doen!!."
+
+#: src/Features/Constants/SettingsData.php:165
+msgid "Service Selection"
+msgstr "Selectie van diensten"
+
+#: src/Features/Constants/SettingsData.php:166
+msgid "Please select a service for your appointment"
+msgstr "Selecteer een dienst voor uw afspraak"
+
+#: src/Features/Constants/SettingsData.php:169
+#: src/Services/LocalizeService.php:135
+#: templates/emails/appt-notification/appt-summary.php:50
+msgid "Agent"
+msgstr "Expediteur"
+
+#: src/Features/Constants/SettingsData.php:170
+msgid "Please select an agent for your appointment"
+msgstr "Selecteer een agent voor uw afspraak"
+
+#: src/Features/Constants/SettingsData.php:173
+msgid "Date & Time"
+msgstr "Datum & Tijd"
+
+#: src/Features/Constants/SettingsData.php:174
+msgid "Please select a date and time for your appointment"
+msgstr "Selecteer een datum en tijd voor uw afspraak"
+
+#: src/Features/Constants/SettingsData.php:177
+msgid "Contact"
+msgstr "Contact"
+
+#: src/Features/Constants/SettingsData.php:178
+msgid "Please enter your contact information"
+msgstr "Vul uw contactgegevens in"
+
+#: src/Features/Constants/SettingsData.php:181
+msgid "Checkout"
+msgstr "Afrekenen"
+
+#: src/Features/Constants/SettingsData.php:182
+msgid "Please enter your payment information"
+msgstr "Voer uw betalingsgegevens in"
+
+#: src/Features/Constants/SettingsData.php:185
+msgid "Confimation"
+msgstr "Configuratie"
+
+#: src/Features/Constants/SettingsData.php:186
+msgid "Your appointment has been booked"
+msgstr "Uw afspraak is geboekt"
+
+#: src/Features/Constants/SettingsData.php:189
+msgid "Need help? Call Us Now"
+msgstr "Hulp nodig? Bel ons nu"
+
+#: src/Features/Enums/BookStatusEnum.php:16
+#: assets/dist/bookster/page-intro.js:1
+#: assets/dist/bookster/prefetch.helper-f488c823.js:1
+#: assets/dist/bookster/ReloadButton-631bf244.js:1
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Approved"
+msgstr "Goedgekeurd"
+
+#: src/Features/Enums/BookStatusEnum.php:18
+#: assets/dist/bookster/prefetch.helper-f488c823.js:1
+#: assets/dist/bookster/ReloadButton-631bf244.js:1
+msgid "Canceled"
+msgstr "Geannuleerd"
+
+#: src/Features/Enums/BookStatusEnum.php:21
+#: assets/dist/bookster/prefetch.helper-f488c823.js:1
+msgid "Pending Approval"
+msgstr "In afwachting van goedkeuring"
+
+#: src/Features/Enums/PaymentStatusEnum.php:17
+#: assets/dist/bookster/prefetch.helper-f488c823.js:1
+msgid "Unpaid"
+msgstr "Onbetaald"
+
+#: src/Features/Enums/PaymentStatusEnum.php:19
+#: assets/dist/bookster/prefetch.helper-f488c823.js:1
+msgid "Refunded"
+msgstr "Terugbetaald"
+
+#: src/Features/Enums/PaymentStatusEnum.php:21
+#: assets/dist/bookster/prefetch.helper-f488c823.js:1
+msgid "Completed"
+msgstr "Voltooid"
+
+#: src/Features/Enums/PaymentStatusEnum.php:24
+#: assets/dist/bookster/prefetch.helper-f488c823.js:1
+msgid "Incomplete"
+msgstr "Onvolledig"
+
+#: src/Services/BookingRequestService.php:59
+msgid "Sorry. The Service is not available for Booking!"
+msgstr "Sorry. De service is niet beschikbaar voor boeking!"
+
+#: src/Services/BookingRequestService.php:62
+msgid "Sorry. The Agent is not available for Booking!"
+msgstr "Sorry. De agent is niet beschikbaar voor boeking!"
+
+#: src/Services/BookingRequestService.php:79
+msgid "Sorry. Invalid datetime format!"
+msgstr "Sorry. Ongeldig datum/tijd-formaat!"
+
+#: src/Services/BookingRequestService.php:206
+#: src/Services/BookingRequestService.php:217
+msgid ""
+"Sorry. Your Booking Time is no longer Valid. Please select another "
+"Appointment Time!"
+msgstr ""
+"Sorry. Uw boekingstijd is niet langer geldig. Selecteer een andere "
+"afspraaktijd!"
+
+#: src/Services/EmailSettingsService.php:62
+msgid "[{site_title}]: New booking #{appt_number}"
+msgstr "[{site_title}]: Nieuwe boeking #{appt_number}"
+
+#: src/Services/EmailSettingsService.php:63
+msgid "New Booking: #{appt_number}"
+msgstr "Nieuwe boeking: #{appt_number}"
+
+#: src/Services/EmailSettingsService.php:64
+msgid ""
+"Hi <strong>Manager</strong>,\n"
+"You have received the following booking from {customer_name}."
+msgstr ""
+"Hoi <strong>Manager</strong>,\n"
+"U heeft de volgende boeking ontvangen van {customer_name}."
+
+#: src/Services/EmailSettingsService.php:69
+msgid "Your {site_title} booking has been received!"
+msgstr "Uw {site_title} boeking is ontvangen!"
+
+#: src/Services/EmailSettingsService.php:70
+msgid "Booking received #{appt_number}"
+msgstr "Boeking ontvangen #{appt_number}"
+
+#: src/Services/EmailSettingsService.php:71
+msgid ""
+"Hi <strong>{customer_name}</strong>,\n"
+"Thank you for your booking. We are working on your schedule."
+msgstr ""
+"Hoi <strong>{customer_name}</strong>,\n"
+"Bedankt voor uw boeking. We werken aan uw planning."
+
+#: src/Services/EmailSettingsService.php:75
+msgid "Your {site_title} appointment has been confirmed!"
+msgstr "Uw {site_title} afspraak is bevestigd!"
+
+#: src/Services/EmailSettingsService.php:76
+msgid "Appointment confirmed #{appt_number}"
+msgstr "Afspraak bevestigd #{appt_number}"
+
+#: src/Services/EmailSettingsService.php:77
+msgid ""
+"Hi <strong>{customer_name}</strong>,\n"
+"Your {service_name} appointment has been confirmed."
+msgstr ""
+"Hoi <strong>{customer_name}</strong>,\n"
+"Uw {service_name} afspraak is bevestigd."
+
+#: src/Services/EmailSettingsService.php:82
+msgid "[{site_title}]: Approved appointment #{appt_number}"
+msgstr "[{site_title}]: Goedgekeurde benoeming #{appt_number}"
+
+#: src/Services/EmailSettingsService.php:83
+msgid "Approved appointment: #{appt_number}"
+msgstr "Goedgekeurde benoeming: #{appt_number}"
+
+#: src/Services/EmailSettingsService.php:84
+msgid ""
+"Hi <strong>{agent_name}</strong>,\n"
+"Congratulation on the {service_name} appointment with {customer_name}!"
+msgstr ""
+"Hoi <strong>{agent_name}</strong>,\n"
+"Gefeliciteerd met de {service_name} afspraak met {customer_name}!"
+
+#: src/Services/EmailSettingsService.php:88
+msgid "[{site_title}]: Canceled appointment #{appt_number}"
+msgstr "[{site_title}]: Geannuleerde afspraak #{appt_number}"
+
+#: src/Services/EmailSettingsService.php:89
+msgid "Canceled appointment: #{appt_number}"
+msgstr "Geannuleerde afspraak: #{appt_number}"
+
+#: src/Services/EmailSettingsService.php:90
+msgid ""
+"Hi <strong>{agent_name}</strong>,\n"
+"Your {service_name} appointment with {customer_name} has been canceled."
+msgstr ""
+"Hoi <strong>{agent_name}</strong>,\n"
+"Uw {service_name} afspraak met {customer_name} is geannuleerd."
+
+#: src/Services/EmailSettingsService.php:94
+msgid "Details for appointment #{appt_number} on {site_title}"
+msgstr "Details voor afspraak #{appt_number} op {site_title}"
+
+#: src/Services/EmailSettingsService.php:95
+#: src/Services/EmailSettingsService.php:100
+msgid "Details for appointment #{appt_number}"
+msgstr "Details voor afspraak #{appt_number}"
+
+#: src/Services/EmailSettingsService.php:96
+msgid ""
+"Hi <strong>{customer_name}</strong>,\n"
+"You have a {service_name} appointment with {agent_name}."
+msgstr ""
+"Hoi <strong>{customer_name}</strong>,\n"
+"Je hebt een {service_name} afspraak met {agent_name}."
+
+#: src/Services/EmailSettingsService.php:99
+msgid "[{site_title}]: Details for appointment #{appt_number}"
+msgstr "[{site_title}]: Details voor afspraak #{appt_number}"
+
+#: src/Services/EmailSettingsService.php:101
+msgid ""
+"Hi <strong>{agent_name}</strong>,\n"
+"You have a {service_name} appointment with {customer_name}."
+msgstr ""
+"Hoi <strong>{agent_name}</strong>,\n"
+"Je hebt een {service_name} afspraak met {customer_name}."
+
+#: src/Services/LocalizeService.php:133
+msgid "Service"
+msgstr "Dienst"
+
+#: src/Services/LocalizeService.php:137
+#: templates/emails/appt-notification/appt-summary.php:42
+msgid "Customer"
+msgstr "Klant"
+
+#: src/Services/LocalizeService.php:139
+msgid "Location"
+msgstr "Locatie"
+
+#: src/Services/LocalizeService.php:140
+msgid "Locations"
+msgstr "Locaties"
+
+#: templates/emails/appt-notification/appt-booking-details.php:23
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Booking Details"
+msgstr "Details reservatie"
+
+#: templates/emails/appt-notification/appt-booking-details.php:68
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Subtotal"
+msgstr "Subtotaal"
+
+#: templates/emails/appt-notification/appt-booking-details.php:98
+#: assets/dist/bookster/AgentAppointmentsPage-0008a26b.js:1
+#: assets/dist/bookster/AppointmentsPage-81a8618e.js:1
+#: assets/dist/bookster/apptDataTable-18ba107e.js:1
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Total"
+msgstr "Totaal"
+
+#: templates/emails/appt-notification/appt-summary.php:23
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Appointment"
+msgstr "Afspraak"
+
+#: assets/dist/bookster/AgentAppointmentsPage-0008a26b.js:1
+#: assets/dist/bookster/AppointmentsPage-81a8618e.js:1
+#: assets/dist/bookster/apptDataTable-18ba107e.js:1
+#: assets/dist/bookster/ReloadButton-631bf244.js:1
+msgid "Status"
+msgstr "Status"
+
+#: assets/dist/bookster/AgentAppointmentsPage-0008a26b.js:1
+#: assets/dist/bookster/AgentsList-074745cd.js:1
+#: assets/dist/bookster/CustomersPage-12f1c628.js:1
+#: assets/dist/bookster/ReloadButton-631bf244.js:1
+msgid "Loading"
+msgstr "Laden"
+
+#: assets/dist/bookster/AgentAppointmentsPage-0008a26b.js:1
+#: assets/dist/bookster/AgentsList-074745cd.js:1
+#: assets/dist/bookster/CustomersPage-12f1c628.js:1
+#: assets/dist/bookster/ReloadButton-631bf244.js:1
+msgid "No Data Found"
+msgstr "Geen gegevens gevonden"
+
+#: assets/dist/bookster/AgentAppointmentsPage-0008a26b.js:1
+#: assets/dist/bookster/AgentsList-074745cd.js:1
+#: assets/dist/bookster/CustomersPage-12f1c628.js:1
+#: assets/dist/bookster/ReloadButton-631bf244.js:1
+msgid "Selected"
+msgstr "Geselecteerd"
+
+#: assets/dist/bookster/AgentAppointmentsPage-0008a26b.js:1
+#: assets/dist/bookster/AppointmentsPage-81a8618e.js:1
+msgid "Columns"
+msgstr "Kolommen"
+
+#: assets/dist/bookster/AgentAppointmentsPage-0008a26b.js:1
+#: assets/dist/bookster/AppointmentsPage-81a8618e.js:1
+#: assets/dist/bookster/apptDataTable-18ba107e.js:1
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+#: assets/dist/bookster/CalendarContent-7a4b8ea6.js:1
+#: assets/dist/bookster/page-manager.js:1
+#: assets/dist/bookster/ReloadButton-631bf244.js:1
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Payment"
+msgstr "Betaling"
+
+#: assets/dist/bookster/AgentAppointmentsPage-0008a26b.js:1
+#: assets/dist/bookster/AppointmentsPage-81a8618e.js:1
+#: assets/dist/bookster/apptDataTable-18ba107e.js:1
+msgid "Date / Time"
+msgstr "Datum / Tijd"
+
+#: assets/dist/bookster/AgentAppointmentsPage-0008a26b.js:1
+#: assets/dist/bookster/AppointmentsPage-81a8618e.js:1
+msgid "Payment Incomplete"
+msgstr "Betaling onvolledig"
+
+#: assets/dist/bookster/AgentAppointmentsPage-0008a26b.js:1
+#: assets/dist/bookster/AgentCalendarPage-d0b6396b.js:1
+#: assets/dist/bookster/AppointmentsPage-81a8618e.js:1
+#: assets/dist/bookster/CalendarPage-f0916903.js:1
+msgid "Filters"
+msgstr "Filters"
+
+#: assets/dist/bookster/AgentCalendarPage-d0b6396b.js:1
+#: assets/dist/bookster/AgentDashboardPage-0cf05306.js:1
+#: assets/dist/bookster/CalendarPage-f0916903.js:1
+#: assets/dist/bookster/DashboardPage-157d9686.js:1
+msgid "Day Schedule"
+msgstr "Dagindeling"
+
+#: assets/dist/bookster/AgentCalendarPage-d0b6396b.js:1
+#: assets/dist/bookster/CalendarPage-f0916903.js:1
+msgid "Week Schedule"
+msgstr "Weekschema"
+
+#: assets/dist/bookster/AgentCalendarPage-d0b6396b.js:1
+#: assets/dist/bookster/CalendarPage-f0916903.js:1
+msgid "Month Schedule"
+msgstr "Maand schema"
+
+#: assets/dist/bookster/AgentCalendarPage-d0b6396b.js:1
+#: assets/dist/bookster/block-customer-dashboard.js:1
+#: assets/dist/bookster/CalendarPage-f0916903.js:1
+#: assets/dist/bookster/ReloadButton-631bf244.js:1
+msgid "Today"
+msgstr "Vandaag"
+
+#: assets/dist/bookster/AgentCalendarPage-d0b6396b.js:1
+#: assets/dist/bookster/AgentDashboardPage-0cf05306.js:1
+#: assets/dist/bookster/CalendarPage-f0916903.js:1
+#: assets/dist/bookster/DashboardPage-157d9686.js:1
+msgid "Week"
+msgstr "Week"
+
+#: assets/dist/bookster/AgentCalendarPage-d0b6396b.js:1
+#: assets/dist/bookster/AgentDashboardPage-0cf05306.js:1
+#: assets/dist/bookster/CalendarPage-f0916903.js:1
+#: assets/dist/bookster/DashboardPage-157d9686.js:1
+msgid "Month"
+msgstr "Maand"
+
+#: assets/dist/bookster/AgentDashboardPage-0cf05306.js:1
+#: assets/dist/bookster/DashboardPage-157d9686.js:1
+msgid "Performance"
+msgstr "Voorstelling"
+
+#: assets/dist/bookster/AgentDashboardPage-0cf05306.js:1
+#: assets/dist/bookster/CalendarPage-f0916903.js:1
+#: assets/dist/bookster/DashboardPage-157d9686.js:1
+msgid "Day"
+msgstr "Dag"
+
+#: assets/dist/bookster/AgentDashboardPage-0cf05306.js:1
+#: assets/dist/bookster/DashboardPage-157d9686.js:1
+#: assets/dist/bookster/StatsRate-1e67a7a4.js:1
+msgid "Revenue"
+msgstr "Inkomsten"
+
+#: assets/dist/bookster/AgentDashboardPage-0cf05306.js:1
+#: assets/dist/bookster/DashboardPage-157d9686.js:1
+msgid "View Appointment"
+msgstr "Afspraak weergeven"
+
+#: assets/dist/bookster/AgentDashboardPage-0cf05306.js:1
+#: assets/dist/bookster/DashboardPage-157d9686.js:1
+msgid "View Calendar"
+msgstr "Bekijk kalender"
+
+#: assets/dist/bookster/AgentDashboardPage-0cf05306.js:1
+#: assets/dist/bookster/DashboardPage-157d9686.js:1
+msgid "New Customers"
+msgstr "Nieuwe klanten"
+
+#: assets/dist/bookster/AgentDashboardPage-0cf05306.js:1
+#: assets/dist/bookster/DashboardPage-157d9686.js:1
+msgid "Total New %(customers)s in the Last 30 Days"
+msgstr "Totaal aantal nieuwe %(customers)s in de afgelopen 30 dagen"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+#: assets/dist/bookster/AgentsPage-1c6eacac.js:1
+#: assets/dist/bookster/CustomersPage-12f1c628.js:1
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid "Search"
+msgstr "Zoeken"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+msgid "Selected %(services)s"
+msgstr "Geselecteerde %(services)s"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "No %(services)s found."
+msgstr "Geen %(services)s gevonden."
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid ""
+"Available only apply to %(customer)s Booking Form. For Manager, there is no "
+"restriction."
+msgstr ""
+"Alleen beschikbaar zijn van toepassing op %(customer)s boekingsformulier. "
+"Voor Manager is er geen beperking."
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+msgid "This %(agent)s is available for all %(services)s"
+msgstr "Deze %(agent)s is beschikbaar voor alle %(services)s"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid "Active"
+msgstr "Actief"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+msgid ""
+"Archiving %(agent)s to avoid Deleting referencing Appointment, Analytics "
+"Data in the past."
+msgstr ""
+"Archivering %(agent)s om te voorkomen dat verwijzende afspraak- en "
+"analysegegevens in het verleden worden verwijderd."
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+msgid "Active %(agents)s are available for booking."
+msgstr "Actieve %(agents)s zijn beschikbaar om te boeken."
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+#: assets/dist/bookster/page-manager.js:1
+msgid "Wordpress User"
+msgstr "Wordpress Gebruiker"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+msgid ""
+"Link %(agent)s with WP User to allow them to login and browse Working "
+"Calendar."
+msgstr ""
+"Koppel %(agent)s aan WP User om hen in staat te stellen in te loggen en door "
+"de werkkalender te bladeren."
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+#: assets/dist/bookster/page-manager.js:1
+msgid "Linked to the WP User"
+msgstr "Gekoppeld aan de WP-gebruiker"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+#: assets/dist/bookster/page-manager.js:1
+msgid "Not Linked to any WP User."
+msgstr "Niet gekoppeld aan een WP-gebruiker."
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+#: assets/dist/bookster/page-manager.js:1
+msgid "Unlink Now"
+msgstr "Nu ontkoppelen"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+#: assets/dist/bookster/page-manager.js:1
+msgid "Link Now"
+msgstr "Link nu"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+#: assets/dist/bookster/AgentProfilePage-464de6d5.js:1
+#: assets/dist/bookster/block-customer-dashboard.js:1
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+#: assets/dist/bookster/page-manager.js:1
+msgid "First Name"
+msgstr "Voornaam"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+#: assets/dist/bookster/AgentProfilePage-464de6d5.js:1
+#: assets/dist/bookster/page-manager.js:1
+msgid "Please enter First Name"
+msgstr "Voer uw voornaam in"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+#: assets/dist/bookster/AgentProfilePage-464de6d5.js:1
+#: assets/dist/bookster/block-customer-dashboard.js:1
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+#: assets/dist/bookster/page-manager.js:1
+msgid "Last Name"
+msgstr "Familienaam"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+#: assets/dist/bookster/AgentProfilePage-464de6d5.js:1
+#: assets/dist/bookster/page-manager.js:1
+msgid "Please enter Last Name"
+msgstr "Voer uw achternaam in"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+#: assets/dist/bookster/AgentProfilePage-464de6d5.js:1
+#: assets/dist/bookster/AgentsList-074745cd.js:1
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+#: assets/dist/bookster/CustomersPage-12f1c628.js:1
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+#: assets/dist/bookster/page-manager.js:1
+msgid "Email"
+msgstr "E-mail"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+#: assets/dist/bookster/page-manager.js:1
+msgid "Please change Email from"
+msgstr "Wijzig e-mail van"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+#: assets/dist/bookster/page-manager.js:1
+msgid "Wordpress Profile"
+msgstr "Wordpress Profiel"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+#: assets/dist/bookster/page-manager.js:1
+msgid "Please enter Email"
+msgstr "Voer e-mailadres in"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+#: assets/dist/bookster/AgentProfilePage-464de6d5.js:1
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+#: assets/dist/bookster/CustomersPage-12f1c628.js:1
+#: assets/dist/bookster/page-manager.js:1
+msgid "Phone"
+msgstr "Telefoon"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+#: assets/dist/bookster/AgentsList-074745cd.js:1
+msgid "Priority"
+msgstr "Prioriteit"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+msgid "Display priority (from 0 to 100)"
+msgstr "Weergaveprioriteit (van 0 tot 100)"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+#: assets/dist/bookster/AgentsList-074745cd.js:1
+#: assets/dist/bookster/AgentsPage-1c6eacac.js:1
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid "Visibility"
+msgstr "Zichtbaarheid"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+msgid "Private %(agents)s are visible to Staff only."
+msgstr "Privé%(agents)s zijn alleen zichtbaar voor het personeel."
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+#: assets/dist/bookster/AgentsList-074745cd.js:1
+#: assets/dist/bookster/AgentsPage-1c6eacac.js:1
+#: assets/dist/bookster/ServiceCard-a501175b.js:1
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid "Public"
+msgstr "Openbaar"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+#: assets/dist/bookster/AgentsList-074745cd.js:1
+#: assets/dist/bookster/AgentsPage-1c6eacac.js:1
+#: assets/dist/bookster/ServiceCard-a501175b.js:1
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid "Private"
+msgstr "Privaat"
+
+#: assets/dist/bookster/AgentProfilePage-464de6d5.js:1
+msgid "%(agent)s Profile"
+msgstr "%(agent)s Profiel"
+
+#: assets/dist/bookster/AgentProfilePage-464de6d5.js:1
+msgid "You can change your personal information here. "
+msgstr "U kunt uw persoonlijke gegevens hier wijzigen. "
+
+#: assets/dist/bookster/AgentProfilePage-464de6d5.js:1
+msgid "%(customers)s will see this information when they contact you."
+msgstr ""
+"%(customers)s krijgt deze informatie te zien wanneer ze contact met u "
+"opnemen."
+
+#: assets/dist/bookster/AgentProfilePage-464de6d5.js:1
+msgid "Change Photo"
+msgstr "Foto wijzigen"
+
+#: assets/dist/bookster/AgentProfilePage-464de6d5.js:1
+msgid "Remove"
+msgstr "Verwijder"
+
+#: assets/dist/bookster/AgentProfilePage-464de6d5.js:1
+msgid "Upload a 256x256 Jpeg or Png (max 2MB)"
+msgstr "Upload een 256x256 Jpeg of Png (max 2MB)"
+
+#: assets/dist/bookster/AgentProfilePage-464de6d5.js:1
+msgid "Bio"
+msgstr "Bio"
+
+#: assets/dist/bookster/AgentScheduleTab-a7146e7f.js:1
+msgid "Custom"
+msgstr "Aangepast"
+
+#: assets/dist/bookster/AgentScheduleTab-a7146e7f.js:1
+msgid "Add More Custom Days Off for this Agent"
+msgstr "Voeg meer aangepaste vrije dagen toe voor deze agent"
+
+#: assets/dist/bookster/AgentScheduleTab-a7146e7f.js:1
+msgid "Use Custom Weekly Schedule for this Agent"
+msgstr "Gebruik een aangepast weekschema voor deze agent"
+
+#: assets/dist/bookster/AgentScheduleTab-a7146e7f.js:1
+msgid "Work Schedule"
+msgstr "Werkschema"
+
+#: assets/dist/bookster/AgentSettingsPage-44a463b6.js:1
+#: assets/dist/bookster/EditAgentDrawer-72f3e86c.js:1
+#: assets/dist/bookster/NewAgentDrawer-e2a05c5d.js:1
+#: assets/dist/bookster/page-agent.js:1 assets/dist/bookster/page-manager.js:1
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Schedule"
+msgstr "Planning"
+
+#: assets/dist/bookster/AgentSettingsPage-44a463b6.js:1
+#: assets/dist/bookster/EditAgentDrawer-72f3e86c.js:1
+#: assets/dist/bookster/NewAgentDrawer-e2a05c5d.js:1
+#: assets/dist/bookster/page-agent.js:1
+msgid "Days Off"
+msgstr "Verlofdagen"
+
+#: assets/dist/bookster/AgentSettingsPage-44a463b6.js:1
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "Day off"
+msgstr "Vrijaf"
+
+#: assets/dist/bookster/AgentsList-074745cd.js:1
+#: assets/dist/bookster/AgentsPage-1c6eacac.js:1
+#: assets/dist/bookster/ServiceCard-a501175b.js:1
+msgid "Inactive"
+msgstr "Inactief"
+
+#: assets/dist/bookster/AgentsList-074745cd.js:1
+#: assets/dist/bookster/CustomersPage-12f1c628.js:1
+msgid "Name"
+msgstr "Naam"
+
+#: assets/dist/bookster/AgentsList-074745cd.js:1
+#: assets/dist/bookster/CustomersPage-12f1c628.js:1
+msgid "WP User"
+msgstr "WP-gebruiker"
+
+#: assets/dist/bookster/AgentsList-074745cd.js:1
+#: assets/dist/bookster/CustomersPage-12f1c628.js:1
+msgid "Not Linked"
+msgstr "Niet gelinkt"
+
+#: assets/dist/bookster/AgentsList-074745cd.js:1
+#: assets/dist/bookster/CustomersPage-12f1c628.js:1
+#: assets/dist/bookster/ReloadButton-631bf244.js:1
+msgid "Delete Data"
+msgstr "Gegevens verwijderen"
+
+#: assets/dist/bookster/AgentsList-074745cd.js:1
+msgid "Delete Multiple Agents"
+msgstr "Meerdere agents verwijderen"
+
+#: assets/dist/bookster/AgentsList-074745cd.js:1
+msgid ""
+"This action cannot be undone. This will permanently delete %s agents and "
+"their %s appointments."
+msgstr ""
+"Deze actie kan niet ongedaan worden gemaakt. Hiermee worden %s agenten en "
+"hun %s afspraken permanent verwijderd."
+
+#: assets/dist/bookster/AgentsList-074745cd.js:1
+#: assets/dist/bookster/BEConfigProvider-180a6f55.js:1
+#: assets/dist/bookster/CustomersPage-12f1c628.js:1
+#: assets/dist/bookster/EditAgentDrawer-72f3e86c.js:1
+#: assets/dist/bookster/EditCustomerDrawer-d63054df.js:1
+#: assets/dist/bookster/EditServiceDrawer-952650b8.js:1
+#: assets/dist/bookster/NewAgentDrawer-e2a05c5d.js:1
+#: assets/dist/bookster/NewCustomerDrawer-dc3f3f3e.js:1
+#: assets/dist/bookster/NewServiceDrawer-7ac694aa.js:1
+#: assets/dist/bookster/page-agent.js:1 assets/dist/bookster/page-manager.js:1
+#: assets/dist/bookster/ReloadButton-631bf244.js:1
+#: assets/dist/bookster/ServiceFormDrawer-0cf878e9.js:1
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "Cancel"
+msgstr "Annuleer"
+
+#: assets/dist/bookster/AgentsList-074745cd.js:1
+#: assets/dist/bookster/CustomersPage-12f1c628.js:1
+#: assets/dist/bookster/EditAgentDrawer-72f3e86c.js:1
+#: assets/dist/bookster/EditCustomerDrawer-d63054df.js:1
+#: assets/dist/bookster/EditServiceDrawer-952650b8.js:1
+#: assets/dist/bookster/ReloadButton-631bf244.js:1
+msgid "Confirm Delete"
+msgstr "Bevestigen Verwijderen"
+
+#: assets/dist/bookster/AgentsPage-1c6eacac.js:1
+#: assets/dist/bookster/ReloadButton-631bf244.js:1
+msgid "No results found."
+msgstr "Geen resultaten gevonden."
+
+#: assets/dist/bookster/AgentsPage-1c6eacac.js:1
+#: assets/dist/bookster/NewAgentDrawer-e2a05c5d.js:1
+#: assets/dist/bookster/page-intro.js:1
+msgid "New %(agent)s"
+msgstr "Nieuwe %(agent)s"
+
+#: assets/dist/bookster/apptDataTable-18ba107e.js:1
+msgid "Paid"
+msgstr "Betaald"
+
+#: assets/dist/bookster/apptDataTable-18ba107e.js:1
+msgid "Due"
+msgstr "Wegens"
+
+#: assets/dist/bookster/apptDataTable-18ba107e.js:1
+msgid "ID"
+msgstr "ID"
+
+#: assets/dist/bookster/ApptsFilterAgent-e1bebc11.js:1
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "No %(agents)s found."
+msgstr "Geen %(agents)s gevonden."
+
+#: assets/dist/bookster/ApptsFilterService-713c7df7.js:1
+msgid "Clear Filters"
+msgstr "Filters wissen"
+
+#: assets/dist/bookster/ApptsFilterService-713c7df7.js:1
+msgid "No %(customer)s found."
+msgstr "Geen %(customer)s gevonden."
+
+#: assets/dist/bookster/ApptsFilterService-713c7df7.js:1
+msgid "No %(services)s found"
+msgstr "Geen %(services)s gevonden"
+
+#: assets/dist/bookster/BEConfigProvider-180a6f55.js:1
+#: assets/dist/bookster/ServiceFormDrawer-0cf878e9.js:1
+msgid "Closing"
+msgstr "Sluiting"
+
+#: assets/dist/bookster/BEConfigProvider-180a6f55.js:1
+#: assets/dist/bookster/CustomizePage-4e0c1c26.js:1
+#: assets/dist/bookster/EditAgentDrawer-72f3e86c.js:1
+#: assets/dist/bookster/EditCustomerDrawer-d63054df.js:1
+#: assets/dist/bookster/EditServiceDrawer-952650b8.js:1
+#: assets/dist/bookster/NewAgentDrawer-e2a05c5d.js:1
+#: assets/dist/bookster/NewCustomerDrawer-dc3f3f3e.js:1
+#: assets/dist/bookster/NewServiceDrawer-7ac694aa.js:1
+#: assets/dist/bookster/page-agent.js:1 assets/dist/bookster/page-manager.js:1
+#: assets/dist/bookster/ServiceFormDrawer-0cf878e9.js:1
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "Save"
+msgstr "Opslaan"
+
+#: assets/dist/bookster/block-customer-dashboard.js:1
+msgid "Upcoming"
+msgstr "Aankomend"
+
+#: assets/dist/bookster/block-customer-dashboard.js:1
+msgid "History"
+msgstr "Geschiedenis"
+
+#: assets/dist/bookster/block-customer-dashboard.js:1
+msgid "All %(services)s"
+msgstr "Alle %(services)s"
+
+#: assets/dist/bookster/block-customer-dashboard.js:1
+msgid "Book Appointment"
+msgstr "Boek afspraak"
+
+#: assets/dist/bookster/block-customer-dashboard.js:1
+msgid "Sign in to your account"
+msgstr "Log in op uw account"
+
+#: assets/dist/bookster/block-customer-dashboard.js:1
+msgid "Please input your Username or Email Address!"
+msgstr "Voer uw gebruikersnaam of e-mailadres in!"
+
+#: assets/dist/bookster/block-customer-dashboard.js:1
+msgid "Username or Email Address"
+msgstr "Gebruikersnaam of e-mailadres"
+
+#: assets/dist/bookster/block-customer-dashboard.js:1
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Please input your password!"
+msgstr "Voer uw wachtwoord in!"
+
+#: assets/dist/bookster/block-customer-dashboard.js:1
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Password"
+msgstr "Wachtwoord"
+
+#: assets/dist/bookster/block-customer-dashboard.js:1
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Remember me"
+msgstr "Onthoud mij"
+
+#: assets/dist/bookster/block-customer-dashboard.js:1
+msgid "Forgot password?"
+msgstr "Wachtwoord vergeten?"
+
+#: assets/dist/bookster/block-customer-dashboard.js:1
+msgid "Log in"
+msgstr "Aanmelden"
+
+#: assets/dist/bookster/block-customer-dashboard.js:1
+msgid "Or Register Now"
+msgstr "Of registreer nu"
+
+#: assets/dist/bookster/block-customer-dashboard.js:1
+msgid "%(customer)s has been saved successfully!"
+msgstr "%(customer)s is succesvol gered!"
+
+#: assets/dist/bookster/block-customer-dashboard.js:1
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Please enter first name"
+msgstr "Gelieve voornaam in te voeren"
+
+#: assets/dist/bookster/block-customer-dashboard.js:1
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Please enter last name"
+msgstr "Geef de achternaam op"
+
+#: assets/dist/bookster/block-customer-dashboard.js:1
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Email Address"
+msgstr "E-mailadres"
+
+#: assets/dist/bookster/block-customer-dashboard.js:1
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Please enter email"
+msgstr "Vul je e-mailadres in"
+
+#: assets/dist/bookster/block-customer-dashboard.js:1
+msgid "Phone Number"
+msgstr "Telefoon nummer"
+
+#: assets/dist/bookster/block-customer-dashboard.js:1
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Save Changes"
+msgstr "Bewaar wijzigingen"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Free"
+msgstr "Gratis"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+#: assets/dist/libs/booking.js:1
+msgid "Summary"
+msgstr "Samenvatting"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Confirm free booking"
+msgstr "Bevestig gratis boeking"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Pay Later"
+msgstr "Ter plaatse betalen"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Pay Now"
+msgstr "Nu betalen"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Booking your Appointment!"
+msgstr "Boek uw afspraak!"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Booking Complete"
+msgstr "Boeking Voltooid"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Payment:"
+msgstr "Betaling:"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Will Pay Locally"
+msgstr "Zal ter plaatse betalen"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Pay in Full"
+msgstr "Volledig betalen"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "New Account Created. Please check your email to verify account."
+msgstr ""
+"Nieuw account aangemaakt. Controleer uw e-mail om uw account te verifiëren."
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Book Another Appointment"
+msgstr "Boek een nieuwe afspraak"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Comments"
+msgstr "Reacties"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Add comments"
+msgstr "Opmerkingen toevoegen"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Submit"
+msgstr "Verzenden"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Please input your email address!"
+msgstr "Voer uw e-mailadres in!"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Your Email Address"
+msgstr "Uw e-mail adres"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Forgot password"
+msgstr "Wachtwoord vergeten"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "First Name is required"
+msgstr "Voornaam is verplicht"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Your Last Name"
+msgstr "Uw achternaam"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Last Name is required"
+msgstr "Achternaam is verplicht"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Your First Name"
+msgstr "Je voornaam"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Email Address is required"
+msgstr "E-mailadres is vereist"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Please enter valid email!"
+msgstr "Voer een geldig e-mailadres in!"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Add Comments"
+msgstr "Opmerkingen toevoegen"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+#: assets/dist/bookster/page-manager.js:1
+msgid "New %(customer)s"
+msgstr "Nieuwe %(customer)s"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Already have an account?"
+msgstr "Heeft u een reeds een account?"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Login"
+msgstr "Login"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid ""
+"The Form is not working correctly. %(agent)s and %(service)s need to be "
+"selected first!"
+msgstr ""
+"Het formulier werkt niet correct. %(agent)s en %(service)s moeten eerst "
+"worden geselecteerd!"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:1
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "Day Off"
+msgstr "Verlofdag"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Fully Booked"
+msgstr "Volgeboekt"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Available Time Slots"
+msgstr "Beschikbare tijdvakken"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Pick Appointment Time"
+msgstr "Kies afspraaktijd"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Confirm"
+msgstr "Bevestigen"
+
+#: assets/dist/bookster/CoverPicker-1f60dfd1.js:1
+msgid "Upload Image"
+msgstr "Afbeelding uploaden"
+
+#: assets/dist/bookster/CoverPicker-1f60dfd1.js:1
+msgid "%(service)s cover"
+msgstr "%(service)s omslag"
+
+#: assets/dist/bookster/CustomersPage-12f1c628.js:1
+msgid "Delete Multiple Customers"
+msgstr "Meerdere klanten verwijderen"
+
+#: assets/dist/bookster/CustomersPage-12f1c628.js:1
+msgid ""
+"This action cannot be undone. This will permanently delete %s customers and "
+"their %s appointments."
+msgstr ""
+"Deze actie kan niet ongedaan worden gemaakt. Hiermee worden %s klanten en "
+"hun %s afspraken permanent verwijderd."
+
+#: assets/dist/bookster/CustomersPage-12f1c628.js:1
+msgid "New Customer"
+msgstr "Nieuwe klant"
+
+#: assets/dist/bookster/CustomizePage-4e0c1c26.js:1
+msgid "Booking %(service)s title"
+msgstr "Boeking %(service)s titel"
+
+#: assets/dist/bookster/CustomizePage-4e0c1c26.js:1
+msgid "Booking %(service)s description"
+msgstr "Boeking %(service)s beschrijving"
+
+#: assets/dist/bookster/CustomizePage-4e0c1c26.js:1
+msgid "Help"
+msgstr "Help"
+
+#: assets/dist/bookster/CustomizePage-4e0c1c26.js:1
+msgid "Styler"
+msgstr "Styler"
+
+#: assets/dist/bookster/CustomizePage-4e0c1c26.js:1
+msgid "Desciption"
+msgstr "Beschrijving"
+
+#: assets/dist/bookster/CustomizePage-4e0c1c26.js:1
+msgid "Title"
+msgstr "Titel"
+
+#: assets/dist/bookster/CustomizePage-4e0c1c26.js:1
+msgid "Please enter Title!"
+msgstr "Voer de titel in!"
+
+#: assets/dist/bookster/CustomizePage-4e0c1c26.js:1
+msgid "Description"
+msgstr "Omschrijving"
+
+#: assets/dist/bookster/CustomizePage-4e0c1c26.js:1
+msgid "Step booking"
+msgstr "Stap boeken"
+
+#: assets/dist/bookster/CustomizePage-4e0c1c26.js:1
+msgid "Previous step"
+msgstr "Vorige"
+
+#: assets/dist/bookster/CustomizePage-4e0c1c26.js:1
+msgid "Next step"
+msgstr "Volgende stap"
+
+#: assets/dist/bookster/DashboardPage-157d9686.js:1
+msgid "NO"
+msgstr "NO"
+
+#: assets/dist/bookster/DashboardPage-157d9686.js:1
+msgid "Agent name"
+msgstr "Naam van agent"
+
+#: assets/dist/bookster/DashboardPage-157d9686.js:1
+msgid "% of Sales"
+msgstr "% o Verkoop"
+
+#: assets/dist/bookster/DashboardPage-157d9686.js:1
+msgid "Total revenue"
+msgstr "Totale omzet"
+
+#: assets/dist/bookster/DashboardPage-157d9686.js:1
+msgid "Service name"
+msgstr "Service naam"
+
+#: assets/dist/bookster/DashboardPage-157d9686.js:1
+msgid "View Customers"
+msgstr "Bekijk klanten"
+
+#: assets/dist/bookster/EditAgentDrawer-72f3e86c.js:1
+msgid "Delete Agent"
+msgstr "Verkoper verwijderen"
+
+#: assets/dist/bookster/EditAgentDrawer-72f3e86c.js:1
+#: assets/dist/bookster/EditCustomerDrawer-d63054df.js:1
+#: assets/dist/bookster/EditServiceDrawer-952650b8.js:1
+msgid ""
+"This action cannot be undone. This will permanently delete this %s and %s "
+"appointments."
+msgstr ""
+"Deze actie kan niet ongedaan worden gemaakt. Hiermee worden deze %s en %s "
+"afspraken definitief verwijderd."
+
+#: assets/dist/bookster/EditAgentDrawer-72f3e86c.js:1
+msgid "Edit %(agent)s"
+msgstr "%(agent)s bewerken"
+
+#: assets/dist/bookster/EditAgentDrawer-72f3e86c.js:1
+#: assets/dist/bookster/EditServiceDrawer-952650b8.js:1
+#: assets/dist/bookster/NewAgentDrawer-e2a05c5d.js:1
+#: assets/dist/bookster/NewServiceDrawer-7ac694aa.js:1
+#: assets/dist/bookster/page-manager.js:1
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "General"
+msgstr "Algemeen"
+
+#: assets/dist/bookster/EditAgentDrawer-72f3e86c.js:1
+#: assets/dist/bookster/EditServiceDrawer-952650b8.js:1
+#: assets/dist/bookster/NewAgentDrawer-e2a05c5d.js:1
+#: assets/dist/bookster/NewServiceDrawer-7ac694aa.js:1
+msgid "Available"
+msgstr "Beschikbaar"
+
+#: assets/dist/bookster/EditCustomerDrawer-d63054df.js:1
+msgid "Delete Customer"
+msgstr "Klant Verwijderen"
+
+#: assets/dist/bookster/EditCustomerDrawer-d63054df.js:1
+#: assets/dist/bookster/page-manager.js:1
+msgid "Edit %(customer)s"
+msgstr "%(customer)s bewerken"
+
+#: assets/dist/bookster/EditCustomerDrawer-d63054df.js:1
+msgid "%(customer)s has been Deleted Successfully!"
+msgstr "%(customer)s is met succes verwijderd!"
+
+#: assets/dist/bookster/EditServiceDrawer-952650b8.js:1
+msgid "Delete Service"
+msgstr "Service verwijderen"
+
+#: assets/dist/bookster/EditServiceDrawer-952650b8.js:1
+msgid "Edit %(service)s"
+msgstr "%(service)s bewerken"
+
+#: assets/dist/bookster/EditServiceDrawer-952650b8.js:1
+#: assets/dist/bookster/NewServiceDrawer-7ac694aa.js:1
+msgid "%(service)s has been Saved Successfully!"
+msgstr "%(service)s is succesvol opgeslagen!"
+
+#: assets/dist/bookster/EditServiceDrawer-952650b8.js:1
+msgid "%(service)s has been Deleted Successfully!"
+msgstr "%(service)s is met succes verwijderd!"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Best %(service)s Ever"
+msgstr "Beste %(service)s ooit"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "copied"
+msgstr "Gekopieerd"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Site"
+msgstr "Site"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Appointment Number"
+msgstr "Afspraaknummer"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "%(customer)s Full Name"
+msgstr "%(customer)s volledige naam"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "%(agent)s Full Name"
+msgstr "%(agent)s volledige naam"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid "%(service)s Name"
+msgstr "%(service)s naam"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Appointment Date & Time"
+msgstr "Afspraak Datum & Tijd"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Appointment Book Status"
+msgstr "Status van het afsprakenboek"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Appointment Payment Status"
+msgstr "Betalingsstatus afspraak"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Appointment URL"
+msgstr "URL van afspraak"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Bookster Credit Link"
+msgstr "Boekster krediet Link"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "%(customer)s:"
+msgstr "%(customer)s:"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Preview"
+msgstr "Voorbeeld"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Placeholders"
+msgstr "Tijdelijke aanduidingen"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Send Test Email"
+msgstr "Stuur testmail"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Email Options has been Saved Successfully!"
+msgstr "E-mailopties is succesvol opgeslagen!"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Email Options"
+msgstr "E-mail opties"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid ""
+"Customize your email appearance and test your server with 'Send Test Email'"
+msgstr ""
+"Pas het uiterlijk van uw e-mail aan en test uw server met 'Test-e-mail "
+"verzenden'"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Content"
+msgstr "Inhoud"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Sender Name"
+msgstr "Naam afzender"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Sender Email"
+msgstr "E-mail afzender"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Mail Footer"
+msgstr "E-mail voettekst"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Style"
+msgstr "Stijl"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Primary Color"
+msgstr "Primaire kleur"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Text Color"
+msgstr "Tekst kleur"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Mail Background"
+msgstr "Mail Achtergrond"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Body Background"
+msgstr "Hoofdachtergrond"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Reset To Default"
+msgstr "Resetten naar standaard"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Test Email has been Sent Successfully!"
+msgstr "Test-e-mail is succesvol verzonden!"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Event name is not defined"
+msgstr "De naam van de gebeurtenis is niet gedefinieerd"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Preview Email has been Sent Successfully!"
+msgstr "Voorbeeld E-mail is succesvol verzonden!"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Turn on to send this notification"
+msgstr "Inschakelen om deze melding te verzenden"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "automatically in the background"
+msgstr "automatisch op de achtergrond"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Approved Appointment"
+msgstr "Goedgekeurde benoeming"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "to %(agent)s"
+msgstr "Nieuwe %(agent)s"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Notification Configuration has been Saved Successfully!"
+msgstr "Meldingsconfiguratie is succesvol opgeslagen!"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Subject"
+msgstr "Onderwerp"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Heading"
+msgstr "Heading"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Message"
+msgstr "Bericht"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "to %(customer)s"
+msgstr "Geen %(customer)s gevonden."
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Canceled Appointment"
+msgstr "Geannuleerde afspraak"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "New Booking"
+msgstr "Nieuwe reservatie"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "to Manager"
+msgstr "Boekster Manager"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Recipient"
+msgstr "Ontvanger"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "New Pending Booking"
+msgstr "Nieuwe boeking in afwachting"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "TO %(customer)s"
+msgstr "Geen %(customer)s gevonden."
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Resend Appointment"
+msgstr "Afspraak opnieuw verzenden"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Email Notifications"
+msgstr "E-mailmeldingen"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "The notifications from Bookster are listed below."
+msgstr "De meldingen van Bookster staan hieronder vermeld."
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Options"
+msgstr "Opties"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Notifications"
+msgstr "Meldingen"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Coming soon"
+msgstr "Komt binnenkort"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Download Now"
+msgstr "Nu downloaden"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Activate Now"
+msgstr "Activeer nu"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Automation and Integrations"
+msgstr "Automatisering en integraties"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid ""
+"Install Addons and extend your workflow, connect with other tools and "
+"automate your tasks."
+msgstr ""
+"Installeer add-ons en breid uw workflow uit, maak verbinding met andere "
+"tools en automatiseer uw taken."
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "The default notifications channel for Bookster."
+msgstr "Het standaard meldingskanaal voor Bookster."
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Configure"
+msgstr "Configureren"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Payment Gateways"
+msgstr "Betalingsmogelijkheden"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid ""
+"Accept payments from your %(customers)s using popular online payment "
+"%(services)s."
+msgstr ""
+"Accepteer betalingen van uw %(customers)s met behulp van populaire online "
+"betalings%(services)s."
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Stripe"
+msgstr "Kredietkaart"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Secure checkout via Stripe payment"
+msgstr "Veilig afrekenen via Stripe betaling"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Paypal"
+msgstr "Paypal"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Pay easily with PayPal checkout."
+msgstr "Betaal eenvoudig met PayPal checkout."
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Google Calendar and Meet"
+msgstr "Google Agenda en Meet"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "%(agent)s could connect appointments with Google Calendar and Meet."
+msgstr "%(agent)s kunt afspraken koppelen met Google Agenda en Meet."
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Intergrations"
+msgstr "Integraties"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+#: assets/dist/bookster/page-manager.js:1
+msgid "Overview"
+msgstr "Overzicht"
+
+#: assets/dist/bookster/NewAgentDrawer-e2a05c5d.js:1
+msgid "%(agent)s has been Saved Successfully!"
+msgstr "%(agent)s is succesvol opgeslagen!"
+
+#: assets/dist/bookster/NewCustomerDrawer-dc3f3f3e.js:1
+msgid "New %(customer)s "
+msgstr "Nieuwe %(customer)s "
+
+#: assets/dist/bookster/NewCustomerDrawer-dc3f3f3e.js:1
+#: assets/dist/bookster/page-manager.js:1
+msgid "%(customer)s has been Saved Successfully!"
+msgstr "%(customer)s is succesvol opgeslagen!"
+
+#: assets/dist/bookster/NewServiceDrawer-7ac694aa.js:1
+msgid "New %(service)s"
+msgstr "Nieuwe %(service)s"
+
+#: assets/dist/bookster/page-agent.js:1
+msgid "Sorry, Your %(agent)s Record is Not Existed."
+msgstr "Sorry, uw %(agent)s record bestaat niet."
+
+#: assets/dist/bookster/page-agent.js:1 assets/dist/bookster/page-manager.js:1
+msgid "Management"
+msgstr "Management"
+
+#: assets/dist/bookster/page-agent.js:1 assets/dist/bookster/page-manager.js:1
+msgid "Records"
+msgstr "Registraties"
+
+#: assets/dist/bookster/page-agent.js:1 assets/dist/bookster/page-manager.js:1
+msgid "Administration"
+msgstr "Administratie"
+
+#: assets/dist/bookster/page-agent.js:1 assets/dist/bookster/page-manager.js:1
+msgid "Edit Appointment"
+msgstr "Afspraak bewerken"
+
+#: assets/dist/bookster/page-agent.js:1 assets/dist/bookster/page-manager.js:1
+msgid "New Appointment"
+msgstr "Nieuwe afspraak"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid "Skip Setup"
+msgstr "Installatie Overslaan"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid "Are you sure?"
+msgstr "Ben je zeker?"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid "No"
+msgstr "Nee"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid "Yes"
+msgstr "Ja"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid "Set up your %(agents)s"
+msgstr "Stel uw %(agents)s in"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid ""
+"Tell us about the %(agents)s working with you. Please add at least some "
+"%(agents)s."
+msgstr ""
+"Vertel ons over de %(agents)s die met u samenwerken. Voeg in ieder geval wat "
+"%(agents)s toe."
+
+#: assets/dist/bookster/page-intro.js:1
+msgid "Continue"
+msgstr "Ga verder"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid "Welcome to Bookster"
+msgstr "Welkom bij Bookster"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid "Tell us about your business, configure the currency, phone code."
+msgstr "Vertel ons over uw bedrijf, configureer de valuta, telefooncode."
+
+#: assets/dist/bookster/page-intro.js:1
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Default Time Slot Step"
+msgstr "Standaard tijd voor een afspraakblokje"
+
+#: assets/dist/bookster/page-intro.js:1
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Default Appointment Status"
+msgstr "Standaard status van de afspraak"
+
+#: assets/dist/bookster/page-intro.js:1
+#: assets/dist/bookster/prefetch.helper-f488c823.js:1
+#: assets/dist/bookster/ReloadButton-631bf244.js:1
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Pending"
+msgstr "In afwachting"
+
+#: assets/dist/bookster/page-intro.js:1
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Default Phone Country"
+msgstr "Standaard land van telefoon"
+
+#: assets/dist/bookster/page-intro.js:1
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Default Items Per Page"
+msgstr "Standaarditems per pagina"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid "Formats"
+msgstr "Formaten"
+
+#: assets/dist/bookster/page-intro.js:1
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Time Format"
+msgstr "Tijdsformaat"
+
+#: assets/dist/bookster/page-intro.js:1
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Date Format"
+msgstr "Datum formaat"
+
+#: assets/dist/bookster/page-intro.js:1
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Restrictions"
+msgstr "Beperkingen"
+
+#: assets/dist/bookster/page-intro.js:1
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Earliest Possible Booking Time"
+msgstr "Vroegst mogelijke boekingstijd"
+
+#: assets/dist/bookster/page-intro.js:1
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Please select"
+msgstr "Gelieve te selecteren"
+
+#: assets/dist/bookster/page-intro.js:1
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Latest Possible Booking Time"
+msgstr "Laatst mogelijke boekingstijd"
+
+#: assets/dist/bookster/page-intro.js:1
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Currency Options"
+msgstr "Valuta-opties"
+
+#: assets/dist/bookster/page-intro.js:1
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Currency"
+msgstr "Munteenheid"
+
+#: assets/dist/bookster/page-intro.js:1
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Please select currency!"
+msgstr "Selecteer a.u.b. valuta!"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid "Shortcode has been copied!"
+msgstr "Shortcode is gekopieerd!"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid "Publish Bookster for your %(customer)s"
+msgstr "Publiceer Bookster voor uw %(customer)s"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid "Add a Booking Form Page"
+msgstr "Pagina met een boekingsformulier toevoegen"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid "Add Class to Button"
+msgstr "Klasse toevoegen aan knop"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid "Class has been copied!"
+msgstr "Klasse is gekopieerd!"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid "Using Bookster Shortcodes"
+msgstr "Bookster Shortcodes gebruiken"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid "Using Bookster Blocks"
+msgstr "Boeksterblokken gebruiken"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid "Block name has been copied!"
+msgstr "De naam van het blok is gekopieerd!"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid "Edit %(customer)s Dashboard Page"
+msgstr "%(customer)s dashboardpagina bewerken"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid "Set up your %(services)s"
+msgstr "Stel uw %(services)s in"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid ""
+"Tell us about the %(services)s that your business provides. Please add at "
+"least some."
+msgstr ""
+"Vertel ons over de %(services)s die uw bedrijf biedt. Voeg er alsjeblieft op "
+"zijn minst een paar toe."
+
+#: assets/dist/bookster/page-intro.js:1
+msgid "General Settings"
+msgstr "Algemene instellingen"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid "Schedule Settings"
+msgstr "Schema instellingen"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid "Publish"
+msgstr "Publiceren"
+
+#: assets/dist/bookster/page-manager.js:1
+msgid "No Matched %(agent)s found!"
+msgstr "Geen Matched %(agent)s gevonden!"
+
+#: assets/dist/bookster/page-manager.js:1
+msgid "No Matched %(customer)s found!"
+msgstr "Geen Matched %(customer)s gevonden!"
+
+#: assets/dist/bookster/page-manager.js:1
+msgid "No Matched %(service)s found!"
+msgstr "Geen Matched %(service)s gevonden!"
+
+#: assets/dist/bookster/page-manager.js:1
+msgid ""
+"Link Customer with WP User to allow them to login and browse Appointment "
+"History."
+msgstr ""
+"Koppel de klant aan de WP-gebruiker om hem in staat te stellen in te loggen "
+"en door de afsprakengeschiedenis te bladeren."
+
+#: assets/dist/bookster/page-manager.js:1
+msgid "Notes by Staff"
+msgstr "Opmerkingen van het personeel"
+
+#: assets/dist/bookster/page-manager.js:1
+msgid "Please enter Note"
+msgstr "Voer Opmerking in"
+
+#: assets/dist/bookster/page-manager.js:1
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Create New"
+msgstr "Maak nieuwe"
+
+#: assets/dist/bookster/page-manager.js:1
+msgid "All Appointments"
+msgstr "Alle Afspraken"
+
+#: assets/dist/bookster/page-manager.js:1
+msgid "List"
+msgstr "Lijst"
+
+#: assets/dist/bookster/page-manager.js:1
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "Holiday"
+msgstr "Vakantie"
+
+#: assets/dist/bookster/page-manager.js:1
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Permissions"
+msgstr "Toelatingen"
+
+#: assets/dist/bookster/page-manager.js:1
+#: assets/dist/bookster/ServiceFormDrawer-0cf878e9.js:1
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "More Actions"
+msgstr "Meer acties"
+
+#: assets/dist/bookster/page-manager.js:1
+msgid "Email Notification has been Sent Successfully!"
+msgstr "E-mailmelding is succesvol verzonden!"
+
+#: assets/dist/bookster/page-manager.js:1
+msgid "Resend Email to %(customer)s"
+msgstr "E-mail opnieuw verzenden naar %(customer)s"
+
+#: assets/dist/bookster/page-manager.js:1
+msgid "Resend Email to %(agent)s"
+msgstr "E-mail opnieuw verzenden naar %(agent)s"
+
+#: assets/dist/bookster/page-manager.js:1
+msgid "Delete"
+msgstr "Verwijder"
+
+#: assets/dist/bookster/ReloadButton-631bf244.js:1
+msgid "Delete Multiple Appointments"
+msgstr "Meerdere afspraken verwijderen"
+
+#: assets/dist/bookster/ReloadButton-631bf244.js:1
+msgid ""
+"This action cannot be undone. This will permanently delete %s appointments."
+msgstr ""
+"Deze actie kan niet ongedaan worden gemaakt. Hiermee worden %s afspraken "
+"definitief verwijderd."
+
+#: assets/dist/bookster/ReloadButton-631bf244.js:1
+msgid "Search by ID"
+msgstr "Zoeken op ID"
+
+#: assets/dist/bookster/ReloadButton-631bf244.js:1
+msgid "This week"
+msgstr "Weekschema"
+
+#: assets/dist/bookster/ReloadButton-631bf244.js:1
+msgid "This month"
+msgstr "Deze maand"
+
+#: assets/dist/bookster/ReloadButton-631bf244.js:1
+msgid "Next 7 days"
+msgstr "Volgende 7 dagen"
+
+#: assets/dist/bookster/ReloadButton-631bf244.js:1
+msgid "Next 30 days"
+msgstr "Volgende 30 dagen"
+
+#: assets/dist/bookster/ServiceFormDrawer-0cf878e9.js:1
+msgid "Add new %(service)s"
+msgstr "Nieuwe %(service)s toevoegen"
+
+#: assets/dist/bookster/ServiceFormDrawer-0cf878e9.js:1
+msgid "Edit category"
+msgstr "Bewerk categorie"
+
+#: assets/dist/bookster/ServiceFormDrawer-0cf878e9.js:1
+msgid "Delete category"
+msgstr "Categorie verwijderen"
+
+#: assets/dist/bookster/ServiceFormDrawer-0cf878e9.js:1
+msgid "New Category"
+msgstr "Nieuwe Categorie"
+
+#: assets/dist/bookster/ServiceFormDrawer-0cf878e9.js:1
+msgid "Category Name"
+msgstr "Categorie Naam"
+
+#: assets/dist/bookster/ServiceFormDrawer-0cf878e9.js:1
+msgid "Please enter category name"
+msgstr "Voer de categorienaam in"
+
+#: assets/dist/bookster/ServiceFormDrawer-0cf878e9.js:1
+msgid "Category Description"
+msgstr "Categorie Beschrijving"
+
+#: assets/dist/bookster/ServiceFormDrawer-0cf878e9.js:1
+msgid "Please enter category description"
+msgstr "Voer de beschrijving van de categorie in"
+
+#: assets/dist/bookster/ServiceFormDrawer-0cf878e9.js:1
+msgid "Edit %(service)s Category"
+msgstr "Bewerk %(service)s categorie"
+
+#: assets/dist/bookster/ServiceFormDrawer-0cf878e9.js:1
+msgid "New %(service)s Category"
+msgstr "Nieuwe %(service)s Categorie"
+
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid "Selected %(agents)s"
+msgstr "Geselecteerde %(agents)s"
+
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid "This %(service)s is available for all %(agents)s"
+msgstr "Deze %(service)s is beschikbaar voor alle %(agents)s"
+
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid "Select Category"
+msgstr "Selecteer Categorie"
+
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid "Search categories..."
+msgstr "Zoeken categorieën..."
+
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid "No Categories found."
+msgstr "Geen categorieën gevonden."
+
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid "Please enter %(service)s Name"
+msgstr "Voer %(service)s naam in"
+
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid "%(service)s Category"
+msgstr "%(service)s Categorie"
+
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid "%(service)s Price"
+msgstr "%(service)s Prijs"
+
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid "%(service)s Price can not be negative"
+msgstr "%(service)s Prijs kan niet negatief zijn"
+
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Buffer Before"
+msgstr "Extra tijd voor eerder"
+
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Buffer time to prepare before the appointment start."
+msgstr "Buffer tijd om je voor te bereiden voordat de afspraak begint."
+
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid "Theme Color"
+msgstr "Themakleur"
+
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid "%(service)s Duration"
+msgstr "%(service)s Duur"
+
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid "%(service)s Duration must be greater than 0"
+msgstr "%(service)s Duur moet langer zijn dan 0"
+
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Buffer After"
+msgstr "Extra tijd na"
+
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Buffer time to rest/clean after the appointment end."
+msgstr "Buffer tijd om te rusten/schoon te maken na het einde van de afspraak."
+
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid "%(service)s Description"
+msgstr "%(service)s Beschrijving"
+
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid "Please enter %(service)s description"
+msgstr "Voer %(service)s beschrijving in"
+
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid "The %(service)s is available for booking."
+msgstr "De %(service)s is beschikbaar om te boeken."
+
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid "Private %(services)s are visible to Staff only."
+msgstr "Privé%(services)s zijn alleen zichtbaar voor het personeel."
+
+#: assets/dist/bookster/settings.constants-ec898673.js:1
+msgid "Items"
+msgstr "Artikelen"
+
+#: assets/dist/bookster/settings.constants-ec898673.js:1
+msgid "Currency Format"
+msgstr "Valuta Formaat"
+
+#: assets/dist/bookster/settings.constants-ec898673.js:1
+msgid "Currency position:"
+msgstr "Valuta positie:"
+
+#: assets/dist/bookster/settings.constants-ec898673.js:1
+msgid "Please select Currency Position"
+msgstr "Selecteer Valutapositie"
+
+#: assets/dist/bookster/settings.constants-ec898673.js:1
+msgid "Before"
+msgstr "Voor"
+
+#: assets/dist/bookster/settings.constants-ec898673.js:1
+msgid "After"
+msgstr "Na"
+
+#: assets/dist/bookster/settings.constants-ec898673.js:1
+msgid "Before With Space"
+msgstr "Eerder met ruimte"
+
+#: assets/dist/bookster/settings.constants-ec898673.js:1
+msgid "After With Space"
+msgstr "Na met ruimte"
+
+#: assets/dist/bookster/settings.constants-ec898673.js:1
+msgid "Thousand separator:"
+msgstr "Duizend-scheidingsteken:"
+
+#: assets/dist/bookster/settings.constants-ec898673.js:1
+msgid "Please select Thousand Separator"
+msgstr "Selecteer Duizendvoudig scheidingsteken"
+
+#: assets/dist/bookster/settings.constants-ec898673.js:1
+msgid "No Separator"
+msgstr "Geen scheidingsteken"
+
+#: assets/dist/bookster/settings.constants-ec898673.js:1
+msgid "Decimal separator:"
+msgstr "Decimaalteken:"
+
+#: assets/dist/bookster/settings.constants-ec898673.js:1
+msgid "Please select Decimal Separator"
+msgstr "Selecteer een decimaal scheidingsteken"
+
+#: assets/dist/bookster/settings.constants-ec898673.js:1
+msgid "Number of decimals:"
+msgstr "Aantal decimalen:"
+
+#: assets/dist/bookster/settings.constants-ec898673.js:1
+msgid "Please enter Number of Decimal"
+msgstr "Voer het aantal decimalen in"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Booking Options"
+msgstr "Reservering opties"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Interval between time slots in booking form, time picker and calendar."
+msgstr "Interval tussen tijdslots in boekingsvorm, tijdkiezer en kalender."
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Apply to records pages."
+msgstr "Toepassen op recordpagina's."
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Datetime Formats"
+msgstr "Datum/tijd-notaties"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "How to display time in Bookster, also apply to time picker."
+msgstr "Hoe tijd weer te geven in Bookster, ook van toepassing op tijdkiezer."
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "How to display date in Bookster."
+msgstr "Hoe de datum weer te geven in Bookster."
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Time Slots before this time will not be available for booking."
+msgstr "Tijdslots voor deze tijd zijn niet beschikbaar om te boeken."
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Time Slots after this time will not be available for booking."
+msgstr "Tijdslots na deze tijd zijn niet meer beschikbaar om te boeken."
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Payment Method"
+msgstr "Betalingsmethode"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "No payment method available"
+msgstr "Geen betaalmethode beschikbaar"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Pay Later/Locally"
+msgstr "Betaal later/lokaal"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "%(agent)s Permissions"
+msgstr "%(agent)s machtigingen"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Create and Link WP User to %(agent)s"
+msgstr "WP-gebruiker maken en koppelen aan %(agent)s"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "%(agent)s would not be able to login to Bookster if WP User not linked."
+msgstr ""
+"%(agent)s zou niet kunnen inloggen op Bookster als WP User niet zou linken."
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Auto"
+msgstr "Auto"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "This means a WP User is created simultaneously with the Agent"
+msgstr ""
+"Dit betekent dat een WP-gebruiker gelijktijdig met de agent wordt aangemaakt"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Manual"
+msgstr "Manueel"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "This means the WP User is created separately"
+msgstr "Dit betekent dat de WP-gebruiker afzonderlijk wordt aangemaakt"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Appointment Time & Status"
+msgstr "Afspraak tijd en status"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Allow %(agent)s to edit his/her appointment time and status"
+msgstr "Sta %(agent)s toe om zijn/haar afspraaktijd en status te bewerken"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Working Schedule"
+msgstr "Werkschema"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Allow %(agent)s to edit his/her working schedule"
+msgstr "Laat %(agent)s zijn/haar werkschema bewerken"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "%(customer)s Permissions"
+msgstr "%(customer)s machtigingen"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Create and Link WP User to %(customer)s"
+msgstr "WP-gebruiker maken en koppelen aan %(customer)s"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid ""
+"%(customer)s would not be able to login to Bookster if WP User not linked."
+msgstr ""
+"%(customer)s zou niet kunnen inloggen op Bookster als WP User niet zou "
+"linken."
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "This means WP User is created together with %(customer)s"
+msgstr "Dit betekent dat WP User samen met %(customer)s wordt aangemaakt"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Cancel Appointment"
+msgstr "Afspraak annuleren"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Allow %(customer)s to cancel his/her appointment"
+msgstr "Sta %(customer)s toe zijn/haar afspraak te annuleren"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "%(customer)s Dashboard Page"
+msgstr "%(customer)s Dashboard-pagina"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "%(customer)s dashboard page"
+msgstr "%(customer)s dashboardpagina"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "My account"
+msgstr "Mijn Account"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Explore Addon"
+msgstr "Add-on verkennen"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Support"
+msgstr "Ondersteuning"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Logout"
+msgstr "Uitloggen"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Hide navigation"
+msgstr "Navigatie verbergen"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Show navigation"
+msgstr "Toon navigatie"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Back to WP"
+msgstr "Terug naar WP"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "%(service)s search e.g:"
+msgstr "%(service)s zoek bijvoorbeeld:"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "%(service)s name"
+msgstr "%(service)s naam"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "%(customer)s or %(agent)s search e.g:"
+msgstr "%(customer)s of %(agent)s zoek bijvoorbeeld:"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "%(customer)s or %(agent)s phone search e.g:"
+msgstr "%(customer)s of %(agent)s telefoon zoeken, bijvoorbeeld:"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Select"
+msgstr "Selecteer"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Select a %(service)s name"
+msgstr "Selecteer een %(service)s naam"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "%(customer)s with this email already exists!"
+msgstr "%(customer)s met deze e-mail bestaat al!"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Select Customer"
+msgstr "Selecteer klant"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Balance Due"
+msgstr "Saldo verschuldigd"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Total Paid"
+msgstr "Totaal Betaald"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Payment Status"
+msgstr "Betalings status"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Booking Detail"
+msgstr "Boeking Detail"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Recalculate"
+msgstr "Herberekenen"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Please select a %(service)s name"
+msgstr "Selecteer een %(service)s naam"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Select a %(service)s to begin edit datetime, price, payment..."
+msgstr ""
+"Selecteer een %(service)s om te beginnen met bewerken: datum, tijd, prijs, "
+"betaling..."
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Please select a service"
+msgstr "Selecteer een dienst"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Invalid %(service)s id"
+msgstr "Ongeldig %(service)s-id"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Book Date"
+msgstr "Boek datum"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Book Status"
+msgstr "Boek status"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Book Time"
+msgstr "Boek tijd"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "End Time"
+msgstr "Eindtijd"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Information"
+msgstr "Informatie"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Additional"
+msgstr "Extra"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "More"
+msgstr "Meer"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+#: assets/dist/libs/booking.js:1
+msgid "Back"
+msgstr "Terug"
+
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:1
+msgid "Name Holiday"
+msgstr "Naam Vakantie"
+
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:1
+msgid "Enable"
+msgstr "Inschakelen"
+
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:1
+msgid "Holiday status is active"
+msgstr "Vakantiestatus is actief"
+
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:1
+msgid "Repeat"
+msgstr "Herhaal"
+
+#. translators: %s: day off or working day.
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "Select “Repeat yearly” to apply the chosen %s to every year."
+msgstr ""
+"Selecteer \"Jaarlijks herhalen\" om de gekozen %s elk jaar toe te passen."
+
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "day off"
+msgstr "vrijaf"
+
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "working day"
+msgstr "werkdag"
+
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "Once off"
+msgstr "Eenmaal uitgeschakeld"
+
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "Working day"
+msgstr "Werkdag"
+
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "Repeat yearly"
+msgstr "Jaarlijks herhalen"
+
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "Once Off"
+msgstr "Eenmalig"
+
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "Agent Day Off"
+msgstr "Vrije dag van de agent"
+
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "Repeat Yearly"
+msgstr "Herhaal jaarlijks"
+
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "Shop Day Off"
+msgstr "Vrije dag winkelen"
+
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "Day Range"
+msgstr "Overdag bereik"
+
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "New Holiday"
+msgstr "Nieuwe vakantie"
+
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "New Day Off"
+msgstr "Nieuwe vrije dag"
+
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "New"
+msgstr "Nieuw"
+
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "Edit"
+msgstr "Bewerk"
+
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "Apply to every day"
+msgstr "Aanbrengen op elke dag"
+
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "Delete all time period"
+msgstr "Alle tijdsperioden verwijderen"
+
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "Add Work Period"
+msgstr "Werkperiode toevoegen"
+
+#: assets/dist/blocks/booking-button/block.json
+msgctxt "block title"
+msgid "Bookster Booking Button"
+msgstr "Boekster Boekingsknop"
+
+#: assets/dist/blocks/booking-button/block.json
+#: assets/dist/blocks/booking-form/block.json
+#: assets/dist/blocks/customer-dashboard/block.json
+msgctxt "block keyword"
+msgid "bookster"
+msgstr "Boeker"
+
+#: assets/dist/blocks/booking-button/block.json
+#: assets/dist/blocks/booking-form/block.json
+msgctxt "block keyword"
+msgid "booking"
+msgstr "reservatie"
+
+#: assets/dist/blocks/booking-button/block.json
+msgctxt "block keyword"
+msgid "button"
+msgstr "knoop"
+
+#: assets/dist/blocks/booking-button/block.json
+msgctxt "block description"
+msgid "Bookster Booking Button."
+msgstr "Boekster Boekingsknop."
+
+#: assets/dist/blocks/booking-button/block.json
+msgctxt "block style label"
+msgid "Fill"
+msgstr "Vullen"
+
+#: assets/dist/blocks/booking-button/block.json
+msgctxt "block style label"
+msgid "Outline"
+msgstr "Uitlijning"
+
+#: assets/dist/blocks/booking-form/block.json
+msgctxt "block title"
+msgid "Bookster Booking Form"
+msgstr "Bookster Boekingsformulier"
+
+#: assets/dist/blocks/booking-form/block.json
+msgctxt "block keyword"
+msgid "form"
+msgstr "formulier"
+
+#: assets/dist/blocks/booking-form/block.json
+msgctxt "block description"
+msgid "Bookster Booking Form."
+msgstr "Bookster Boekingsformulier."
+
+#: assets/dist/blocks/customer-dashboard/block.json
+msgctxt "block title"
+msgid "Bookster Customer Dashboard"
+msgstr "Bookster Klant Dashboard Pagina"
+
+#: assets/dist/blocks/customer-dashboard/block.json
+msgctxt "block keyword"
+msgid "customer"
+msgstr "klant"
+
+#: assets/dist/blocks/customer-dashboard/block.json
+msgctxt "block keyword"
+msgid "dashboard"
+msgstr "dashboard"
+
+#: assets/dist/blocks/customer-dashboard/block.json
+msgctxt "block description"
+msgid "Bookster Customer Dashboard."
+msgstr "Bookster Klant Dashboard Pagina"

@@ -1,0 +1,1 @@
+import{c as e}from"./prefetch.helper-04349684.js";import{q as t}from"./page-agent.js";function r(r,a){return e.useQuery({queryKey:["appointments","events",a],queryFn:async()=>(await t(r,a)).data.map((e=>({id:e.appointment_id.toString(),title:e.service.name,start:e.busy_datetime_start,end:e.busy_datetime_end,model:e,resourceIds:[r.toString()]})))})}export{r as u};

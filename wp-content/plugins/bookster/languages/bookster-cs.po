@@ -1,0 +1,2564 @@
+# Copyright (C) 2025 WPBookster
+# This file is distributed under the GPL v3 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Bookster 2.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/bookster\n"
+"POT-Creation-Date: 2025-02-17T01:57:32+00:00\n"
+"PO-Revision-Date: 2025-02-25 11:17+0700\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.5\n"
+"X-Domain: bookster\n"
+
+#. Plugin Name of the plugin
+#: bookster.php src/Engine/BEPages/ManagerPage.php:45
+#: src/Engine/BEPages/ManagerPage.php:91 src/Engine/BEPages/ManagerPage.php:92
+#: src/Engine/BEPages/ManagerPage.php:102
+#: src/Engine/BEPages/ManagerPage.php:111
+#: src/Engine/BEPages/ManagerPage.php:122
+#: src/Engine/BEPages/ManagerPage.php:131
+#: src/Engine/BEPages/ManagerPage.php:140
+#: src/Engine/BEPages/ManagerPage.php:149
+#: src/Engine/BEPages/ManagerPage.php:158
+#: src/Engine/BEPages/ManagerPage.php:167
+#: src/Engine/BEPages/ManagerPage.php:176
+#: src/Engine/BEPages/ManagerPage.php:185
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Bookster"
+msgstr "Brožura"
+
+#. Plugin URI of the plugin
+#: bookster.php
+msgid "https://wpbookster.com/"
+msgstr "https://wpbookster.com/"
+
+#. Description of the plugin
+#: bookster.php
+msgid "An awesome Booking system for WordPress."
+msgstr "Úžasný rezervační systém pro WordPress."
+
+#. Author of the plugin
+#: bookster.php
+msgid "WPBookster"
+msgstr "WPBookster"
+
+#. Author URI of the plugin
+#: bookster.php
+msgid "https://wpbookster.com/about"
+msgstr "https://wpbookster.com/about"
+
+#. translators: %s: Bookster Minimum php version
+#: bookster.php:73
+msgid "\"Bookster Plugin\" requires PHP %s or newer."
+msgstr "\"Bookster Plugin\" vyžaduje PHP %s nebo novější."
+
+#. translators: %s: Bookster Minimum WordPress version
+#: bookster.php:91
+msgid "\"Bookster Plugin\" requires WordPress %s or newer."
+msgstr "\"Bookster Plugin\" vyžaduje WordPress %s nebo novější."
+
+#: src/Engine/Admin.php:31
+msgid "Bookster Customer Dashboard Page"
+msgstr "Stránka zákaznického panelu Bookster"
+
+#: src/Engine/BEPages/AgentPage.php:44 src/Engine/BEPages/AgentPage.php:94
+#: src/Engine/BEPages/AgentPage.php:95 src/Engine/BEPages/AgentPage.php:105
+#: src/Engine/BEPages/AgentPage.php:114 src/Engine/BEPages/AgentPage.php:125
+#: src/Engine/BEPages/AgentPage.php:134 src/Engine/BEPages/AgentPage.php:143
+msgid "My Bookster"
+msgstr "Můj Bookster"
+
+#: src/Engine/BEPages/AgentPage.php:57 src/Engine/BEPages/AgentPage.php:106
+#: src/Engine/BEPages/ManagerPage.php:58 src/Engine/BEPages/ManagerPage.php:103
+#: assets/dist/bookster/page-agent.js:1 assets/dist/bookster/page-manager.js:1
+msgid "Dashboard"
+msgstr "Ovládací panel"
+
+#: src/Engine/BEPages/AgentPage.php:65 src/Engine/BEPages/AgentPage.php:115
+#: src/Engine/BEPages/ManagerPage.php:66 src/Engine/BEPages/ManagerPage.php:112
+#: assets/dist/bookster/page-agent.js:1 assets/dist/bookster/page-manager.js:1
+msgid "Calendar"
+msgstr "Kalendář"
+
+#: src/Engine/BEPages/AgentPage.php:75 src/Engine/BEPages/AgentPage.php:126
+#: assets/dist/bookster/AgentAppointmentsPage-0008a26b.js:1
+msgid "My Appointments"
+msgstr "Moje schůzky"
+
+#: src/Engine/BEPages/AgentPage.php:135
+#: assets/dist/bookster/AgentProfilePage-464de6d5.js:1
+#: assets/dist/bookster/page-agent.js:1
+msgid "Profile"
+msgstr "Profil"
+
+#: src/Engine/BEPages/AgentPage.php:144 src/Engine/BEPages/ManagerPage.php:159
+#: assets/dist/bookster/AgentSettingsPage-44a463b6.js:1
+#: assets/dist/bookster/page-agent.js:1 assets/dist/bookster/page-manager.js:1
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Settings"
+msgstr "Nastavení"
+
+#: src/Engine/BEPages/IntroPage.php:43
+msgid "Bookster Setup Walkthrough"
+msgstr "Návod k nastavení aplikace Bookster"
+
+#: src/Engine/BEPages/IntroPage.php:44
+msgid "Bookster Tours"
+msgstr "Bookster Tours"
+
+#: src/Engine/BEPages/IntroPage.php:93
+msgid "Booking"
+msgstr "Rezervace"
+
+#: src/Engine/BEPages/IntroPage.php:96
+msgid "Customer Dashboard"
+msgstr "Zákaznický panel"
+
+#: src/Engine/BEPages/ManagerPage.php:76 src/Engine/BEPages/ManagerPage.php:123
+#: assets/dist/bookster/AgentDashboardPage-0cf05306.js:1
+#: assets/dist/bookster/AppointmentsPage-81a8618e.js:1
+#: assets/dist/bookster/DashboardPage-157d9686.js:1
+#: assets/dist/bookster/page-agent.js:1 assets/dist/bookster/page-manager.js:1
+#: assets/dist/bookster/StatsRate-1e67a7a4.js:1
+msgid "Appointments"
+msgstr "Rezervace"
+
+#: src/Engine/BEPages/ManagerPage.php:132 src/Services/LocalizeService.php:136
+msgid "Agents"
+msgstr "Pracovníci"
+
+#: src/Engine/BEPages/ManagerPage.php:141 src/Services/LocalizeService.php:134
+msgid "Services"
+msgstr "Služby"
+
+#: src/Engine/BEPages/ManagerPage.php:150 src/Services/LocalizeService.php:138
+#: assets/dist/bookster/DashboardPage-157d9686.js:1
+msgid "Customers"
+msgstr "Zákazníci"
+
+#: src/Engine/BEPages/ManagerPage.php:168
+#: assets/dist/bookster/CustomizePage-4e0c1c26.js:1
+#: assets/dist/bookster/page-manager.js:1
+msgid "Customize"
+msgstr "Upravit"
+
+#: src/Engine/BEPages/ManagerPage.php:177
+#: assets/dist/bookster/page-manager.js:1
+msgid "Integrations"
+msgstr "Integrace"
+
+#: src/Engine/BEPages/ManagerPage.php:186
+#: assets/dist/bookster/page-manager.js:1
+msgid "Addons"
+msgstr "Doplňky"
+
+#: src/Engine/BEPages/ManagerPage.php:211
+msgid "Manage"
+msgstr "Spravovat"
+
+#: src/Engine/FEBlocks/BookingFormShortcode.php:49
+msgid "Book Now"
+msgstr "Rezervovat"
+
+#: src/Engine/Tasks/RegisterTasks.php:23
+msgid "Every 5 Minutes"
+msgstr "Každých 5 minut"
+
+#: src/Engine/Tasks/RegisterTasks.php:27
+msgid "Once Monthly"
+msgstr "Jednou měsíčně"
+
+#: src/Features/Auth/AuthFns.php:12
+msgid "Bookster Manager"
+msgstr "Manažer knihkupectví"
+
+#: src/Features/Auth/AuthFns.php:17
+msgid "Bookster Agent"
+msgstr "Bookster Agent"
+
+#: src/Features/Auth/RestAuth.php:16
+msgid "Sorry, you need to Login to do this!!!."
+msgstr "Je nám líto, ale k tomu se musíte přihlásit!!."
+
+#: src/Features/Auth/RestAuth.php:28 src/Features/Auth/RestAuth.php:40
+msgid "Sorry, you need to be Manager to do this!!!."
+msgstr "Je nám líto, ale k tomu musíte být manažerem!!."
+
+#: src/Features/Auth/RestAuth.php:52 src/Features/Auth/RestAuth.php:64
+#: src/Features/Auth/RestAuth.php:76
+msgid "Sorry, you need to be Agent to do this!!!."
+msgstr "Je nám líto, ale musíte být agentem, abyste to dokázali!!."
+
+#: src/Features/Auth/RestAuth.php:104
+msgid "Sorry, you don't have Permission to do this!!!."
+msgstr "Je nám líto, ale nemáte k tomu oprávnění!!."
+
+#: src/Features/Constants/SettingsData.php:165
+msgid "Service Selection"
+msgstr "Výběr služby"
+
+#: src/Features/Constants/SettingsData.php:166
+msgid "Please select a service for your appointment"
+msgstr "Vyberte si prosím službu pro vaši schůzku"
+
+#: src/Features/Constants/SettingsData.php:169
+#: src/Services/LocalizeService.php:135
+#: templates/emails/appt-notification/appt-summary.php:50
+msgid "Agent"
+msgstr "Makléř"
+
+#: src/Features/Constants/SettingsData.php:170
+msgid "Please select an agent for your appointment"
+msgstr "Vyberte si prosím agenta pro svou schůzku"
+
+#: src/Features/Constants/SettingsData.php:173
+msgid "Date & Time"
+msgstr "Datum & Čas"
+
+#: src/Features/Constants/SettingsData.php:174
+msgid "Please select a date and time for your appointment"
+msgstr "Vyberte si prosím datum a čas schůzky"
+
+#: src/Features/Constants/SettingsData.php:177
+msgid "Contact"
+msgstr "Kontakt"
+
+#: src/Features/Constants/SettingsData.php:178
+msgid "Please enter your contact information"
+msgstr "Zadejte prosím své kontaktní údaje"
+
+#: src/Features/Constants/SettingsData.php:181
+msgid "Checkout"
+msgstr "Pokladna"
+
+#: src/Features/Constants/SettingsData.php:182
+msgid "Please enter your payment information"
+msgstr "Zadejte prosím své platební údaje"
+
+#: src/Features/Constants/SettingsData.php:185
+msgid "Confimation"
+msgstr "Konfiskace"
+
+#: src/Features/Constants/SettingsData.php:186
+msgid "Your appointment has been booked"
+msgstr "Váš termín byl rezervován"
+
+#: src/Features/Constants/SettingsData.php:189
+msgid "Need help? Call Us Now"
+msgstr "Potřebujete pomoc? Zavolejte nám hned"
+
+#: src/Features/Enums/BookStatusEnum.php:16
+#: assets/dist/bookster/page-intro.js:1
+#: assets/dist/bookster/prefetch.helper-f488c823.js:1
+#: assets/dist/bookster/ReloadButton-631bf244.js:1
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Approved"
+msgstr "Schváleno"
+
+#: src/Features/Enums/BookStatusEnum.php:18
+#: assets/dist/bookster/prefetch.helper-f488c823.js:1
+#: assets/dist/bookster/ReloadButton-631bf244.js:1
+msgid "Canceled"
+msgstr "Zrušeno"
+
+#: src/Features/Enums/BookStatusEnum.php:21
+#: assets/dist/bookster/prefetch.helper-f488c823.js:1
+msgid "Pending Approval"
+msgstr "Čeká na schválení"
+
+#: src/Features/Enums/PaymentStatusEnum.php:17
+#: assets/dist/bookster/prefetch.helper-f488c823.js:1
+msgid "Unpaid"
+msgstr "Nezaplaceno"
+
+#: src/Features/Enums/PaymentStatusEnum.php:19
+#: assets/dist/bookster/prefetch.helper-f488c823.js:1
+msgid "Refunded"
+msgstr "Vráceno"
+
+#: src/Features/Enums/PaymentStatusEnum.php:21
+#: assets/dist/bookster/prefetch.helper-f488c823.js:1
+msgid "Completed"
+msgstr "Dokončeno"
+
+#: src/Features/Enums/PaymentStatusEnum.php:24
+#: assets/dist/bookster/prefetch.helper-f488c823.js:1
+msgid "Incomplete"
+msgstr "Nedokončeno"
+
+#: src/Services/BookingRequestService.php:59
+msgid "Sorry. The Service is not available for Booking!"
+msgstr "Promiň. Služba není k dispozici pro rezervaci!"
+
+#: src/Services/BookingRequestService.php:62
+msgid "Sorry. The Agent is not available for Booking!"
+msgstr "Promiň. Zprostředkovatel není k dispozici pro rezervaci!"
+
+#: src/Services/BookingRequestService.php:79
+msgid "Sorry. Invalid datetime format!"
+msgstr "Promiň. Neplatný formát data a času!"
+
+#: src/Services/BookingRequestService.php:206
+#: src/Services/BookingRequestService.php:217
+msgid ""
+"Sorry. Your Booking Time is no longer Valid. Please select another "
+"Appointment Time!"
+msgstr ""
+"Promiň. Čas vaší rezervace již není platný. Vyberte prosím jiný čas schůzky!"
+
+#: src/Services/EmailSettingsService.php:62
+msgid "[{site_title}]: New booking #{appt_number}"
+msgstr "[{site_title}]: Nová rezervace #{appt_number}"
+
+#: src/Services/EmailSettingsService.php:63
+msgid "New Booking: #{appt_number}"
+msgstr "Nová rezervace: #{appt_number}"
+
+#: src/Services/EmailSettingsService.php:64
+msgid ""
+"Hi <strong>Manager</strong>,\n"
+"You have received the following booking from {customer_name}."
+msgstr ""
+"Dobrý <strong>den, pane manažere</strong>,\n"
+"Obdrželi jste následující rezervaci od {customer_name}."
+
+#: src/Services/EmailSettingsService.php:69
+msgid "Your {site_title} booking has been received!"
+msgstr "Vaše {site_title} rezervace byla přijata!"
+
+#: src/Services/EmailSettingsService.php:70
+msgid "Booking received #{appt_number}"
+msgstr "Rezervace přijata #{appt_number}"
+
+#: src/Services/EmailSettingsService.php:71
+msgid ""
+"Hi <strong>{customer_name}</strong>,\n"
+"Thank you for your booking. We are working on your schedule."
+msgstr ""
+"<strong>{customer_name}</strong>Ahoj ,\n"
+"Děkujeme za vaši rezervaci. Pracujeme na vašem harmonogramu."
+
+#: src/Services/EmailSettingsService.php:75
+msgid "Your {site_title} appointment has been confirmed!"
+msgstr "Vaše {site_title} schůzka byla potvrzena!"
+
+#: src/Services/EmailSettingsService.php:76
+msgid "Appointment confirmed #{appt_number}"
+msgstr "Jmenování potvrzeno #{appt_number}"
+
+#: src/Services/EmailSettingsService.php:77
+msgid ""
+"Hi <strong>{customer_name}</strong>,\n"
+"Your {service_name} appointment has been confirmed."
+msgstr ""
+"<strong>{customer_name}</strong>Ahoj ,\n"
+"Vaše {service_name} schůzka byla potvrzena."
+
+#: src/Services/EmailSettingsService.php:82
+msgid "[{site_title}]: Approved appointment #{appt_number}"
+msgstr "[{site_title}]: Schválená schůzka #{appt_number}"
+
+#: src/Services/EmailSettingsService.php:83
+msgid "Approved appointment: #{appt_number}"
+msgstr "Schválená schůzka: #{appt_number}"
+
+#: src/Services/EmailSettingsService.php:84
+msgid ""
+"Hi <strong>{agent_name}</strong>,\n"
+"Congratulation on the {service_name} appointment with {customer_name}!"
+msgstr ""
+"<strong>{agent_name}</strong>Ahoj ,\n"
+"Gratulujeme ke {service_name} jmenování s {customer_name}!"
+
+#: src/Services/EmailSettingsService.php:88
+msgid "[{site_title}]: Canceled appointment #{appt_number}"
+msgstr "[{site_title}]: Zrušená schůzka #{appt_number}"
+
+#: src/Services/EmailSettingsService.php:89
+msgid "Canceled appointment: #{appt_number}"
+msgstr "Zrušená schůzka: #{appt_number}"
+
+#: src/Services/EmailSettingsService.php:90
+msgid ""
+"Hi <strong>{agent_name}</strong>,\n"
+"Your {service_name} appointment with {customer_name} has been canceled."
+msgstr ""
+"<strong>{agent_name}</strong>Ahoj ,\n"
+"Vaše {service_name} schůzka s {customer_name} byla zrušena."
+
+#: src/Services/EmailSettingsService.php:94
+msgid "Details for appointment #{appt_number} on {site_title}"
+msgstr "Podrobnosti pro schůzku #{appt_number} dne {site_title}"
+
+#: src/Services/EmailSettingsService.php:95
+#: src/Services/EmailSettingsService.php:100
+msgid "Details for appointment #{appt_number}"
+msgstr "Podrobnosti pro schůzku #{appt_number}"
+
+#: src/Services/EmailSettingsService.php:96
+msgid ""
+"Hi <strong>{customer_name}</strong>,\n"
+"You have a {service_name} appointment with {agent_name}."
+msgstr ""
+"<strong>{customer_name}</strong>Ahoj ,\n"
+"Máte schůzku {service_name} se {agent_name}společností ."
+
+#: src/Services/EmailSettingsService.php:99
+msgid "[{site_title}]: Details for appointment #{appt_number}"
+msgstr "[{site_title}]: Podrobnosti pro schůzku #{appt_number}"
+
+#: src/Services/EmailSettingsService.php:101
+msgid ""
+"Hi <strong>{agent_name}</strong>,\n"
+"You have a {service_name} appointment with {customer_name}."
+msgstr ""
+"<strong>{agent_name}</strong>Ahoj ,\n"
+"Máte schůzku {service_name} se {customer_name}společností ."
+
+#: src/Services/LocalizeService.php:133
+msgid "Service"
+msgstr "Služba"
+
+#: src/Services/LocalizeService.php:137
+#: templates/emails/appt-notification/appt-summary.php:42
+msgid "Customer"
+msgstr "Zákazník"
+
+#: src/Services/LocalizeService.php:139
+msgid "Location"
+msgstr "Umístění"
+
+#: src/Services/LocalizeService.php:140
+msgid "Locations"
+msgstr "Lokality"
+
+#: templates/emails/appt-notification/appt-booking-details.php:23
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Booking Details"
+msgstr "Detaily rezervace"
+
+#: templates/emails/appt-notification/appt-booking-details.php:68
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Subtotal"
+msgstr "Mezisoučet"
+
+#: templates/emails/appt-notification/appt-booking-details.php:98
+#: assets/dist/bookster/AgentAppointmentsPage-0008a26b.js:1
+#: assets/dist/bookster/AppointmentsPage-81a8618e.js:1
+#: assets/dist/bookster/apptDataTable-18ba107e.js:1
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Total"
+msgstr "Celkem"
+
+#: templates/emails/appt-notification/appt-summary.php:23
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Appointment"
+msgstr "Rezervace"
+
+#: assets/dist/bookster/AgentAppointmentsPage-0008a26b.js:1
+#: assets/dist/bookster/AppointmentsPage-81a8618e.js:1
+#: assets/dist/bookster/apptDataTable-18ba107e.js:1
+#: assets/dist/bookster/ReloadButton-631bf244.js:1
+msgid "Status"
+msgstr "Stav"
+
+#: assets/dist/bookster/AgentAppointmentsPage-0008a26b.js:1
+#: assets/dist/bookster/AgentsList-074745cd.js:1
+#: assets/dist/bookster/CustomersPage-12f1c628.js:1
+#: assets/dist/bookster/ReloadButton-631bf244.js:1
+msgid "Loading"
+msgstr "Načítání"
+
+#: assets/dist/bookster/AgentAppointmentsPage-0008a26b.js:1
+#: assets/dist/bookster/AgentsList-074745cd.js:1
+#: assets/dist/bookster/CustomersPage-12f1c628.js:1
+#: assets/dist/bookster/ReloadButton-631bf244.js:1
+msgid "No Data Found"
+msgstr "Nenalezena data"
+
+#: assets/dist/bookster/AgentAppointmentsPage-0008a26b.js:1
+#: assets/dist/bookster/AgentsList-074745cd.js:1
+#: assets/dist/bookster/CustomersPage-12f1c628.js:1
+#: assets/dist/bookster/ReloadButton-631bf244.js:1
+msgid "Selected"
+msgstr "Vybráno"
+
+#: assets/dist/bookster/AgentAppointmentsPage-0008a26b.js:1
+#: assets/dist/bookster/AppointmentsPage-81a8618e.js:1
+msgid "Columns"
+msgstr "Sloupce"
+
+#: assets/dist/bookster/AgentAppointmentsPage-0008a26b.js:1
+#: assets/dist/bookster/AppointmentsPage-81a8618e.js:1
+#: assets/dist/bookster/apptDataTable-18ba107e.js:1
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+#: assets/dist/bookster/CalendarContent-7a4b8ea6.js:1
+#: assets/dist/bookster/page-manager.js:1
+#: assets/dist/bookster/ReloadButton-631bf244.js:1
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Payment"
+msgstr "Platba"
+
+#: assets/dist/bookster/AgentAppointmentsPage-0008a26b.js:1
+#: assets/dist/bookster/AppointmentsPage-81a8618e.js:1
+#: assets/dist/bookster/apptDataTable-18ba107e.js:1
+msgid "Date / Time"
+msgstr "Event date/time"
+
+#: assets/dist/bookster/AgentAppointmentsPage-0008a26b.js:1
+#: assets/dist/bookster/AppointmentsPage-81a8618e.js:1
+msgid "Payment Incomplete"
+msgstr "Platba nedokončena"
+
+#: assets/dist/bookster/AgentAppointmentsPage-0008a26b.js:1
+#: assets/dist/bookster/AgentCalendarPage-d0b6396b.js:1
+#: assets/dist/bookster/AppointmentsPage-81a8618e.js:1
+#: assets/dist/bookster/CalendarPage-f0916903.js:1
+msgid "Filters"
+msgstr "Filtry"
+
+#: assets/dist/bookster/AgentCalendarPage-d0b6396b.js:1
+#: assets/dist/bookster/AgentDashboardPage-0cf05306.js:1
+#: assets/dist/bookster/CalendarPage-f0916903.js:1
+#: assets/dist/bookster/DashboardPage-157d9686.js:1
+msgid "Day Schedule"
+msgstr "Denní rozvrh"
+
+#: assets/dist/bookster/AgentCalendarPage-d0b6396b.js:1
+#: assets/dist/bookster/CalendarPage-f0916903.js:1
+msgid "Week Schedule"
+msgstr "Týdenní plán"
+
+#: assets/dist/bookster/AgentCalendarPage-d0b6396b.js:1
+#: assets/dist/bookster/CalendarPage-f0916903.js:1
+msgid "Month Schedule"
+msgstr "Měsíční plán"
+
+#: assets/dist/bookster/AgentCalendarPage-d0b6396b.js:1
+#: assets/dist/bookster/block-customer-dashboard.js:1
+#: assets/dist/bookster/CalendarPage-f0916903.js:1
+#: assets/dist/bookster/ReloadButton-631bf244.js:1
+msgid "Today"
+msgstr "Dnes"
+
+#: assets/dist/bookster/AgentCalendarPage-d0b6396b.js:1
+#: assets/dist/bookster/AgentDashboardPage-0cf05306.js:1
+#: assets/dist/bookster/CalendarPage-f0916903.js:1
+#: assets/dist/bookster/DashboardPage-157d9686.js:1
+msgid "Week"
+msgstr "Týden"
+
+#: assets/dist/bookster/AgentCalendarPage-d0b6396b.js:1
+#: assets/dist/bookster/AgentDashboardPage-0cf05306.js:1
+#: assets/dist/bookster/CalendarPage-f0916903.js:1
+#: assets/dist/bookster/DashboardPage-157d9686.js:1
+msgid "Month"
+msgstr "Měsíc"
+
+#: assets/dist/bookster/AgentDashboardPage-0cf05306.js:1
+#: assets/dist/bookster/DashboardPage-157d9686.js:1
+msgid "Performance"
+msgstr "Výkon"
+
+#: assets/dist/bookster/AgentDashboardPage-0cf05306.js:1
+#: assets/dist/bookster/CalendarPage-f0916903.js:1
+#: assets/dist/bookster/DashboardPage-157d9686.js:1
+msgid "Day"
+msgstr "Den"
+
+#: assets/dist/bookster/AgentDashboardPage-0cf05306.js:1
+#: assets/dist/bookster/DashboardPage-157d9686.js:1
+#: assets/dist/bookster/StatsRate-1e67a7a4.js:1
+msgid "Revenue"
+msgstr "Výnosy"
+
+#: assets/dist/bookster/AgentDashboardPage-0cf05306.js:1
+#: assets/dist/bookster/DashboardPage-157d9686.js:1
+msgid "View Appointment"
+msgstr "Zobrazit rezervaci"
+
+#: assets/dist/bookster/AgentDashboardPage-0cf05306.js:1
+#: assets/dist/bookster/DashboardPage-157d9686.js:1
+msgid "View Calendar"
+msgstr "Zobrazit kalendář"
+
+#: assets/dist/bookster/AgentDashboardPage-0cf05306.js:1
+#: assets/dist/bookster/DashboardPage-157d9686.js:1
+msgid "New Customers"
+msgstr "Nový zákazníci"
+
+#: assets/dist/bookster/AgentDashboardPage-0cf05306.js:1
+#: assets/dist/bookster/DashboardPage-157d9686.js:1
+msgid "Total New %(customers)s in the Last 30 Days"
+msgstr "Celkový počet nových %(customers)s za posledních 30 dní"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+#: assets/dist/bookster/AgentsPage-1c6eacac.js:1
+#: assets/dist/bookster/CustomersPage-12f1c628.js:1
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid "Search"
+msgstr "Hledat"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+msgid "Selected %(services)s"
+msgstr "Vybrané %(services)s"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "No %(services)s found."
+msgstr "Nebyl nalezen žádný %(services)s."
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid ""
+"Available only apply to %(customer)s Booking Form. For Manager, there is no "
+"restriction."
+msgstr ""
+"K dispozici pouze pro %(customer)s rezervační formulář. Pro Manager "
+"neexistuje žádné omezení."
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+msgid "This %(agent)s is available for all %(services)s"
+msgstr "Tato %(agent)s je k dispozici pro všechny %(services)s"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid "Active"
+msgstr "Aktivní"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+msgid ""
+"Archiving %(agent)s to avoid Deleting referencing Appointment, Analytics "
+"Data in the past."
+msgstr ""
+"Archivace %(agent)s, aby nedošlo k odstranění odkazování na schůzku, "
+"analytická data v minulosti."
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+msgid "Active %(agents)s are available for booking."
+msgstr "Aktivní %(agents)s jsou k dispozici pro rezervaci."
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+#: assets/dist/bookster/page-manager.js:1
+msgid "Wordpress User"
+msgstr "Uživatel Wordpressu"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+msgid ""
+"Link %(agent)s with WP User to allow them to login and browse Working "
+"Calendar."
+msgstr ""
+"Propojte %(agent)s s WP User, abyste jim umožnili přihlásit se a procházet "
+"pracovní kalendář."
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+#: assets/dist/bookster/page-manager.js:1
+msgid "Linked to the WP User"
+msgstr "Propojeno s uživatelem WP"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+#: assets/dist/bookster/page-manager.js:1
+msgid "Not Linked to any WP User."
+msgstr "Není spojen s žádným uživatelem WP."
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+#: assets/dist/bookster/page-manager.js:1
+msgid "Unlink Now"
+msgstr "Zrušit propojení nyní"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+#: assets/dist/bookster/page-manager.js:1
+msgid "Link Now"
+msgstr "Odkaz nyní"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+#: assets/dist/bookster/AgentProfilePage-464de6d5.js:1
+#: assets/dist/bookster/block-customer-dashboard.js:1
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+#: assets/dist/bookster/page-manager.js:1
+msgid "First Name"
+msgstr "Jméno"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+#: assets/dist/bookster/AgentProfilePage-464de6d5.js:1
+#: assets/dist/bookster/page-manager.js:1
+msgid "Please enter First Name"
+msgstr "Zadejte prosím křestní jméno"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+#: assets/dist/bookster/AgentProfilePage-464de6d5.js:1
+#: assets/dist/bookster/block-customer-dashboard.js:1
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+#: assets/dist/bookster/page-manager.js:1
+msgid "Last Name"
+msgstr "Příjmení"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+#: assets/dist/bookster/AgentProfilePage-464de6d5.js:1
+#: assets/dist/bookster/page-manager.js:1
+msgid "Please enter Last Name"
+msgstr "Zadejte prosím příjmení"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+#: assets/dist/bookster/AgentProfilePage-464de6d5.js:1
+#: assets/dist/bookster/AgentsList-074745cd.js:1
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+#: assets/dist/bookster/CustomersPage-12f1c628.js:1
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+#: assets/dist/bookster/page-manager.js:1
+msgid "Email"
+msgstr "Email"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+#: assets/dist/bookster/page-manager.js:1
+msgid "Please change Email from"
+msgstr "Změňte prosím e-mail z"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+#: assets/dist/bookster/page-manager.js:1
+msgid "Wordpress Profile"
+msgstr "Wordpress profil"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+#: assets/dist/bookster/page-manager.js:1
+msgid "Please enter Email"
+msgstr "Zadejte prosím e-mail"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+#: assets/dist/bookster/AgentProfilePage-464de6d5.js:1
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+#: assets/dist/bookster/CustomersPage-12f1c628.js:1
+#: assets/dist/bookster/page-manager.js:1
+msgid "Phone"
+msgstr "Telefon"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+#: assets/dist/bookster/AgentsList-074745cd.js:1
+msgid "Priority"
+msgstr "Priorita"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+msgid "Display priority (from 0 to 100)"
+msgstr "Priorita displeje (od 0 do 100)"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+#: assets/dist/bookster/AgentsList-074745cd.js:1
+#: assets/dist/bookster/AgentsPage-1c6eacac.js:1
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid "Visibility"
+msgstr "Viditelnost"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+msgid "Private %(agents)s are visible to Staff only."
+msgstr "Soukromé %(agents)s jsou viditelné pouze pro zaměstnance."
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+#: assets/dist/bookster/AgentsList-074745cd.js:1
+#: assets/dist/bookster/AgentsPage-1c6eacac.js:1
+#: assets/dist/bookster/ServiceCard-a501175b.js:1
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid "Public"
+msgstr "Veřejné"
+
+#: assets/dist/bookster/AgentGeneralTab-03e3b65f.js:1
+#: assets/dist/bookster/AgentsList-074745cd.js:1
+#: assets/dist/bookster/AgentsPage-1c6eacac.js:1
+#: assets/dist/bookster/ServiceCard-a501175b.js:1
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid "Private"
+msgstr "Soukromé"
+
+#: assets/dist/bookster/AgentProfilePage-464de6d5.js:1
+msgid "%(agent)s Profile"
+msgstr "%(agent)s profil"
+
+#: assets/dist/bookster/AgentProfilePage-464de6d5.js:1
+msgid "You can change your personal information here. "
+msgstr "Své osobní údaje můžete změnit zde. "
+
+#: assets/dist/bookster/AgentProfilePage-464de6d5.js:1
+msgid "%(customers)s will see this information when they contact you."
+msgstr "%(customers)s tyto informace uvidí, když vás kontaktují."
+
+#: assets/dist/bookster/AgentProfilePage-464de6d5.js:1
+msgid "Change Photo"
+msgstr "Změnit fotografii"
+
+#: assets/dist/bookster/AgentProfilePage-464de6d5.js:1
+msgid "Remove"
+msgstr "Odstranit"
+
+#: assets/dist/bookster/AgentProfilePage-464de6d5.js:1
+msgid "Upload a 256x256 Jpeg or Png (max 2MB)"
+msgstr "Nahrajte soubor JPEG nebo PNG 256x256 (max. 2MB)"
+
+#: assets/dist/bookster/AgentProfilePage-464de6d5.js:1
+msgid "Bio"
+msgstr "Bio"
+
+#: assets/dist/bookster/AgentScheduleTab-a7146e7f.js:1
+msgid "Custom"
+msgstr "Vlastní"
+
+#: assets/dist/bookster/AgentScheduleTab-a7146e7f.js:1
+msgid "Add More Custom Days Off for this Agent"
+msgstr "Přidejte další vlastní dny volna pro tohoto operátora"
+
+#: assets/dist/bookster/AgentScheduleTab-a7146e7f.js:1
+msgid "Use Custom Weekly Schedule for this Agent"
+msgstr "Pro tohoto agenta použijte vlastní týdenní plán"
+
+#: assets/dist/bookster/AgentScheduleTab-a7146e7f.js:1
+msgid "Work Schedule"
+msgstr "Pracovní plán"
+
+#: assets/dist/bookster/AgentSettingsPage-44a463b6.js:1
+#: assets/dist/bookster/EditAgentDrawer-72f3e86c.js:1
+#: assets/dist/bookster/NewAgentDrawer-e2a05c5d.js:1
+#: assets/dist/bookster/page-agent.js:1 assets/dist/bookster/page-manager.js:1
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Schedule"
+msgstr "Plán"
+
+#: assets/dist/bookster/AgentSettingsPage-44a463b6.js:1
+#: assets/dist/bookster/EditAgentDrawer-72f3e86c.js:1
+#: assets/dist/bookster/NewAgentDrawer-e2a05c5d.js:1
+#: assets/dist/bookster/page-agent.js:1
+msgid "Days Off"
+msgstr "Dny volna"
+
+#: assets/dist/bookster/AgentSettingsPage-44a463b6.js:1
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "Day off"
+msgstr "Den volna"
+
+#: assets/dist/bookster/AgentsList-074745cd.js:1
+#: assets/dist/bookster/AgentsPage-1c6eacac.js:1
+#: assets/dist/bookster/ServiceCard-a501175b.js:1
+msgid "Inactive"
+msgstr "Neaktivní"
+
+#: assets/dist/bookster/AgentsList-074745cd.js:1
+#: assets/dist/bookster/CustomersPage-12f1c628.js:1
+msgid "Name"
+msgstr "Jméno"
+
+#: assets/dist/bookster/AgentsList-074745cd.js:1
+#: assets/dist/bookster/CustomersPage-12f1c628.js:1
+msgid "WP User"
+msgstr "Uživatel WP"
+
+#: assets/dist/bookster/AgentsList-074745cd.js:1
+#: assets/dist/bookster/CustomersPage-12f1c628.js:1
+msgid "Not Linked"
+msgstr "Nepropojeno"
+
+#: assets/dist/bookster/AgentsList-074745cd.js:1
+#: assets/dist/bookster/CustomersPage-12f1c628.js:1
+#: assets/dist/bookster/ReloadButton-631bf244.js:1
+msgid "Delete Data"
+msgstr "Smazat data"
+
+#: assets/dist/bookster/AgentsList-074745cd.js:1
+msgid "Delete Multiple Agents"
+msgstr "Odstranění více agentů"
+
+#: assets/dist/bookster/AgentsList-074745cd.js:1
+msgid ""
+"This action cannot be undone. This will permanently delete %s agents and "
+"their %s appointments."
+msgstr ""
+"Tuto akci nelze vrátit zpět. Tím dojde k trvalému odstranění %s agentů a "
+"jejich %s schůzek."
+
+#: assets/dist/bookster/AgentsList-074745cd.js:1
+#: assets/dist/bookster/BEConfigProvider-180a6f55.js:1
+#: assets/dist/bookster/CustomersPage-12f1c628.js:1
+#: assets/dist/bookster/EditAgentDrawer-72f3e86c.js:1
+#: assets/dist/bookster/EditCustomerDrawer-d63054df.js:1
+#: assets/dist/bookster/EditServiceDrawer-952650b8.js:1
+#: assets/dist/bookster/NewAgentDrawer-e2a05c5d.js:1
+#: assets/dist/bookster/NewCustomerDrawer-dc3f3f3e.js:1
+#: assets/dist/bookster/NewServiceDrawer-7ac694aa.js:1
+#: assets/dist/bookster/page-agent.js:1 assets/dist/bookster/page-manager.js:1
+#: assets/dist/bookster/ReloadButton-631bf244.js:1
+#: assets/dist/bookster/ServiceFormDrawer-0cf878e9.js:1
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "Cancel"
+msgstr "Zrušit"
+
+#: assets/dist/bookster/AgentsList-074745cd.js:1
+#: assets/dist/bookster/CustomersPage-12f1c628.js:1
+#: assets/dist/bookster/EditAgentDrawer-72f3e86c.js:1
+#: assets/dist/bookster/EditCustomerDrawer-d63054df.js:1
+#: assets/dist/bookster/EditServiceDrawer-952650b8.js:1
+#: assets/dist/bookster/ReloadButton-631bf244.js:1
+msgid "Confirm Delete"
+msgstr "Potvrdit smazání"
+
+#: assets/dist/bookster/AgentsPage-1c6eacac.js:1
+#: assets/dist/bookster/ReloadButton-631bf244.js:1
+msgid "No results found."
+msgstr "Nebyly nalezeny žádné výsledky."
+
+#: assets/dist/bookster/AgentsPage-1c6eacac.js:1
+#: assets/dist/bookster/NewAgentDrawer-e2a05c5d.js:1
+#: assets/dist/bookster/page-intro.js:1
+msgid "New %(agent)s"
+msgstr "Nové %(agent)s"
+
+#: assets/dist/bookster/apptDataTable-18ba107e.js:1
+msgid "Paid"
+msgstr "Zaplaceno"
+
+#: assets/dist/bookster/apptDataTable-18ba107e.js:1
+msgid "Due"
+msgstr "Splatnost"
+
+#: assets/dist/bookster/apptDataTable-18ba107e.js:1
+msgid "ID"
+msgstr "ID"
+
+#: assets/dist/bookster/ApptsFilterAgent-e1bebc11.js:1
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "No %(agents)s found."
+msgstr "Nebyl nalezen žádný %(agents)s."
+
+#: assets/dist/bookster/ApptsFilterService-713c7df7.js:1
+msgid "Clear Filters"
+msgstr "Smazat filtry"
+
+#: assets/dist/bookster/ApptsFilterService-713c7df7.js:1
+msgid "No %(customer)s found."
+msgstr "Nebyl nalezen žádný %(customer)s."
+
+#: assets/dist/bookster/ApptsFilterService-713c7df7.js:1
+msgid "No %(services)s found"
+msgstr "Nebyly nalezeny žádné %(services)s"
+
+#: assets/dist/bookster/BEConfigProvider-180a6f55.js:1
+#: assets/dist/bookster/ServiceFormDrawer-0cf878e9.js:1
+msgid "Closing"
+msgstr "Zavření"
+
+#: assets/dist/bookster/BEConfigProvider-180a6f55.js:1
+#: assets/dist/bookster/CustomizePage-4e0c1c26.js:1
+#: assets/dist/bookster/EditAgentDrawer-72f3e86c.js:1
+#: assets/dist/bookster/EditCustomerDrawer-d63054df.js:1
+#: assets/dist/bookster/EditServiceDrawer-952650b8.js:1
+#: assets/dist/bookster/NewAgentDrawer-e2a05c5d.js:1
+#: assets/dist/bookster/NewCustomerDrawer-dc3f3f3e.js:1
+#: assets/dist/bookster/NewServiceDrawer-7ac694aa.js:1
+#: assets/dist/bookster/page-agent.js:1 assets/dist/bookster/page-manager.js:1
+#: assets/dist/bookster/ServiceFormDrawer-0cf878e9.js:1
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "Save"
+msgstr "Uložit"
+
+#: assets/dist/bookster/block-customer-dashboard.js:1
+msgid "Upcoming"
+msgstr "Nadcházející"
+
+#: assets/dist/bookster/block-customer-dashboard.js:1
+msgid "History"
+msgstr "Historie"
+
+#: assets/dist/bookster/block-customer-dashboard.js:1
+msgid "All %(services)s"
+msgstr "Všechny %(services)s"
+
+#: assets/dist/bookster/block-customer-dashboard.js:1
+msgid "Book Appointment"
+msgstr "Rezervovat"
+
+#: assets/dist/bookster/block-customer-dashboard.js:1
+msgid "Sign in to your account"
+msgstr "Přihlaste se ke svému účtu"
+
+#: assets/dist/bookster/block-customer-dashboard.js:1
+msgid "Please input your Username or Email Address!"
+msgstr "Zadejte prosím své uživatelské jméno nebo e-mailovou adresu!"
+
+#: assets/dist/bookster/block-customer-dashboard.js:1
+msgid "Username or Email Address"
+msgstr "Uživatelské jméno nebo email"
+
+#: assets/dist/bookster/block-customer-dashboard.js:1
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Please input your password!"
+msgstr "Zadejte prosím své heslo!"
+
+#: assets/dist/bookster/block-customer-dashboard.js:1
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Password"
+msgstr "Heslo"
+
+#: assets/dist/bookster/block-customer-dashboard.js:1
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Remember me"
+msgstr "Zapamatovat si mě"
+
+#: assets/dist/bookster/block-customer-dashboard.js:1
+msgid "Forgot password?"
+msgstr "Zapomenuté heslo?"
+
+#: assets/dist/bookster/block-customer-dashboard.js:1
+msgid "Log in"
+msgstr "Přihlásit"
+
+#: assets/dist/bookster/block-customer-dashboard.js:1
+msgid "Or Register Now"
+msgstr "Nebo se zaregistrujte nyní"
+
+#: assets/dist/bookster/block-customer-dashboard.js:1
+msgid "%(customer)s has been saved successfully!"
+msgstr "%(customer)s byl úspěšně uložen!"
+
+#: assets/dist/bookster/block-customer-dashboard.js:1
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Please enter first name"
+msgstr "Zadejte křestní jméno, prosím"
+
+#: assets/dist/bookster/block-customer-dashboard.js:1
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Please enter last name"
+msgstr "Zadejte příjmení"
+
+#: assets/dist/bookster/block-customer-dashboard.js:1
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Email Address"
+msgstr "E-mailová adresa"
+
+#: assets/dist/bookster/block-customer-dashboard.js:1
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Please enter email"
+msgstr "Zadejte e-mail"
+
+#: assets/dist/bookster/block-customer-dashboard.js:1
+msgid "Phone Number"
+msgstr "Telefonní číslo"
+
+#: assets/dist/bookster/block-customer-dashboard.js:1
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Save Changes"
+msgstr "Uložit změny"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Free"
+msgstr "Zdarma"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+#: assets/dist/libs/booking.js:1
+msgid "Summary"
+msgstr "Shrnutí"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Confirm free booking"
+msgstr "Potvrdit bezplatnou rezervaci"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Pay Later"
+msgstr "Zaplaťte později"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Pay Now"
+msgstr "Zaplatit nyní"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Booking your Appointment!"
+msgstr "Rezervujte si schůzku!"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Booking Complete"
+msgstr "Rezervace dokončena"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Payment:"
+msgstr "Platba:"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Will Pay Locally"
+msgstr "Bude platit na místě"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Pay in Full"
+msgstr "Platba v plné výši"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "New Account Created. Please check your email to verify account."
+msgstr "Vytvořen nový účet. Pro ověření účtu zkontrolujte svůj e-mail."
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Book Another Appointment"
+msgstr "Rezervujte si další schůzku"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Comments"
+msgstr "Komentáře"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Add comments"
+msgstr "Přidat komentáře"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Submit"
+msgstr "Odeslat"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Please input your email address!"
+msgstr "Zadejte prosím svou e-mailovou adresu!"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Your Email Address"
+msgstr "Vaše emailová adresa"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Forgot password"
+msgstr "Zapomenuté heslo"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "First Name is required"
+msgstr "Křestní jméno je povinné"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Your Last Name"
+msgstr "Vaše příjmení"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Last Name is required"
+msgstr "Příjmení je povinné"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Your First Name"
+msgstr "Vaše křestní jméno"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Email Address is required"
+msgstr "Je vyžadována e-mailová adresa"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Please enter valid email!"
+msgstr "Zadejte prosím platný e-mail!"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Add Comments"
+msgstr "Přidání komentářů"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+#: assets/dist/bookster/page-manager.js:1
+msgid "New %(customer)s"
+msgstr "Nové %(customer)s"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Already have an account?"
+msgstr "Již máte účet?"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Login"
+msgstr "Přihlášení"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid ""
+"The Form is not working correctly. %(agent)s and %(service)s need to be "
+"selected first!"
+msgstr ""
+"Formulář nefunguje správně. %(agent)s a %(service)s je třeba vybrat jako "
+"první!"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:1
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "Day Off"
+msgstr "Den volna"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Fully Booked"
+msgstr "Plně obsazeno"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Available Time Slots"
+msgstr "Dostupné časové sloty"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Pick Appointment Time"
+msgstr "Vyberte si čas schůzky"
+
+#: assets/dist/bookster/BookingFormRoot-20243186.js:1
+msgid "Confirm"
+msgstr "Potvrdit"
+
+#: assets/dist/bookster/CoverPicker-1f60dfd1.js:1
+msgid "Upload Image"
+msgstr "Nahrát obrázek"
+
+#: assets/dist/bookster/CoverPicker-1f60dfd1.js:1
+msgid "%(service)s cover"
+msgstr "%(service)s kryt"
+
+#: assets/dist/bookster/CustomersPage-12f1c628.js:1
+msgid "Delete Multiple Customers"
+msgstr "Smazat více zákazníků"
+
+#: assets/dist/bookster/CustomersPage-12f1c628.js:1
+msgid ""
+"This action cannot be undone. This will permanently delete %s customers and "
+"their %s appointments."
+msgstr ""
+"Tuto akci nelze vrátit zpět. Tím se trvale odstraní %s zákazníci a jejich %s "
+"schůzky."
+
+#: assets/dist/bookster/CustomersPage-12f1c628.js:1
+msgid "New Customer"
+msgstr "Nový zákazník"
+
+#: assets/dist/bookster/CustomizePage-4e0c1c26.js:1
+msgid "Booking %(service)s title"
+msgstr "Rezervace %(service)s titulu"
+
+#: assets/dist/bookster/CustomizePage-4e0c1c26.js:1
+msgid "Booking %(service)s description"
+msgstr "Rezervace %(service)s popisu"
+
+#: assets/dist/bookster/CustomizePage-4e0c1c26.js:1
+msgid "Help"
+msgstr "Pomoc"
+
+#: assets/dist/bookster/CustomizePage-4e0c1c26.js:1
+msgid "Styler"
+msgstr "Módní návrhář"
+
+#: assets/dist/bookster/CustomizePage-4e0c1c26.js:1
+msgid "Desciption"
+msgstr "Popis"
+
+#: assets/dist/bookster/CustomizePage-4e0c1c26.js:1
+msgid "Title"
+msgstr "Nadpis"
+
+#: assets/dist/bookster/CustomizePage-4e0c1c26.js:1
+msgid "Please enter Title!"
+msgstr "Zadejte prosím název!"
+
+#: assets/dist/bookster/CustomizePage-4e0c1c26.js:1
+msgid "Description"
+msgstr "Popis"
+
+#: assets/dist/bookster/CustomizePage-4e0c1c26.js:1
+msgid "Step booking"
+msgstr "Kroková rezervace"
+
+#: assets/dist/bookster/CustomizePage-4e0c1c26.js:1
+msgid "Previous step"
+msgstr "Předchozí krok"
+
+#: assets/dist/bookster/CustomizePage-4e0c1c26.js:1
+msgid "Next step"
+msgstr "Další krok"
+
+#: assets/dist/bookster/DashboardPage-157d9686.js:1
+msgid "NO"
+msgstr "NE"
+
+#: assets/dist/bookster/DashboardPage-157d9686.js:1
+msgid "Agent name"
+msgstr "Název agenta"
+
+#: assets/dist/bookster/DashboardPage-157d9686.js:1
+msgid "% of Sales"
+msgstr "% of prodej"
+
+#: assets/dist/bookster/DashboardPage-157d9686.js:1
+msgid "Total revenue"
+msgstr "Celkové příjmy"
+
+#: assets/dist/bookster/DashboardPage-157d9686.js:1
+msgid "Service name"
+msgstr "Název služby"
+
+#: assets/dist/bookster/DashboardPage-157d9686.js:1
+msgid "View Customers"
+msgstr "Zobrazit zákazníky"
+
+#: assets/dist/bookster/EditAgentDrawer-72f3e86c.js:1
+msgid "Delete Agent"
+msgstr "Odstranit barbera"
+
+#: assets/dist/bookster/EditAgentDrawer-72f3e86c.js:1
+#: assets/dist/bookster/EditCustomerDrawer-d63054df.js:1
+#: assets/dist/bookster/EditServiceDrawer-952650b8.js:1
+msgid ""
+"This action cannot be undone. This will permanently delete this %s and %s "
+"appointments."
+msgstr ""
+"Tuto akci nelze vrátit zpět. Tím se toto %s a %s schůzky trvale odstraní."
+
+#: assets/dist/bookster/EditAgentDrawer-72f3e86c.js:1
+msgid "Edit %(agent)s"
+msgstr "Upravit %(agent)s"
+
+#: assets/dist/bookster/EditAgentDrawer-72f3e86c.js:1
+#: assets/dist/bookster/EditServiceDrawer-952650b8.js:1
+#: assets/dist/bookster/NewAgentDrawer-e2a05c5d.js:1
+#: assets/dist/bookster/NewServiceDrawer-7ac694aa.js:1
+#: assets/dist/bookster/page-manager.js:1
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "General"
+msgstr "Hlavní"
+
+#: assets/dist/bookster/EditAgentDrawer-72f3e86c.js:1
+#: assets/dist/bookster/EditServiceDrawer-952650b8.js:1
+#: assets/dist/bookster/NewAgentDrawer-e2a05c5d.js:1
+#: assets/dist/bookster/NewServiceDrawer-7ac694aa.js:1
+msgid "Available"
+msgstr "Dostupný"
+
+#: assets/dist/bookster/EditCustomerDrawer-d63054df.js:1
+msgid "Delete Customer"
+msgstr "Odstranit zákazníka"
+
+#: assets/dist/bookster/EditCustomerDrawer-d63054df.js:1
+#: assets/dist/bookster/page-manager.js:1
+msgid "Edit %(customer)s"
+msgstr "Upravit %(customer)s"
+
+#: assets/dist/bookster/EditCustomerDrawer-d63054df.js:1
+msgid "%(customer)s has been Deleted Successfully!"
+msgstr "%(customer)s byl úspěšně smazán!"
+
+#: assets/dist/bookster/EditServiceDrawer-952650b8.js:1
+msgid "Delete Service"
+msgstr "Odstranit službu"
+
+#: assets/dist/bookster/EditServiceDrawer-952650b8.js:1
+msgid "Edit %(service)s"
+msgstr "Upravit %(service)s"
+
+#: assets/dist/bookster/EditServiceDrawer-952650b8.js:1
+#: assets/dist/bookster/NewServiceDrawer-7ac694aa.js:1
+msgid "%(service)s has been Saved Successfully!"
+msgstr "%(service)s byl úspěšně uložen!"
+
+#: assets/dist/bookster/EditServiceDrawer-952650b8.js:1
+msgid "%(service)s has been Deleted Successfully!"
+msgstr "%(service)s byl úspěšně smazán!"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Best %(service)s Ever"
+msgstr "Nejlepší %(service)s vůbec"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "copied"
+msgstr "zkopírováno"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Site"
+msgstr "Stránka"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Appointment Number"
+msgstr "Číslo schůzky"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "%(customer)s Full Name"
+msgstr "%(customer)s celé jméno"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "%(agent)s Full Name"
+msgstr "%(agent)s celé jméno"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid "%(service)s Name"
+msgstr "%(service)s jméno"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Appointment Date & Time"
+msgstr "Datum a čas schůzky"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Appointment Book Status"
+msgstr "Stav knihy schůzek"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Appointment Payment Status"
+msgstr "Stav platby schůzky"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Appointment URL"
+msgstr "URL schůzky"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Bookster Credit Link"
+msgstr "Odkaz na kredit Bookster"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "%(customer)s:"
+msgstr "%(customer)s:"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Preview"
+msgstr "Náhled"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Placeholders"
+msgstr "Zástupný text"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Send Test Email"
+msgstr "Odeslat testovací email"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Email Options has been Saved Successfully!"
+msgstr "Možnosti e-mailu byly úspěšně uloženy!"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Email Options"
+msgstr "Možnosti e-mailu"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid ""
+"Customize your email appearance and test your server with 'Send Test Email'"
+msgstr ""
+"Přizpůsobte si vzhled e-mailu a otestujte svůj server pomocí funkce "
+"\"Odeslat testovací e-mail\""
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Content"
+msgstr "Obsah"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Sender Name"
+msgstr "Jméno odesílatele"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Sender Email"
+msgstr "Email odesílatele"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Mail Footer"
+msgstr "Zápatí pošty"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Style"
+msgstr "Styl"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Primary Color"
+msgstr "Základní barva"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Text Color"
+msgstr "Barva textu"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Mail Background"
+msgstr "Mail pozadí"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Body Background"
+msgstr "Pozadí těla stránky"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Reset To Default"
+msgstr "Obnovit do základního nastavení"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Test Email has been Sent Successfully!"
+msgstr "Testovací e-mail byl úspěšně odeslán!"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Event name is not defined"
+msgstr "Název události není definován"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Preview Email has been Sent Successfully!"
+msgstr "Náhled e-mailu byl úspěšně odeslán!"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Turn on to send this notification"
+msgstr "Zapnutí pro odesílání tohoto oznámení"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "automatically in the background"
+msgstr "automaticky na pozadí"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Approved Appointment"
+msgstr "Schválené jmenování"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "to %(agent)s"
+msgstr "%(agent)s"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Notification Configuration has been Saved Successfully!"
+msgstr "Konfigurace notifikací byla úspěšně uložena!"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Subject"
+msgstr "Předmět"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Heading"
+msgstr "Nadpis"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Message"
+msgstr "Zpráva"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "to %(customer)s"
+msgstr "%(customer)s"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Canceled Appointment"
+msgstr "Zrušená schůzka"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "New Booking"
+msgstr "Nová rezervace"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "to Manager"
+msgstr "Manažerovi"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Recipient"
+msgstr "Příjemce"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "New Pending Booking"
+msgstr "Nová čekající rezervace"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "TO %(customer)s"
+msgstr "NA %(customer)s"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Resend Appointment"
+msgstr "Znovu odeslat schůzku"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Email Notifications"
+msgstr "E-mailové notifikace"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "The notifications from Bookster are listed below."
+msgstr "Oznámení od společnosti Bookster jsou uvedena níže."
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Options"
+msgstr "Možnosti"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Notifications"
+msgstr "Oznámení"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Coming soon"
+msgstr "Již brzy"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Download Now"
+msgstr "Stáhnout nyní"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Activate Now"
+msgstr "Aktivujte nyní"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Automation and Integrations"
+msgstr "Automatizace a integrace"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid ""
+"Install Addons and extend your workflow, connect with other tools and "
+"automate your tasks."
+msgstr ""
+"Nainstalujte si Addons a rozšiřte svůj pracovní postup, propojte se s "
+"dalšími nástroji a automatizujte své úkoly."
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "The default notifications channel for Bookster."
+msgstr "Výchozí kanál oznámení pro aplikaci Bookster."
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Configure"
+msgstr "Konfigurovat"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Payment Gateways"
+msgstr "Platební brány"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid ""
+"Accept payments from your %(customers)s using popular online payment "
+"%(services)s."
+msgstr ""
+"Přijímejte platby ze svých %(customers)s pomocí oblíbených online platebních "
+"%(services)s."
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Stripe"
+msgstr "Stripe"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Secure checkout via Stripe payment"
+msgstr "Bezpečná platba prostřednictvím platby Stripe"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Paypal"
+msgstr "Paypal"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Pay easily with PayPal checkout."
+msgstr "Plaťte snadno pomocí platby přes PayPal."
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Google Calendar and Meet"
+msgstr "Kalendář Google a služba Meet"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "%(agent)s could connect appointments with Google Calendar and Meet."
+msgstr "%(agent)s propojit schůzky s Kalendářem Google a službou Meet."
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+msgid "Intergrations"
+msgstr "Integrace"
+
+#: assets/dist/bookster/IntegrationsPage-90dbc1c8.js:1
+#: assets/dist/bookster/page-manager.js:1
+msgid "Overview"
+msgstr "Přehled"
+
+#: assets/dist/bookster/NewAgentDrawer-e2a05c5d.js:1
+msgid "%(agent)s has been Saved Successfully!"
+msgstr "%(agent)s byl úspěšně uložen!"
+
+#: assets/dist/bookster/NewCustomerDrawer-dc3f3f3e.js:1
+msgid "New %(customer)s "
+msgstr "Nové %(customer)s "
+
+#: assets/dist/bookster/NewCustomerDrawer-dc3f3f3e.js:1
+#: assets/dist/bookster/page-manager.js:1
+msgid "%(customer)s has been Saved Successfully!"
+msgstr "%(customer)s byl úspěšně uložen!"
+
+#: assets/dist/bookster/NewServiceDrawer-7ac694aa.js:1
+msgid "New %(service)s"
+msgstr "Nové %(service)s"
+
+#: assets/dist/bookster/page-agent.js:1
+msgid "Sorry, Your %(agent)s Record is Not Existed."
+msgstr "Je nám líto, ale váš záznam %(agent)s neexistuje."
+
+#: assets/dist/bookster/page-agent.js:1 assets/dist/bookster/page-manager.js:1
+msgid "Management"
+msgstr "Správa"
+
+#: assets/dist/bookster/page-agent.js:1 assets/dist/bookster/page-manager.js:1
+msgid "Records"
+msgstr "Záznamy"
+
+#: assets/dist/bookster/page-agent.js:1 assets/dist/bookster/page-manager.js:1
+msgid "Administration"
+msgstr "Administrace"
+
+#: assets/dist/bookster/page-agent.js:1 assets/dist/bookster/page-manager.js:1
+msgid "Edit Appointment"
+msgstr "Editovat rezervaci"
+
+#: assets/dist/bookster/page-agent.js:1 assets/dist/bookster/page-manager.js:1
+msgid "New Appointment"
+msgstr "Nová událost"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid "Skip Setup"
+msgstr "Přeskočit instalaci"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid "Are you sure?"
+msgstr "Jste si jistí?"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid "No"
+msgstr "Ne"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid "Yes"
+msgstr "Ano"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid "Set up your %(agents)s"
+msgstr "Nastavte si %(agents)s"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid ""
+"Tell us about the %(agents)s working with you. Please add at least some "
+"%(agents)s."
+msgstr ""
+"Povězte nám o %(agents)s spolupráce s vámi. Prosím, doplňte alespoň nějaké "
+"%(agents)s."
+
+#: assets/dist/bookster/page-intro.js:1
+msgid "Continue"
+msgstr "Pokračovat"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid "Welcome to Bookster"
+msgstr "Vítejte v Booksteru"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid "Tell us about your business, configure the currency, phone code."
+msgstr "Řekněte nám o svém podnikání, nakonfigurujte měnu, telefonní kód."
+
+#: assets/dist/bookster/page-intro.js:1
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Default Time Slot Step"
+msgstr "Výchozí krok časového úseku"
+
+#: assets/dist/bookster/page-intro.js:1
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Default Appointment Status"
+msgstr "Výchozí stav rezervace"
+
+#: assets/dist/bookster/page-intro.js:1
+#: assets/dist/bookster/prefetch.helper-f488c823.js:1
+#: assets/dist/bookster/ReloadButton-631bf244.js:1
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Pending"
+msgstr "Čekající"
+
+#: assets/dist/bookster/page-intro.js:1
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Default Phone Country"
+msgstr "Výchozí telefonní země"
+
+#: assets/dist/bookster/page-intro.js:1
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Default Items Per Page"
+msgstr "Výchozí položky na stránku"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid "Formats"
+msgstr "Formáty"
+
+#: assets/dist/bookster/page-intro.js:1
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Time Format"
+msgstr "Formát času"
+
+#: assets/dist/bookster/page-intro.js:1
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Date Format"
+msgstr "Formát data"
+
+#: assets/dist/bookster/page-intro.js:1
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Restrictions"
+msgstr "Omezení"
+
+#: assets/dist/bookster/page-intro.js:1
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Earliest Possible Booking Time"
+msgstr "Nejbližší možný čas rezervace"
+
+#: assets/dist/bookster/page-intro.js:1
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Please select"
+msgstr "Prosím vyberte"
+
+#: assets/dist/bookster/page-intro.js:1
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Latest Possible Booking Time"
+msgstr "Nejzazší možný čas rezervace"
+
+#: assets/dist/bookster/page-intro.js:1
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Currency Options"
+msgstr "Možnosti měny"
+
+#: assets/dist/bookster/page-intro.js:1
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Currency"
+msgstr "Měna"
+
+#: assets/dist/bookster/page-intro.js:1
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Please select currency!"
+msgstr "Vyberte prosím měnu!"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid "Shortcode has been copied!"
+msgstr "Krátký kód byl zkopírován!"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid "Publish Bookster for your %(customer)s"
+msgstr "Publikujte Bookster pro svůj %(customer)s"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid "Add a Booking Form Page"
+msgstr "Přidání stránky rezervačního formuláře"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid "Add Class to Button"
+msgstr "Přidat třídu k tlačítku"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid "Class has been copied!"
+msgstr "Třída byla zkopírována!"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid "Using Bookster Shortcodes"
+msgstr "Použití krátkých kódů Bookster"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid "Using Bookster Blocks"
+msgstr "Použití bloků Bookster"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid "Block name has been copied!"
+msgstr "Název bloku byl zkopírován!"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid "Edit %(customer)s Dashboard Page"
+msgstr "Upravit stránku %(customer)s panelu"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid "Set up your %(services)s"
+msgstr "Nastavte si %(services)s"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid ""
+"Tell us about the %(services)s that your business provides. Please add at "
+"least some."
+msgstr ""
+"Řekněte nám o %(services)s, které vaše firma poskytuje. Prosím, přidejte "
+"alespoň některé."
+
+#: assets/dist/bookster/page-intro.js:1
+msgid "General Settings"
+msgstr "Hlavní nastavení"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid "Schedule Settings"
+msgstr "Nastavení rozvrhu"
+
+#: assets/dist/bookster/page-intro.js:1
+msgid "Publish"
+msgstr "Zveřejnit"
+
+#: assets/dist/bookster/page-manager.js:1
+msgid "No Matched %(agent)s found!"
+msgstr "Nebyly nalezeny žádné odpovídající %(agent)s!"
+
+#: assets/dist/bookster/page-manager.js:1
+msgid "No Matched %(customer)s found!"
+msgstr "Nebyly nalezeny žádné odpovídající %(customer)s!"
+
+#: assets/dist/bookster/page-manager.js:1
+msgid "No Matched %(service)s found!"
+msgstr "Nebyly nalezeny žádné odpovídající %(service)s!"
+
+#: assets/dist/bookster/page-manager.js:1
+msgid ""
+"Link Customer with WP User to allow them to login and browse Appointment "
+"History."
+msgstr ""
+"Propojte zákazníka s WP Uživatelem, abyste mu umožnili přihlásit se a "
+"procházet historii schůzek."
+
+#: assets/dist/bookster/page-manager.js:1
+msgid "Notes by Staff"
+msgstr "Poznámky zaměstnanců"
+
+#: assets/dist/bookster/page-manager.js:1
+msgid "Please enter Note"
+msgstr "Zadejte prosím poznámku"
+
+#: assets/dist/bookster/page-manager.js:1
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Create New"
+msgstr "Vytvořit nový"
+
+#: assets/dist/bookster/page-manager.js:1
+msgid "All Appointments"
+msgstr "Všechny rezervace"
+
+#: assets/dist/bookster/page-manager.js:1
+msgid "List"
+msgstr "Seznam"
+
+#: assets/dist/bookster/page-manager.js:1
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "Holiday"
+msgstr "dovolená"
+
+#: assets/dist/bookster/page-manager.js:1
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Permissions"
+msgstr "Oprávnění"
+
+#: assets/dist/bookster/page-manager.js:1
+#: assets/dist/bookster/ServiceFormDrawer-0cf878e9.js:1
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "More Actions"
+msgstr "Další akce"
+
+#: assets/dist/bookster/page-manager.js:1
+msgid "Email Notification has been Sent Successfully!"
+msgstr "E-mailové oznámení bylo úspěšně odesláno!"
+
+#: assets/dist/bookster/page-manager.js:1
+msgid "Resend Email to %(customer)s"
+msgstr "Znovu odeslat e-mail na %(customer)s"
+
+#: assets/dist/bookster/page-manager.js:1
+msgid "Resend Email to %(agent)s"
+msgstr "Znovu odeslat e-mail na %(agent)s"
+
+#: assets/dist/bookster/page-manager.js:1
+msgid "Delete"
+msgstr "Smazat"
+
+#: assets/dist/bookster/ReloadButton-631bf244.js:1
+msgid "Delete Multiple Appointments"
+msgstr "Odstranění více schůzek"
+
+#: assets/dist/bookster/ReloadButton-631bf244.js:1
+msgid ""
+"This action cannot be undone. This will permanently delete %s appointments."
+msgstr "Tuto akci nelze vrátit zpět. Tím se trvale odstraní %s schůzky."
+
+#: assets/dist/bookster/ReloadButton-631bf244.js:1
+msgid "Search by ID"
+msgstr "Hledat podle ID"
+
+#: assets/dist/bookster/ReloadButton-631bf244.js:1
+msgid "This week"
+msgstr "Tento týden"
+
+#: assets/dist/bookster/ReloadButton-631bf244.js:1
+msgid "This month"
+msgstr "Tento měsíc"
+
+#: assets/dist/bookster/ReloadButton-631bf244.js:1
+msgid "Next 7 days"
+msgstr "Následujích 7 dní"
+
+#: assets/dist/bookster/ReloadButton-631bf244.js:1
+msgid "Next 30 days"
+msgstr "Příštích 30 dní"
+
+#: assets/dist/bookster/ServiceFormDrawer-0cf878e9.js:1
+msgid "Add new %(service)s"
+msgstr "Přidat nové %(service)s"
+
+#: assets/dist/bookster/ServiceFormDrawer-0cf878e9.js:1
+msgid "Edit category"
+msgstr "Upravit kategorii"
+
+#: assets/dist/bookster/ServiceFormDrawer-0cf878e9.js:1
+msgid "Delete category"
+msgstr "Smaž kategorii"
+
+#: assets/dist/bookster/ServiceFormDrawer-0cf878e9.js:1
+msgid "New Category"
+msgstr "Nová kategorie"
+
+#: assets/dist/bookster/ServiceFormDrawer-0cf878e9.js:1
+msgid "Category Name"
+msgstr "Název kategorie"
+
+#: assets/dist/bookster/ServiceFormDrawer-0cf878e9.js:1
+msgid "Please enter category name"
+msgstr "Zadejte prosím název kategorie"
+
+#: assets/dist/bookster/ServiceFormDrawer-0cf878e9.js:1
+msgid "Category Description"
+msgstr "Popis kategorie"
+
+#: assets/dist/bookster/ServiceFormDrawer-0cf878e9.js:1
+msgid "Please enter category description"
+msgstr "Zadejte prosím popis kategorie"
+
+#: assets/dist/bookster/ServiceFormDrawer-0cf878e9.js:1
+msgid "Edit %(service)s Category"
+msgstr "Upravit %(service)s kategorii"
+
+#: assets/dist/bookster/ServiceFormDrawer-0cf878e9.js:1
+msgid "New %(service)s Category"
+msgstr "Kategorie Nové %(service)s"
+
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid "Selected %(agents)s"
+msgstr "Vybrané %(agents)s"
+
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid "This %(service)s is available for all %(agents)s"
+msgstr "Tato %(service)s je k dispozici pro všechny %(agents)s"
+
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid "Select Category"
+msgstr "Vybrat kategorii"
+
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid "Search categories..."
+msgstr "Hledat v kategoriích…"
+
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid "No Categories found."
+msgstr "Nebyly nalezeny žádné kategorie."
+
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid "Please enter %(service)s Name"
+msgstr "Zadejte prosím %(service)s jméno"
+
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid "%(service)s Category"
+msgstr "%(service)s Kategorie"
+
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid "%(service)s Price"
+msgstr "%(service)s Cena"
+
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid "%(service)s Price can not be negative"
+msgstr "%(service)s Cena nemůže být záporná"
+
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Buffer Before"
+msgstr "Vyrovnávací paměť před"
+
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Buffer time to prepare before the appointment start."
+msgstr "Rezerva na přípravu před zahájením schůzky."
+
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid "Theme Color"
+msgstr "Barva šablony"
+
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid "%(service)s Duration"
+msgstr "%(service)s Doba trvání"
+
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid "%(service)s Duration must be greater than 0"
+msgstr "%(service)s Doba trvání musí být větší než 0"
+
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Buffer After"
+msgstr "Vyrovnávací paměť po"
+
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Buffer time to rest/clean after the appointment end."
+msgstr "Rezervujte si čas na odpočinek/úklid po skončení schůzky."
+
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid "%(service)s Description"
+msgstr "%(service)s Popis"
+
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid "Please enter %(service)s description"
+msgstr "Zadejte prosím %(service)s popis"
+
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid "The %(service)s is available for booking."
+msgstr "%(service)s je možné rezervovat."
+
+#: assets/dist/bookster/ServiceGeneralTab-888bd612.js:1
+msgid "Private %(services)s are visible to Staff only."
+msgstr "Soukromé %(services)s jsou viditelné pouze pro zaměstnance."
+
+#: assets/dist/bookster/settings.constants-ec898673.js:1
+msgid "Items"
+msgstr "Položky"
+
+#: assets/dist/bookster/settings.constants-ec898673.js:1
+msgid "Currency Format"
+msgstr "Formát měny"
+
+#: assets/dist/bookster/settings.constants-ec898673.js:1
+msgid "Currency position:"
+msgstr "Měnová pozice:"
+
+#: assets/dist/bookster/settings.constants-ec898673.js:1
+msgid "Please select Currency Position"
+msgstr "Vyberte prosím Měnová pozice"
+
+#: assets/dist/bookster/settings.constants-ec898673.js:1
+msgid "Before"
+msgstr "Před"
+
+#: assets/dist/bookster/settings.constants-ec898673.js:1
+msgid "After"
+msgstr "Po"
+
+#: assets/dist/bookster/settings.constants-ec898673.js:1
+msgid "Before With Space"
+msgstr "Před s prostorem"
+
+#: assets/dist/bookster/settings.constants-ec898673.js:1
+msgid "After With Space"
+msgstr "Po s prostorem"
+
+#: assets/dist/bookster/settings.constants-ec898673.js:1
+msgid "Thousand separator:"
+msgstr "Oddělovač tisíců:"
+
+#: assets/dist/bookster/settings.constants-ec898673.js:1
+msgid "Please select Thousand Separator"
+msgstr "Vyberte prosím Oddělovač tisíců"
+
+#: assets/dist/bookster/settings.constants-ec898673.js:1
+msgid "No Separator"
+msgstr "Bez oddělovače"
+
+#: assets/dist/bookster/settings.constants-ec898673.js:1
+msgid "Decimal separator:"
+msgstr "Oddělovač desetinných míst:"
+
+#: assets/dist/bookster/settings.constants-ec898673.js:1
+msgid "Please select Decimal Separator"
+msgstr "Vyberte prosím Oddělovač desetinných míst"
+
+#: assets/dist/bookster/settings.constants-ec898673.js:1
+msgid "Number of decimals:"
+msgstr "Počet desetinných míst:"
+
+#: assets/dist/bookster/settings.constants-ec898673.js:1
+msgid "Please enter Number of Decimal"
+msgstr "Zadejte prosím počet desetinných míst"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Booking Options"
+msgstr "Možnosti rezervace"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Interval between time slots in booking form, time picker and calendar."
+msgstr ""
+"Interval mezi časovými sloty v rezervačním formuláři, timepickeru a "
+"kalendáři."
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Apply to records pages."
+msgstr "Použít na stránky záznamů."
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Datetime Formats"
+msgstr "Formáty data a času"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "How to display time in Bookster, also apply to time picker."
+msgstr "Jak zobrazit čas v Booksteru, platí také pro výběr času."
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "How to display date in Bookster."
+msgstr "Jak zobrazit datum v Booksteru."
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Time Slots before this time will not be available for booking."
+msgstr "Časové úseky před tímto časem nebudou k dispozici pro rezervaci."
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Time Slots after this time will not be available for booking."
+msgstr "Časové úseky po této době nebudou k dispozici pro rezervaci."
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Payment Method"
+msgstr "Způsob platby"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "No payment method available"
+msgstr "Není k dispozici žádný způsob platby"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Pay Later/Locally"
+msgstr "Zaplaťte později/na místě"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "%(agent)s Permissions"
+msgstr "%(agent)s oprávnění"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Create and Link WP User to %(agent)s"
+msgstr "Vytvořte a propojte uživatele WP s %(agent)s"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "%(agent)s would not be able to login to Bookster if WP User not linked."
+msgstr ""
+"%(agent)s by se nemohl přihlásit do Booksteru, pokud by uživatel WP nebyl "
+"propojen."
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Auto"
+msgstr "Automaticky"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "This means a WP User is created simultaneously with the Agent"
+msgstr "To znamená, že uživatel WP je vytvořen současně s agentem"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Manual"
+msgstr "Manuální"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "This means the WP User is created separately"
+msgstr "To znamená, že uživatel WP je vytvořen samostatně"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Appointment Time & Status"
+msgstr "Čas a stav schůzky"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Allow %(agent)s to edit his/her appointment time and status"
+msgstr "Povolit %(agent)s upravit čas a stav schůzky"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Working Schedule"
+msgstr "Pracovní plán"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Allow %(agent)s to edit his/her working schedule"
+msgstr "Povolit %(agent)s upravit svůj pracovní rozvrh"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "%(customer)s Permissions"
+msgstr "%(customer)s oprávnění"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Create and Link WP User to %(customer)s"
+msgstr "Vytvořte a propojte uživatele WP s %(customer)s"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid ""
+"%(customer)s would not be able to login to Bookster if WP User not linked."
+msgstr ""
+"%(customer)s by se nemohl přihlásit do Booksteru, pokud by uživatel WP nebyl "
+"propojen."
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "This means WP User is created together with %(customer)s"
+msgstr "To znamená, že WP User je vytvořen společně s %(customer)s"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Cancel Appointment"
+msgstr "Zrušit událost"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "Allow %(customer)s to cancel his/her appointment"
+msgstr "Povolit %(customer)s zrušit schůzku"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "%(customer)s Dashboard Page"
+msgstr "%(customer)s stránka Dashboard"
+
+#: assets/dist/bookster/SettingsPage-31022698.js:1
+msgid "%(customer)s dashboard page"
+msgstr "%(customer)s stránku řídicího panelu"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "My account"
+msgstr "Můj účet"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Explore Addon"
+msgstr "Prozkoumat doplněk"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Support"
+msgstr "Podpora"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Logout"
+msgstr "Odhlásit"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Hide navigation"
+msgstr "Skrýt navigaci"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Show navigation"
+msgstr "Zobrazit navigaci"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Back to WP"
+msgstr "Zpět na WP"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "%(service)s search e.g:"
+msgstr "%(service)s hledat např.:"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "%(service)s name"
+msgstr "%(service)s jméno"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "%(customer)s or %(agent)s search e.g:"
+msgstr "%(customer)s nebo %(agent)s vyhledávání např.:"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "%(customer)s or %(agent)s phone search e.g:"
+msgstr "%(customer)s nebo %(agent)s vyhledávání v telefonu, např.:"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Select"
+msgstr "Vybrat"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Select a %(service)s name"
+msgstr "Vyberte název %(service)s"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "%(customer)s with this email already exists!"
+msgstr "%(customer)s s tímto e-mailem již existuje!"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Select Customer"
+msgstr "Zvolte zákazníka"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Balance Due"
+msgstr "Splatný zůstatek"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Total Paid"
+msgstr "Celkem zaplaceno"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Payment Status"
+msgstr "Stav platby"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Booking Detail"
+msgstr "Podrobnosti rezervace"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Recalculate"
+msgstr "Přepočítat"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Please select a %(service)s name"
+msgstr "Vyberte prosím jméno %(service)s"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Select a %(service)s to begin edit datetime, price, payment..."
+msgstr "Výběrem %(service)s zahájíte úpravy data a času, ceny, platby..."
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Please select a service"
+msgstr "Vyberte prosím službu"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Invalid %(service)s id"
+msgstr "Neplatné ID %(service)s"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Book Date"
+msgstr "Datum rezervace"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Book Status"
+msgstr "Stav rezervace"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Book Time"
+msgstr "Čas rezervace"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "End Time"
+msgstr "Čas konce"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Information"
+msgstr "Informace"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "Additional"
+msgstr "Dodatečná nastavení"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+msgid "More"
+msgstr "Více"
+
+#: assets/dist/bookster/useCacheCustomers-03e8fdea.js:1
+#: assets/dist/libs/booking.js:1
+msgid "Back"
+msgstr "Zpět"
+
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:1
+msgid "Name Holiday"
+msgstr "Název Svátek"
+
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:1
+msgid "Enable"
+msgstr "Povolit"
+
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:1
+msgid "Holiday status is active"
+msgstr "Stav Dovolená je aktivní"
+
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:1
+msgid "Repeat"
+msgstr "Opakovat"
+
+#. translators: %s: day off or working day.
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "Select “Repeat yearly” to apply the chosen %s to every year."
+msgstr "Výběrem možnosti \"Opakovat ročně\" použijete zvolený %s na každý rok."
+
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "day off"
+msgstr "Den volna"
+
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "working day"
+msgstr "pracovní den"
+
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "Once off"
+msgstr "Jednou vypnuto"
+
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "Working day"
+msgstr "Pracovní den"
+
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "Repeat yearly"
+msgstr "Opakujte ročně"
+
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "Once Off"
+msgstr "Jednou vypnuto"
+
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "Agent Day Off"
+msgstr "Agent má volno"
+
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "Repeat Yearly"
+msgstr "Opakujte ročně"
+
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "Shop Day Off"
+msgstr "Volný den obchodu"
+
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "Day Range"
+msgstr "Rozsah dnů"
+
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "New Holiday"
+msgstr "Nová dovolená"
+
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "New Day Off"
+msgstr "Nový den volna"
+
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "New"
+msgstr "Nový"
+
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "Edit"
+msgstr "Upravit"
+
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "Apply to every day"
+msgstr "Aplikujte na každý den"
+
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "Delete all time period"
+msgstr "Smazat celé časové období"
+
+#: assets/dist/bookster/WeeklyScheduleEditor-97f0ca4f.js:3
+msgid "Add Work Period"
+msgstr "Přidat pracovní období"
+
+#: assets/dist/blocks/booking-button/block.json
+msgctxt "block title"
+msgid "Bookster Booking Button"
+msgstr "Bookster Rezervační tlačítko"
+
+#: assets/dist/blocks/booking-button/block.json
+#: assets/dist/blocks/booking-form/block.json
+#: assets/dist/blocks/customer-dashboard/block.json
+msgctxt "block keyword"
+msgid "bookster"
+msgstr "Brožura"
+
+#: assets/dist/blocks/booking-button/block.json
+#: assets/dist/blocks/booking-form/block.json
+msgctxt "block keyword"
+msgid "booking"
+msgstr "rezervace"
+
+#: assets/dist/blocks/booking-button/block.json
+msgctxt "block keyword"
+msgid "button"
+msgstr "tlačítko"
+
+#: assets/dist/blocks/booking-button/block.json
+msgctxt "block description"
+msgid "Bookster Booking Button."
+msgstr "Bookster Booking tlačítko."
+
+#: assets/dist/blocks/booking-button/block.json
+msgctxt "block style label"
+msgid "Fill"
+msgstr "Vyplnit"
+
+#: assets/dist/blocks/booking-button/block.json
+msgctxt "block style label"
+msgid "Outline"
+msgstr "Outline"
+
+#: assets/dist/blocks/booking-form/block.json
+msgctxt "block title"
+msgid "Bookster Booking Form"
+msgstr "Rezervační formulář Bookster"
+
+#: assets/dist/blocks/booking-form/block.json
+msgctxt "block keyword"
+msgid "form"
+msgstr "formulář"
+
+#: assets/dist/blocks/booking-form/block.json
+msgctxt "block description"
+msgid "Bookster Booking Form."
+msgstr "Rezervační formulář Bookster."
+
+#: assets/dist/blocks/customer-dashboard/block.json
+msgctxt "block title"
+msgid "Bookster Customer Dashboard"
+msgstr "Zákaznický panel Bookster"
+
+#: assets/dist/blocks/customer-dashboard/block.json
+msgctxt "block keyword"
+msgid "customer"
+msgstr "zákazník"
+
+#: assets/dist/blocks/customer-dashboard/block.json
+msgctxt "block keyword"
+msgid "dashboard"
+msgstr "nástěnka"
+
+#: assets/dist/blocks/customer-dashboard/block.json
+msgctxt "block description"
+msgid "Bookster Customer Dashboard."
+msgstr "Zákaznický panel Bookster."

@@ -100,8 +100,17 @@ class SOE_GCal_Booking {
 
         add_submenu_page(
             'soe-gcal-booking',
-            __('Classes', 'soe-gcal-booking'),
-            __('Classes', 'soe-gcal-booking'),
+            __('Class Types', 'soe-gcal-booking'),
+            __('Class Types', 'soe-gcal-booking'),
+            'manage_options',
+            'soe-gcal-class-types',
+            ['SOE_GCal_Admin', 'render_class_types_page']
+        );
+
+        add_submenu_page(
+            'soe-gcal-booking',
+            __('Sessions', 'soe-gcal-booking'),
+            __('Sessions', 'soe-gcal-booking'),
             'manage_options',
             'soe-gcal-classes',
             ['SOE_GCal_Admin', 'render_classes_page']
@@ -137,11 +146,23 @@ class SOE_GCal_Booking {
     private function create_tables() {
         global $wpdb;
         $charset_collate = $wpdb->get_charset_collate();
-        
-        // Classes table (synced from Google Calendar)
+
+        // Class Types table (defined by admin)
+        $class_types_table = $wpdb->prefix . 'soe_gcal_class_types';
+        $sql_class_types = "CREATE TABLE $class_types_table (
+            id bigint(20) NOT NULL AUTO_INCREMENT,
+            name varchar(255) NOT NULL,
+            description text,
+            color varchar(7) DEFAULT '#3182CE',
+            created_at datetime DEFAULT CURRENT_TIMESTAMP,
+            PRIMARY KEY (id)
+        ) $charset_collate;";
+
+        // Class Sessions table (synced from Google Calendar, linked to types)
         $classes_table = $wpdb->prefix . 'soe_gcal_classes';
         $sql_classes = "CREATE TABLE $classes_table (
             id bigint(20) NOT NULL AUTO_INCREMENT,
+            class_type_id bigint(20) DEFAULT NULL,
             google_event_id varchar(255) NOT NULL,
             title varchar(255) NOT NULL,
             description text,
@@ -151,9 +172,10 @@ class SOE_GCal_Booking {
             created_at datetime DEFAULT CURRENT_TIMESTAMP,
             updated_at datetime DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
             PRIMARY KEY (id),
-            UNIQUE KEY google_event_id (google_event_id)
+            UNIQUE KEY google_event_id (google_event_id),
+            KEY class_type_id (class_type_id)
         ) $charset_collate;";
-        
+
         // Bookings table
         $bookings_table = $wpdb->prefix . 'soe_gcal_bookings';
         $sql_bookings = "CREATE TABLE $bookings_table (
@@ -167,8 +189,9 @@ class SOE_GCal_Booking {
             PRIMARY KEY (id),
             KEY class_id (class_id)
         ) $charset_collate;";
-        
+
         require_once ABSPATH . 'wp-admin/includes/upgrade.php';
+        dbDelta($sql_class_types);
         dbDelta($sql_classes);
         dbDelta($sql_bookings);
     }

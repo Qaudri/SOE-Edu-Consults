@@ -194,22 +194,57 @@ class SOE_GCal_Google_API {
         }
         
         $body = json_decode(wp_remote_retrieve_body($response), true);
-        
+
         if (!isset($body['items'])) {
             return new WP_Error('api_error', $body['error']['message'] ?? 'Failed to fetch events');
         }
-        
+
         global $wpdb;
-        $table = $wpdb->prefix . 'soe_gcal_classes';
+        $classes_table = $wpdb->prefix . 'soe_gcal_classes';
+        $types_table = $wpdb->prefix . 'soe_gcal_class_types';
+
+        // Get all class types for matching
+        $class_types = $wpdb->get_results("SELECT id, name FROM $types_table");
+        $type_map = [];
+        foreach ($class_types as $type) {
+            // Store lowercase for case-insensitive matching
+            $type_map[strtolower(trim($type->name))] = $type->id;
+        }
+
+        if (empty($type_map)) {
+            return new WP_Error('no_types', 'No class types defined. Please add class types first.');
+        }
+
         $count = 0;
-        
+        $skipped = 0;
+
         foreach ($body['items'] as $event) {
+            $event_title = $event['summary'] ?? '';
+            $event_title_lower = strtolower(trim($event_title));
+
+            // Check if event title matches any class type
+            $matched_type_id = null;
+            foreach ($type_map as $type_name => $type_id) {
+                // Match if event title contains the class type name
+                if (strpos($event_title_lower, $type_name) !== false || $event_title_lower === $type_name) {
+                    $matched_type_id = $type_id;
+                    break;
+                }
+            }
+
+            // Skip events that don't match any class type
+            if ($matched_type_id === null) {
+                $skipped++;
+                continue;
+            }
+
             $start = $event['start']['dateTime'] ?? $event['start']['date'];
             $end = $event['end']['dateTime'] ?? $event['end']['date'];
-            
-            $wpdb->replace($table, [
+
+            $wpdb->replace($classes_table, [
                 'google_event_id' => $event['id'],
-                'title' => $event['summary'] ?? 'Untitled Class',
+                'class_type_id' => $matched_type_id,
+                'title' => $event_title,
                 'description' => $event['description'] ?? '',
                 'start_time' => date('Y-m-d H:i:s', strtotime($start)),
                 'end_time' => date('Y-m-d H:i:s', strtotime($end)),
@@ -217,8 +252,15 @@ class SOE_GCal_Google_API {
             ]);
             $count++;
         }
-        
+
         return $count;
+    }
+
+    /**
+     * Get sync stats (for admin display)
+     */
+    public function get_last_sync_info() {
+        return get_option('soe_gcal_last_sync', null);
     }
 }
 

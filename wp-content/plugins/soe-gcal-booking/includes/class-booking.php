@@ -53,17 +53,20 @@ class SOE_GCal_Booking {
     }
     
     /**
-     * Get upcoming classes
+     * Get upcoming classes with class type info
      */
     public static function get_upcoming_classes($limit = 20) {
         global $wpdb;
-        
-        $table = $wpdb->prefix . 'soe_gcal_classes';
-        
+
+        $classes_table = $wpdb->prefix . 'soe_gcal_classes';
+        $types_table = $wpdb->prefix . 'soe_gcal_class_types';
+
         return $wpdb->get_results($wpdb->prepare("
-            SELECT * FROM $table
-            WHERE start_time > %s
-            ORDER BY start_time ASC
+            SELECT c.*, ct.name as type_name, ct.description as type_description, ct.color as type_color
+            FROM $classes_table c
+            LEFT JOIN $types_table ct ON c.class_type_id = ct.id
+            WHERE c.start_time > %s
+            ORDER BY c.start_time ASC
             LIMIT %d
         ", current_time('mysql'), $limit));
     }

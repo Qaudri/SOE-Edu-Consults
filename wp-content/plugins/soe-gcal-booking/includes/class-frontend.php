@@ -32,16 +32,22 @@ class SOE_GCal_Frontend {
                 <p class="soe-no-classes"><?php _e('No upcoming classes at the moment. Please check back later!', 'soe-gcal-booking'); ?></p>
             <?php else: ?>
                 <div class="soe-classes-list">
-                    <?php foreach ($classes as $class): ?>
-                        <div class="soe-class-card" data-class-id="<?php echo esc_attr($class->id); ?>">
+                    <?php foreach ($classes as $class):
+                        $display_name = $class->type_name ?: $class->title;
+                        $display_description = $class->type_description ?: $class->description;
+                        $color = $class->type_color ?: '#3182CE';
+                    ?>
+                        <div class="soe-class-card" data-class-id="<?php echo esc_attr($class->id); ?>" style="border-left: 4px solid <?php echo esc_attr($color); ?>;">
                             <div class="soe-class-info">
-                                <h3 class="soe-class-title"><?php echo esc_html($class->title); ?></h3>
+                                <span class="soe-class-type-badge" style="background: <?php echo esc_attr($color); ?>;">
+                                    <?php echo esc_html($display_name); ?>
+                                </span>
                                 <div class="soe-class-datetime">
                                     <span class="soe-class-date">
                                         📅 <?php echo esc_html(date('l, F j, Y', strtotime($class->start_time))); ?>
                                     </span>
                                     <span class="soe-class-time">
-                                        🕐 <?php echo esc_html(date('g:i A', strtotime($class->start_time))); ?> - 
+                                        🕐 <?php echo esc_html(date('g:i A', strtotime($class->start_time))); ?> -
                                         <?php echo esc_html(date('g:i A', strtotime($class->end_time))); ?>
                                     </span>
                                 </div>
@@ -50,13 +56,13 @@ class SOE_GCal_Frontend {
                                         📍 <?php echo esc_html($class->location); ?>
                                     </div>
                                 <?php endif; ?>
-                                <?php if ($class->description): ?>
+                                <?php if ($display_description): ?>
                                     <div class="soe-class-description">
-                                        <?php echo wp_kses_post(nl2br($class->description)); ?>
+                                        <?php echo wp_kses_post(nl2br($display_description)); ?>
                                     </div>
                                 <?php endif; ?>
                             </div>
-                            <button type="button" class="soe-book-btn" data-class-id="<?php echo esc_attr($class->id); ?>">
+                            <button type="button" class="soe-book-btn" data-class-id="<?php echo esc_attr($class->id); ?>" data-class-name="<?php echo esc_attr($display_name); ?>">
                                 <?php _e('Book This Class', 'soe-gcal-booking'); ?>
                             </button>
                         </div>

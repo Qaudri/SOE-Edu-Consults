@@ -133,138 +133,181 @@ class SOE_GCal_Admin {
     }
     
     /**
-     * Render the classes management page
+     * Render the class types management page
      */
-    public static function render_classes_page() {
+    public static function render_class_types_page() {
         global $wpdb;
-        $table = $wpdb->prefix . 'soe_gcal_classes';
+        $table = $wpdb->prefix . 'soe_gcal_class_types';
         $editing = false;
-        $edit_class = null;
+        $edit_type = null;
 
         // Handle delete
-        if (isset($_GET['delete']) && isset($_GET['_wpnonce']) && wp_verify_nonce($_GET['_wpnonce'], 'delete_class_' . $_GET['delete'])) {
+        if (isset($_GET['delete']) && isset($_GET['_wpnonce']) && wp_verify_nonce($_GET['_wpnonce'], 'delete_type_' . $_GET['delete'])) {
             $wpdb->delete($table, ['id' => intval($_GET['delete'])]);
-            echo '<div class="notice notice-success"><p>Class deleted.</p></div>';
+            echo '<div class="notice notice-success"><p>Class type deleted.</p></div>';
         }
 
         // Handle edit mode
         if (isset($_GET['edit'])) {
-            $edit_class = $wpdb->get_row($wpdb->prepare("SELECT * FROM $table WHERE id = %d", intval($_GET['edit'])));
-            if ($edit_class) {
+            $edit_type = $wpdb->get_row($wpdb->prepare("SELECT * FROM $table WHERE id = %d", intval($_GET['edit'])));
+            if ($edit_type) {
                 $editing = true;
             }
         }
 
-        // Handle form submission (add/edit)
-        if (isset($_POST['soe_save_class']) && wp_verify_nonce($_POST['_wpnonce'], 'soe_save_class')) {
+        // Handle form submission
+        if (isset($_POST['soe_save_class_type']) && wp_verify_nonce($_POST['_wpnonce'], 'soe_save_class_type')) {
             $data = [
-                'title' => sanitize_text_field($_POST['title']),
+                'name' => sanitize_text_field($_POST['name']),
                 'description' => sanitize_textarea_field($_POST['description']),
-                'start_time' => sanitize_text_field($_POST['start_date'] . ' ' . $_POST['start_time']),
-                'end_time' => sanitize_text_field($_POST['end_date'] . ' ' . $_POST['end_time']),
-                'location' => sanitize_text_field($_POST['location']),
-                'google_event_id' => 'manual_' . time() . '_' . wp_rand()
+                'color' => sanitize_hex_color($_POST['color']) ?: '#3182CE'
             ];
 
-            if (!empty($_POST['class_id'])) {
-                // Update existing
-                unset($data['google_event_id']);
-                $wpdb->update($table, $data, ['id' => intval($_POST['class_id'])]);
-                echo '<div class="notice notice-success"><p>Class updated!</p></div>';
+            if (!empty($_POST['type_id'])) {
+                $wpdb->update($table, $data, ['id' => intval($_POST['type_id'])]);
+                echo '<div class="notice notice-success"><p>Class type updated!</p></div>';
                 $editing = false;
-                $edit_class = null;
+                $edit_type = null;
             } else {
-                // Insert new
                 $wpdb->insert($table, $data);
-                echo '<div class="notice notice-success"><p>Class created!</p></div>';
+                echo '<div class="notice notice-success"><p>Class type created!</p></div>';
             }
         }
 
-        // Get all classes
-        $classes = $wpdb->get_results("SELECT * FROM $table ORDER BY start_time DESC");
+        $types = $wpdb->get_results("SELECT * FROM $table ORDER BY name ASC");
 
         ?>
         <div class="wrap">
-            <h1><?php _e('Manage Classes', 'soe-gcal-booking'); ?></h1>
+            <h1><?php _e('Class Types', 'soe-gcal-booking'); ?></h1>
+            <p class="description"><?php _e('Define your class types here. When syncing from Google Calendar, only events matching these names will be imported.', 'soe-gcal-booking'); ?></p>
 
-            <!-- Add/Edit Form -->
-            <div class="card" style="max-width: 600px; margin-bottom: 20px;">
-                <h2><?php echo $editing ? __('Edit Class', 'soe-gcal-booking') : __('Add New Class', 'soe-gcal-booking'); ?></h2>
+            <div class="card" style="max-width: 500px; margin-bottom: 20px;">
+                <h2><?php echo $editing ? __('Edit Class Type', 'soe-gcal-booking') : __('Add New Class Type', 'soe-gcal-booking'); ?></h2>
 
                 <form method="post">
-                    <?php wp_nonce_field('soe_save_class'); ?>
+                    <?php wp_nonce_field('soe_save_class_type'); ?>
                     <?php if ($editing): ?>
-                        <input type="hidden" name="class_id" value="<?php echo esc_attr($edit_class->id); ?>">
+                        <input type="hidden" name="type_id" value="<?php echo esc_attr($edit_type->id); ?>">
                     <?php endif; ?>
 
                     <table class="form-table">
                         <tr>
-                            <th><label for="title"><?php _e('Class Title', 'soe-gcal-booking'); ?> *</label></th>
-                            <td><input type="text" id="title" name="title" class="regular-text" required value="<?php echo $editing ? esc_attr($edit_class->title) : ''; ?>"></td>
+                            <th><label for="name"><?php _e('Class Name', 'soe-gcal-booking'); ?> *</label></th>
+                            <td>
+                                <input type="text" id="name" name="name" class="regular-text" required
+                                       value="<?php echo $editing ? esc_attr($edit_type->name) : ''; ?>"
+                                       placeholder="e.g., Math Tutoring, Yoga Class">
+                                <p class="description"><?php _e('This must match the event title in Google Calendar exactly.', 'soe-gcal-booking'); ?></p>
+                            </td>
                         </tr>
                         <tr>
                             <th><label for="description"><?php _e('Description', 'soe-gcal-booking'); ?></label></th>
-                            <td><textarea id="description" name="description" rows="3" class="large-text"><?php echo $editing ? esc_textarea($edit_class->description) : ''; ?></textarea></td>
+                            <td><textarea id="description" name="description" rows="3" class="large-text"><?php echo $editing ? esc_textarea($edit_type->description) : ''; ?></textarea></td>
                         </tr>
                         <tr>
-                            <th><label><?php _e('Start', 'soe-gcal-booking'); ?> *</label></th>
-                            <td>
-                                <input type="date" name="start_date" required value="<?php echo $editing ? esc_attr(date('Y-m-d', strtotime($edit_class->start_time))) : ''; ?>">
-                                <input type="time" name="start_time" required value="<?php echo $editing ? esc_attr(date('H:i', strtotime($edit_class->start_time))) : ''; ?>">
-                            </td>
-                        </tr>
-                        <tr>
-                            <th><label><?php _e('End', 'soe-gcal-booking'); ?> *</label></th>
-                            <td>
-                                <input type="date" name="end_date" required value="<?php echo $editing ? esc_attr(date('Y-m-d', strtotime($edit_class->end_time))) : ''; ?>">
-                                <input type="time" name="end_time" required value="<?php echo $editing ? esc_attr(date('H:i', strtotime($edit_class->end_time))) : ''; ?>">
-                            </td>
-                        </tr>
-                        <tr>
-                            <th><label for="location"><?php _e('Location', 'soe-gcal-booking'); ?></label></th>
-                            <td><input type="text" id="location" name="location" class="regular-text" value="<?php echo $editing ? esc_attr($edit_class->location) : ''; ?>"></td>
+                            <th><label for="color"><?php _e('Color', 'soe-gcal-booking'); ?></label></th>
+                            <td><input type="color" id="color" name="color" value="<?php echo $editing ? esc_attr($edit_type->color) : '#3182CE'; ?>"></td>
                         </tr>
                     </table>
 
                     <p>
-                        <button type="submit" name="soe_save_class" class="button button-primary">
-                            <?php echo $editing ? __('Update Class', 'soe-gcal-booking') : __('Add Class', 'soe-gcal-booking'); ?>
+                        <button type="submit" name="soe_save_class_type" class="button button-primary">
+                            <?php echo $editing ? __('Update Class Type', 'soe-gcal-booking') : __('Add Class Type', 'soe-gcal-booking'); ?>
                         </button>
                         <?php if ($editing): ?>
-                            <a href="<?php echo admin_url('admin.php?page=soe-gcal-classes'); ?>" class="button"><?php _e('Cancel', 'soe-gcal-booking'); ?></a>
+                            <a href="<?php echo admin_url('admin.php?page=soe-gcal-class-types'); ?>" class="button"><?php _e('Cancel', 'soe-gcal-booking'); ?></a>
                         <?php endif; ?>
                     </p>
                 </form>
             </div>
 
-            <!-- Classes List -->
-            <h2><?php _e('All Classes', 'soe-gcal-booking'); ?></h2>
+            <h2><?php _e('Your Class Types', 'soe-gcal-booking'); ?></h2>
             <table class="wp-list-table widefat fixed striped">
                 <thead>
                     <tr>
-                        <th><?php _e('Title', 'soe-gcal-booking'); ?></th>
-                        <th><?php _e('Date', 'soe-gcal-booking'); ?></th>
-                        <th><?php _e('Time', 'soe-gcal-booking'); ?></th>
-                        <th><?php _e('Location', 'soe-gcal-booking'); ?></th>
-                        <th><?php _e('Source', 'soe-gcal-booking'); ?></th>
+                        <th style="width: 30px;"><?php _e('Color', 'soe-gcal-booking'); ?></th>
+                        <th><?php _e('Name', 'soe-gcal-booking'); ?></th>
+                        <th><?php _e('Description', 'soe-gcal-booking'); ?></th>
                         <th><?php _e('Actions', 'soe-gcal-booking'); ?></th>
                     </tr>
                 </thead>
                 <tbody>
-                    <?php if (empty($classes)): ?>
-                        <tr><td colspan="6"><?php _e('No classes yet. Add one above or sync from Google Calendar.', 'soe-gcal-booking'); ?></td></tr>
+                    <?php if (empty($types)): ?>
+                        <tr><td colspan="4"><?php _e('No class types yet. Add one above.', 'soe-gcal-booking'); ?></td></tr>
                     <?php else: ?>
-                        <?php foreach ($classes as $class): ?>
+                        <?php foreach ($types as $type): ?>
                             <tr>
-                                <td><strong><?php echo esc_html($class->title); ?></strong></td>
+                                <td><span style="display: inline-block; width: 20px; height: 20px; background: <?php echo esc_attr($type->color); ?>; border-radius: 3px;"></span></td>
+                                <td><strong><?php echo esc_html($type->name); ?></strong></td>
+                                <td><?php echo esc_html($type->description ?: '-'); ?></td>
+                                <td>
+                                    <a href="<?php echo admin_url('admin.php?page=soe-gcal-class-types&edit=' . $type->id); ?>" class="button button-small"><?php _e('Edit', 'soe-gcal-booking'); ?></a>
+                                    <a href="<?php echo wp_nonce_url(admin_url('admin.php?page=soe-gcal-class-types&delete=' . $type->id), 'delete_type_' . $type->id); ?>" class="button button-small" onclick="return confirm('<?php _e('Delete this class type?', 'soe-gcal-booking'); ?>');"><?php _e('Delete', 'soe-gcal-booking'); ?></a>
+                                </td>
+                            </tr>
+                        <?php endforeach; ?>
+                    <?php endif; ?>
+                </tbody>
+            </table>
+        </div>
+        <?php
+    }
+
+    /**
+     * Render the sessions (class instances) page
+     */
+    public static function render_classes_page() {
+        global $wpdb;
+        $table = $wpdb->prefix . 'soe_gcal_classes';
+        $types_table = $wpdb->prefix . 'soe_gcal_class_types';
+
+        // Get all sessions with their class type
+        $classes = $wpdb->get_results("
+            SELECT c.*, ct.name as type_name, ct.color as type_color
+            FROM $table c
+            LEFT JOIN $types_table ct ON c.class_type_id = ct.id
+            ORDER BY c.start_time DESC
+        ");
+
+        ?>
+        <div class="wrap">
+            <h1><?php _e('Class Sessions', 'soe-gcal-booking'); ?></h1>
+            <p class="description"><?php _e('These are individual class sessions synced from Google Calendar. Sync from Settings page.', 'soe-gcal-booking'); ?></p>
+
+            <table class="wp-list-table widefat fixed striped" style="margin-top: 20px;">
+                <thead>
+                    <tr>
+                        <th><?php _e('Class Type', 'soe-gcal-booking'); ?></th>
+                        <th><?php _e('Date', 'soe-gcal-booking'); ?></th>
+                        <th><?php _e('Time', 'soe-gcal-booking'); ?></th>
+                        <th><?php _e('Location', 'soe-gcal-booking'); ?></th>
+                        <th><?php _e('Bookings', 'soe-gcal-booking'); ?></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php if (empty($classes)): ?>
+                        <tr><td colspan="5"><?php _e('No sessions yet. Connect Google Calendar and sync from Settings page.', 'soe-gcal-booking'); ?></td></tr>
+                    <?php else: ?>
+                        <?php
+                        global $wpdb;
+                        $bookings_table = $wpdb->prefix . 'soe_gcal_bookings';
+                        foreach ($classes as $class):
+                            $booking_count = $wpdb->get_var($wpdb->prepare(
+                                "SELECT COUNT(*) FROM $bookings_table WHERE class_id = %d AND status = 'confirmed'",
+                                $class->id
+                            ));
+                        ?>
+                            <tr>
+                                <td>
+                                    <?php if ($class->type_color): ?>
+                                        <span style="display: inline-block; width: 12px; height: 12px; background: <?php echo esc_attr($class->type_color); ?>; border-radius: 2px; margin-right: 8px;"></span>
+                                    <?php endif; ?>
+                                    <strong><?php echo esc_html($class->type_name ?: $class->title); ?></strong>
+                                </td>
                                 <td><?php echo esc_html(date('M j, Y', strtotime($class->start_time))); ?></td>
                                 <td><?php echo esc_html(date('g:i A', strtotime($class->start_time))); ?> - <?php echo esc_html(date('g:i A', strtotime($class->end_time))); ?></td>
                                 <td><?php echo esc_html($class->location ?: '-'); ?></td>
-                                <td><?php echo strpos($class->google_event_id, 'manual_') === 0 ? __('Manual', 'soe-gcal-booking') : __('Google Calendar', 'soe-gcal-booking'); ?></td>
-                                <td>
-                                    <a href="<?php echo admin_url('admin.php?page=soe-gcal-classes&edit=' . $class->id); ?>" class="button button-small"><?php _e('Edit', 'soe-gcal-booking'); ?></a>
-                                    <a href="<?php echo wp_nonce_url(admin_url('admin.php?page=soe-gcal-classes&delete=' . $class->id), 'delete_class_' . $class->id); ?>" class="button button-small" onclick="return confirm('<?php _e('Delete this class?', 'soe-gcal-booking'); ?>');"><?php _e('Delete', 'soe-gcal-booking'); ?></a>
-                                </td>
+                                <td><?php echo intval($booking_count); ?> <?php _e('bookings', 'soe-gcal-booking'); ?></td>
                             </tr>
                         <?php endforeach; ?>
                     <?php endif; ?>

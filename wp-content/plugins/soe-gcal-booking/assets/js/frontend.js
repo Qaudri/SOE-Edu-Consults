@@ -11,20 +11,20 @@
     // Open modal when clicking book button
     $(document).on('click', '.soe-book-btn', function(e) {
         e.preventDefault();
-        
+
         var classId = $(this).data('class-id');
+        var className = $(this).data('class-name');
         var card = $(this).closest('.soe-class-card');
-        var className = card.find('.soe-class-title').text();
-        var classDate = card.find('.soe-class-date').text();
-        var classTime = card.find('.soe-class-time').text();
-        
+        var classDate = card.find('.soe-class-date').text().replace('📅', '').trim();
+
         $('#soe-booking-class-id').val(classId);
-        $('.soe-modal-class-name').text(className + ' - ' + classDate.trim());
-        
-        // Reset form
+        $('.soe-modal-class-name').text(className + ' - ' + classDate);
+
+        // Reset form and show fields
         form[0].reset();
+        form.find('.soe-form-group, .soe-form-actions').show();
         messageEl.hide().removeClass('success error');
-        
+
         modal.fadeIn(200);
     });
 

@@ -21,7 +21,7 @@ class SOE_GCal_Frontend {
      * Render the booking form shortcode
      */
     public static function render_booking_form($atts = []) {
-        $classes = SOE_GCal_Booking::get_upcoming_classes();
+        $classes = SOE_GCal_Booking_Manager::get_upcoming_classes();
         
         ob_start();
         ?>
@@ -129,12 +129,12 @@ class SOE_GCal_Frontend {
         }
         
         // Check if already booked
-        if (SOE_GCal_Booking::is_already_booked($class_id, $customer_email)) {
+        if (SOE_GCal_Booking_Manager::is_already_booked($class_id, $customer_email)) {
             wp_send_json_error(['message' => __('You have already booked this class.', 'soe-gcal-booking')]);
         }
-        
+
         // Create booking
-        $booking_id = SOE_GCal_Booking::create($class_id, $customer_name, $customer_email, $customer_phone);
+        $booking_id = SOE_GCal_Booking_Manager::create($class_id, $customer_name, $customer_email, $customer_phone);
         
         if ($booking_id) {
             wp_send_json_success([

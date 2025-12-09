@@ -7,7 +7,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-class SOE_GCal_Booking {
+class SOE_GCal_Booking_Manager {
     
     /**
      * Create a new booking

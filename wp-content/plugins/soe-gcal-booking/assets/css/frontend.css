@@ -1,16 +1,160 @@
-/* SOE GCal Booking - Frontend Styles */
-/* Uses Kadence theme CSS variables for consistent branding */
+/* SOE Class Booking - Frontend Styles */
+/* Multi-step booking flow with Kadence theme CSS variables */
 
-.soe-gcal-booking-container {
-    max-width: 800px;
+.soe-booking-container {
+    max-width: 900px;
     margin: 0 auto;
     padding: 20px;
 }
 
-.soe-gcal-booking-container h2 {
+.soe-booking-container h2 {
     margin-bottom: 30px;
     text-align: center;
     color: var(--global-palette3, #1A202C);
+}
+
+/* Step Indicator */
+.soe-steps {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.soe-step {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    background: var(--global-palette7, #EDF2F7);
+    border-radius: 25px;
+    color: var(--global-palette5, #4A5568);
+    font-size: 0.9em;
+    transition: all 0.3s ease;
+}
+
+.soe-step.active {
+    background: var(--global-palette1, #3182CE);
+    color: #fff;
+}
+
+.soe-step.completed {
+    background: #C6F6D5;
+    color: #22543D;
+}
+
+.soe-step-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.3);
+    font-weight: 600;
+    font-size: 0.85em;
+}
+
+.soe-step.active .soe-step-number {
+    background: rgba(255,255,255,0.3);
+}
+
+.soe-step.completed .soe-step-number {
+    background: #22543D;
+    color: #fff;
+}
+
+/* Step Content */
+.soe-step-content {
+    display: none;
+}
+
+.soe-step-content.active {
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Back Button */
+.soe-back-btn {
+    background: none;
+    border: none;
+    color: var(--global-palette1, #3182CE);
+    cursor: pointer;
+    font-size: 0.95em;
+    padding: 8px 0;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.soe-back-btn:hover {
+    text-decoration: underline;
+}
+
+/* Classes Grid (Step 1) */
+.soe-classes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.soe-class-card {
+    background: var(--global-palette9, #ffffff);
+    border: 1px solid var(--global-palette7, #EDF2F7);
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.soe-class-card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.soe-class-name {
+    margin: 0 0 10px 0;
+    font-size: 1.25em;
+    color: var(--global-palette3, #1A202C);
+}
+
+.soe-class-desc {
+    color: var(--global-palette5, #4A5568);
+    font-size: 0.9em;
+    line-height: 1.5;
+    margin: 0 0 15px 0;
+    flex: 1;
+}
+
+.soe-class-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 15px;
+    font-size: 0.85em;
+    color: var(--global-palette5, #4A5568);
+}
+
+.soe-select-class-btn {
+    background: var(--global-palette1, #3182CE);
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 1em;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.soe-select-class-btn:hover {
+    background: var(--global-palette2, #2B6CB0);
 }
 
 .soe-no-classes {
@@ -21,148 +165,101 @@
     color: var(--global-palette5, #4A5568);
 }
 
-/* Class Cards */
-.soe-classes-list {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.soe-class-card {
-    background: var(--global-palette9, #ffffff);
-    border: 1px solid var(--global-palette7, #EDF2F7);
-    border-radius: 10px;
-    padding: 24px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    transition: box-shadow 0.2s ease, border-color 0.2s ease;
-}
-
-.soe-class-card:hover {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    border-color: var(--global-palette1, #3182CE);
-}
-
-.soe-class-info {
-    flex: 1;
-}
-
-.soe-class-type-badge {
-    display: inline-block;
-    padding: 4px 10px;
-    border-radius: 4px;
-    font-size: 0.75em;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    margin-bottom: 8px;
-    color: #fff;
-    background: var(--global-palette1, #3182CE);
-}
-
-.soe-class-title {
-    margin: 0 0 12px 0;
-    font-size: 1.3em;
-    color: var(--global-palette3, #1A202C);
-}
-
-.soe-class-datetime {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    margin-bottom: 8px;
-    color: var(--global-palette4, #2D3748);
-}
-
-.soe-class-location {
-    color: var(--global-palette5, #4A5568);
-    margin-bottom: 8px;
-}
-
-.soe-class-description {
-    color: var(--global-palette5, #4A5568);
-    font-size: 0.95em;
-    margin-top: 12px;
-    line-height: 1.6;
-}
-
-.soe-book-btn {
-    background: var(--global-palette1, #3182CE);
-    color: #fff;
-    border: none;
-    padding: 12px 24px;
-    border-radius: 6px;
-    font-size: 1em;
-    font-weight: 500;
-    cursor: pointer;
-    transition: background 0.2s ease, transform 0.1s ease;
-    white-space: nowrap;
-}
-
-.soe-book-btn:hover {
-    background: var(--global-palette2, #2B6CB0);
-    transform: translateY(-1px);
-}
-
-.soe-book-btn:active {
-    transform: translateY(0);
-}
-
-/* Modal */
-.soe-modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(26, 32, 44, 0.7);
-    z-index: 9999;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.soe-modal-content {
-    background: var(--global-palette9, #ffffff);
-    padding: 30px;
-    border-radius: 12px;
-    max-width: 450px;
-    width: 90%;
-    position: relative;
-    max-height: 90vh;
-    overflow-y: auto;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-}
-
-.soe-modal-close {
-    position: absolute;
-    top: 15px;
-    right: 20px;
-    font-size: 28px;
-    cursor: pointer;
-    color: var(--global-palette6, #718096);
-    line-height: 1;
-    transition: color 0.2s ease;
-}
-
-.soe-modal-close:hover {
-    color: var(--global-palette3, #1A202C);
-}
-
-.soe-modal-content h3 {
-    margin: 0 0 10px 0;
-    color: var(--global-palette3, #1A202C);
-}
-
-.soe-modal-class-name {
+/* Sessions Grid (Step 2) */
+.soe-selected-class-name {
     color: var(--global-palette1, #3182CE);
     font-weight: 600;
+    font-size: 1.1em;
     margin-bottom: 20px;
 }
 
-/* Form */
+.soe-sessions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.soe-session-card {
+    background: var(--global-palette9, #ffffff);
+    border: 2px solid var(--global-palette7, #EDF2F7);
+    border-radius: 10px;
+    padding: 18px;
+    text-align: center;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.soe-session-card:hover {
+    border-color: var(--global-palette1, #3182CE);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.soe-session-date {
+    font-weight: 600;
+    color: var(--global-palette3, #1A202C);
+    margin-bottom: 5px;
+}
+
+.soe-session-time {
+    color: var(--global-palette1, #3182CE);
+    font-size: 1.1em;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.soe-session-location {
+    color: var(--global-palette5, #4A5568);
+    font-size: 0.85em;
+    margin-bottom: 8px;
+}
+
+.soe-session-spots {
+    color: var(--global-palette5, #4A5568);
+    font-size: 0.8em;
+    margin-bottom: 12px;
+}
+
+.soe-select-session-btn {
+    background: var(--global-palette1, #3182CE);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.soe-select-session-btn:hover {
+    background: var(--global-palette2, #2B6CB0);
+}
+
+.soe-no-sessions, .soe-error {
+    text-align: center;
+    padding: 30px;
+    background: var(--global-palette7, #EDF2F7);
+    border-radius: 8px;
+    color: var(--global-palette5, #4A5568);
+}
+
+.soe-loading {
+    text-align: center;
+    padding: 40px;
+    color: var(--global-palette5, #4A5568);
+}
+
+/* Booking Form (Step 3) */
+.soe-booking-summary {
+    background: var(--global-palette7, #EDF2F7);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+.soe-booking-summary p {
+    margin: 8px 0;
+    color: var(--global-palette4, #2D3748);
+}
+
 .soe-form-group {
     margin-bottom: 18px;
 }
@@ -235,16 +332,84 @@
     color: #742A2A;
 }
 
+/* Confirmation (Step 4) */
+.soe-confirmation {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.soe-confirmation-icon {
+    width: 80px;
+    height: 80px;
+    background: #C6F6D5;
+    color: #22543D;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.soe-confirmation h2 {
+    color: #22543D;
+    margin-bottom: 15px;
+}
+
+.soe-confirmation p {
+    color: var(--global-palette5, #4A5568);
+    margin-bottom: 25px;
+}
+
+.soe-confirmation-details {
+    background: var(--global-palette7, #EDF2F7);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    text-align: left;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.soe-confirmation-details p {
+    margin: 8px 0;
+    color: var(--global-palette4, #2D3748);
+}
+
+.soe-new-booking-btn {
+    background: var(--global-palette1, #3182CE);
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 6px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.soe-new-booking-btn:hover {
+    background: var(--global-palette2, #2B6CB0);
+}
+
 /* Responsive */
 @media (max-width: 600px) {
-    .soe-class-card {
-        flex-direction: column;
-        align-items: stretch;
+    .soe-steps {
+        gap: 8px;
     }
 
-    .soe-book-btn {
-        width: 100%;
-        text-align: center;
+    .soe-step {
+        padding: 8px 12px;
+        font-size: 0.8em;
+    }
+
+    .soe-step-label {
+        display: none;
+    }
+
+    .soe-classes-grid,
+    .soe-sessions-grid {
+        grid-template-columns: 1fr;
     }
 }
 

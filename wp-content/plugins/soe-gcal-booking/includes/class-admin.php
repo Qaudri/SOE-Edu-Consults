@@ -37,7 +37,13 @@ class SOE_GCal_Admin {
             if (is_wp_error($result)) {
                 echo '<div class="notice notice-error"><p>Sync failed: ' . esc_html($result->get_error_message()) . '</p></div>';
             } else {
-                echo '<div class="notice notice-success"><p>Synced ' . intval($result) . ' sessions from Google Calendar!</p></div>';
+                $msg = sprintf(
+                    __('Sync complete! Created: %d, Updated: %d, Skipped: %d (no matching class)', 'soe-gcal-booking'),
+                    $result['created'],
+                    $result['updated'],
+                    $result['skipped']
+                );
+                echo '<div class="notice notice-success"><p>' . esc_html($msg) . '</p></div>';
             }
         }
 
@@ -76,7 +82,9 @@ class SOE_GCal_Admin {
                             <button type="submit" name="soe_gcal_save_settings" class="button"><?php _e('Save', 'soe-gcal-booking'); ?></button>
                         </form>
 
-                        <?php if ($calendar_id): ?>
+                        <?php if ($calendar_id):
+                            $last_sync = $google_api->get_last_sync_info();
+                        ?>
                         <form method="post" style="display: inline-block; margin-right: 10px;">
                             <?php wp_nonce_field('soe_gcal_sync'); ?>
                             <button type="submit" name="soe_gcal_sync_now" class="button button-primary"><?php _e('Sync Sessions from Calendar', 'soe-gcal-booking'); ?></button>
@@ -87,6 +95,28 @@ class SOE_GCal_Admin {
                             <?php wp_nonce_field('soe_gcal_disconnect'); ?>
                             <button type="submit" name="soe_gcal_disconnect" class="button"><?php _e('Disconnect', 'soe-gcal-booking'); ?></button>
                         </form>
+
+                        <?php if ($calendar_id): ?>
+                        <div style="margin-top: 15px; padding: 12px; background: #f0f0f0; border-radius: 4px;">
+                            <strong><?php _e('How sync works:', 'soe-gcal-booking'); ?></strong>
+                            <ul style="margin: 8px 0 0 20px;">
+                                <li><?php _e('Calendar events are matched to your Classes by name', 'soe-gcal-booking'); ?></li>
+                                <li><?php _e('Example: Event "Math Tutoring - John" matches Class "Math Tutoring"', 'soe-gcal-booking'); ?></li>
+                                <li><?php _e('Unmatched events are skipped', 'soe-gcal-booking'); ?></li>
+                                <li><?php _e('Syncs events from now to 30 days ahead', 'soe-gcal-booking'); ?></li>
+                            </ul>
+                            <?php if ($last_sync): ?>
+                            <p style="margin-top: 10px; color: #666;">
+                                <?php printf(__('Last sync: %s (Created: %d, Updated: %d, Skipped: %d)', 'soe-gcal-booking'),
+                                    $last_sync['time'],
+                                    $last_sync['created'],
+                                    $last_sync['updated'],
+                                    $last_sync['skipped']
+                                ); ?>
+                            </p>
+                            <?php endif; ?>
+                        </div>
+                        <?php endif; ?>
                     <?php else: ?>
                         <a href="<?php echo esc_url($google_api->get_auth_url()); ?>" class="button button-primary"><?php _e('Connect Google Calendar', 'soe-gcal-booking'); ?></a>
                     <?php endif; ?>

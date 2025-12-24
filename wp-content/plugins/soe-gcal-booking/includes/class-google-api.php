@@ -159,40 +159,40 @@ class SOE_GCal_Google_API {
     }
     
     /**
-     * Sync calendar events to local database
+     * Sync calendar events to local database as sessions
      */
     public function sync_calendar_events() {
         $access_token = $this->get_access_token();
         if (!$access_token) {
             return new WP_Error('not_connected', 'Not connected to Google Calendar');
         }
-        
+
         $calendar_id = get_option('soe_gcal_calendar_id');
         if (!$calendar_id) {
             return new WP_Error('no_calendar', 'No calendar ID configured');
         }
-        
+
         // Fetch events from now to 30 days ahead
         $time_min = date('c');
         $time_max = date('c', strtotime('+30 days'));
-        
+
         $url = sprintf(
             'https://www.googleapis.com/calendar/v3/calendars/%s/events?timeMin=%s&timeMax=%s&singleEvents=true&orderBy=startTime',
             urlencode($calendar_id),
             urlencode($time_min),
             urlencode($time_max)
         );
-        
+
         $response = wp_remote_get($url, [
             'headers' => [
                 'Authorization' => 'Bearer ' . $access_token
             ]
         ]);
-        
+
         if (is_wp_error($response)) {
             return $response;
         }
-        
+
         $body = json_decode(wp_remote_retrieve_body($response), true);
 
         if (!isset($body['items'])) {
@@ -201,59 +201,89 @@ class SOE_GCal_Google_API {
 
         global $wpdb;
         $classes_table = $wpdb->prefix . 'soe_gcal_classes';
-        $types_table = $wpdb->prefix . 'soe_gcal_class_types';
+        $sessions_table = $wpdb->prefix . 'soe_gcal_sessions';
 
-        // Get all class types for matching
-        $class_types = $wpdb->get_results("SELECT id, name FROM $types_table");
-        $type_map = [];
-        foreach ($class_types as $type) {
+        // Get all classes for matching
+        $classes = $wpdb->get_results("SELECT id, name FROM $classes_table");
+        $class_map = [];
+        foreach ($classes as $class) {
             // Store lowercase for case-insensitive matching
-            $type_map[strtolower(trim($type->name))] = $type->id;
+            $class_map[strtolower(trim($class->name))] = $class->id;
         }
 
-        if (empty($type_map)) {
-            return new WP_Error('no_types', 'No class types defined. Please add class types first.');
+        if (empty($class_map)) {
+            return new WP_Error('no_classes', 'No classes defined. Please add classes first in Class Booking → Classes.');
         }
 
-        $count = 0;
+        $created = 0;
+        $updated = 0;
         $skipped = 0;
 
         foreach ($body['items'] as $event) {
             $event_title = $event['summary'] ?? '';
             $event_title_lower = strtolower(trim($event_title));
 
-            // Check if event title matches any class type
-            $matched_type_id = null;
-            foreach ($type_map as $type_name => $type_id) {
-                // Match if event title contains the class type name
-                if (strpos($event_title_lower, $type_name) !== false || $event_title_lower === $type_name) {
-                    $matched_type_id = $type_id;
+            // Check if event title matches any class name
+            $matched_class_id = null;
+            foreach ($class_map as $class_name => $class_id) {
+                // Match if event title contains the class name or equals it
+                if (strpos($event_title_lower, $class_name) !== false || $event_title_lower === $class_name) {
+                    $matched_class_id = $class_id;
                     break;
                 }
             }
 
-            // Skip events that don't match any class type
-            if ($matched_type_id === null) {
+            // Skip events that don't match any class
+            if ($matched_class_id === null) {
                 $skipped++;
                 continue;
             }
 
             $start = $event['start']['dateTime'] ?? $event['start']['date'];
             $end = $event['end']['dateTime'] ?? $event['end']['date'];
+            $location = $event['location'] ?? '';
+            $google_event_id = $event['id'];
 
-            $wpdb->replace($classes_table, [
-                'google_event_id' => $event['id'],
-                'class_type_id' => $matched_type_id,
-                'title' => $event_title,
-                'description' => $event['description'] ?? '',
+            // Check if session with this google_event_id already exists
+            $existing = $wpdb->get_var($wpdb->prepare(
+                "SELECT id FROM $sessions_table WHERE google_event_id = %s",
+                $google_event_id
+            ));
+
+            $session_data = [
+                'class_id' => $matched_class_id,
+                'google_event_id' => $google_event_id,
                 'start_time' => date('Y-m-d H:i:s', strtotime($start)),
                 'end_time' => date('Y-m-d H:i:s', strtotime($end)),
-                'location' => $event['location'] ?? ''
-            ]);
-            $count++;
+                'location' => $location,
+                'max_capacity' => 1 // Default capacity, can be changed manually
+            ];
+
+            if ($existing) {
+                // Update existing session
+                $wpdb->update($sessions_table, $session_data, ['id' => $existing]);
+                $updated++;
+            } else {
+                // Create new session
+                $session_data['created_at'] = current_time('mysql');
+                $wpdb->insert($sessions_table, $session_data);
+                $created++;
+            }
         }
 
-        return $count;
+        // Save sync info
+        update_option('soe_gcal_last_sync', [
+            'time' => current_time('mysql'),
+            'created' => $created,
+            'updated' => $updated,
+            'skipped' => $skipped
+        ]);
+
+        return [
+            'created' => $created,
+            'updated' => $updated,
+            'skipped' => $skipped
+        ];
     }
 
     /**

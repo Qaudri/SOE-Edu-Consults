@@ -322,16 +322,43 @@ class SOE_GCal_Admin {
             echo '<div class="notice notice-success"><p>Session deleted.</p></div>';
         }
 
+        // Handle quick single session creation
+        if (isset($_POST['soe_add_single_session']) && wp_verify_nonce($_POST['_wpnonce'], 'soe_add_single_session')) {
+            $class_id = intval($_POST['class_id']);
+            $class = $wpdb->get_row($wpdb->prepare("SELECT * FROM $classes_table WHERE id = %d", $class_id));
+
+            if ($class) {
+                $date = sanitize_text_field($_POST['session_date']);
+                $start_time = sanitize_text_field($_POST['start_time']);
+                $location = sanitize_text_field($_POST['location']);
+                $max_capacity = intval($_POST['max_capacity']) ?: 1;
+
+                $start_datetime = $date . ' ' . $start_time;
+                $end_datetime = date('Y-m-d H:i:s', strtotime($start_datetime) + ($class->duration * 60));
+
+                $wpdb->insert($sessions_table, [
+                    'class_id' => $class_id,
+                    'start_time' => $start_datetime,
+                    'end_time' => $end_datetime,
+                    'max_capacity' => $max_capacity,
+                    'location' => $location,
+                    'created_at' => current_time('mysql')
+                ]);
+
+                echo '<div class="notice notice-success"><p>' . __('Session created!', 'soe-gcal-booking') . '</p></div>';
+            }
+        }
+
         // Handle bulk session creation
         if (isset($_POST['soe_add_sessions']) && wp_verify_nonce($_POST['_wpnonce'], 'soe_add_sessions')) {
-            $class_id = intval($_POST['class_id']);
+            $class_id = intval($_POST['bulk_class_id']);
             $class = $wpdb->get_row($wpdb->prepare("SELECT * FROM $classes_table WHERE id = %d", $class_id));
 
             if ($class) {
                 $dates = array_filter(array_map('trim', explode(',', sanitize_text_field($_POST['session_dates']))));
                 $time_slots = array_filter(array_map('trim', explode("\n", sanitize_textarea_field($_POST['time_slots']))));
-                $location = sanitize_text_field($_POST['location']);
-                $max_capacity = intval($_POST['max_capacity']) ?: 1;
+                $location = sanitize_text_field($_POST['bulk_location']);
+                $max_capacity = intval($_POST['bulk_max_capacity']) ?: 1;
 
                 $created = 0;
                 foreach ($dates as $date) {
@@ -377,24 +404,72 @@ class SOE_GCal_Admin {
             <h1><?php _e('Sessions', 'soe-gcal-booking'); ?></h1>
             <p class="description"><?php _e('Create and manage bookable time slots for your classes.', 'soe-gcal-booking'); ?></p>
 
-            <!-- Bulk Add Sessions Form -->
-            <div class="card" style="max-width: 650px; margin: 20px 0;">
-                <h2><?php _e('Add Sessions', 'soe-gcal-booking'); ?></h2>
-
-                <?php if (empty($classes)): ?>
+            <?php if (empty($classes)): ?>
+                <div class="card" style="max-width: 650px; margin: 20px 0;">
                     <p class="description"><?php _e('Please create a Class first before adding sessions.', 'soe-gcal-booking'); ?>
                     <a href="<?php echo admin_url('admin.php?page=soe-gcal-classes'); ?>"><?php _e('Create Class', 'soe-gcal-booking'); ?></a></p>
-                <?php else: ?>
+                </div>
+            <?php else: ?>
+
+            <!-- Quick Add Single Session -->
+            <div class="card" style="max-width: 800px; margin: 20px 0;">
+                <h2><?php _e('Quick Add Session', 'soe-gcal-booking'); ?></h2>
+                <form method="post" style="display: flex; flex-wrap: wrap; gap: 15px; align-items: flex-end;">
+                    <?php wp_nonce_field('soe_add_single_session'); ?>
+                    <div>
+                        <label for="class_id" style="display: block; margin-bottom: 5px; font-weight: 600;"><?php _e('Class', 'soe-gcal-booking'); ?></label>
+                        <select id="class_id" name="class_id" required style="min-width: 180px;">
+                            <option value=""><?php _e('-- Select --', 'soe-gcal-booking'); ?></option>
+                            <?php foreach ($classes as $class): ?>
+                                <option value="<?php echo esc_attr($class->id); ?>" <?php selected($filter_class_id, $class->id); ?>>
+                                    <?php echo esc_html($class->name); ?> (<?php echo intval($class->duration); ?>m)
+                                </option>
+                            <?php endforeach; ?>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="session_date" style="display: block; margin-bottom: 5px; font-weight: 600;"><?php _e('Date', 'soe-gcal-booking'); ?></label>
+                        <input type="date" id="session_date" name="session_date" required value="<?php echo date('Y-m-d'); ?>">
+                    </div>
+                    <div>
+                        <label for="start_time" style="display: block; margin-bottom: 5px; font-weight: 600;"><?php _e('Start Time', 'soe-gcal-booking'); ?></label>
+                        <input type="time" id="start_time" name="start_time" required value="09:00">
+                    </div>
+                    <div>
+                        <label for="max_capacity" style="display: block; margin-bottom: 5px; font-weight: 600;"><?php _e('Capacity', 'soe-gcal-booking'); ?></label>
+                        <input type="number" id="max_capacity" name="max_capacity" min="1" value="1" style="width: 70px;">
+                    </div>
+                    <div>
+                        <label for="location" style="display: block; margin-bottom: 5px; font-weight: 600;"><?php _e('Location', 'soe-gcal-booking'); ?></label>
+                        <input type="text" id="location" name="location" placeholder="Optional" style="width: 140px;">
+                    </div>
+                    <div>
+                        <button type="submit" name="soe_add_single_session" class="button button-primary">
+                            <?php _e('Add Session', 'soe-gcal-booking'); ?>
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Bulk Add Sessions (Collapsible) -->
+            <div class="card" style="max-width: 650px; margin: 20px 0;">
+                <h2 style="cursor: pointer;" onclick="document.getElementById('bulk-form').style.display = document.getElementById('bulk-form').style.display === 'none' ? 'block' : 'none';">
+                    <?php _e('Bulk Create Sessions', 'soe-gcal-booking'); ?>
+                    <span style="font-size: 0.8em; color: #666;">▼</span>
+                </h2>
+                <p class="description"><?php _e('Create multiple sessions at once for a regular schedule.', 'soe-gcal-booking'); ?></p>
+
+                <div id="bulk-form" style="display: none; margin-top: 15px;">
                     <form method="post">
                         <?php wp_nonce_field('soe_add_sessions'); ?>
-                        <table class="form-table">
+                        <table class="form-table" style="margin-top: 0;">
                             <tr>
-                                <th><label for="class_id"><?php _e('Class', 'soe-gcal-booking'); ?> *</label></th>
+                                <th><label for="bulk_class_id"><?php _e('Class', 'soe-gcal-booking'); ?> *</label></th>
                                 <td>
-                                    <select id="class_id" name="class_id" required style="min-width: 200px;">
+                                    <select id="bulk_class_id" name="bulk_class_id" required style="min-width: 200px;">
                                         <option value=""><?php _e('-- Select Class --', 'soe-gcal-booking'); ?></option>
                                         <?php foreach ($classes as $class): ?>
-                                            <option value="<?php echo esc_attr($class->id); ?>" <?php selected($filter_class_id, $class->id); ?>>
+                                            <option value="<?php echo esc_attr($class->id); ?>">
                                                 <?php echo esc_html($class->name); ?> (<?php echo intval($class->duration); ?> min)
                                             </option>
                                         <?php endforeach; ?>
@@ -405,35 +480,36 @@ class SOE_GCal_Admin {
                                 <th><label for="session_dates"><?php _e('Dates', 'soe-gcal-booking'); ?> *</label></th>
                                 <td>
                                     <input type="text" id="session_dates" name="session_dates" class="regular-text" required
-                                           placeholder="2024-12-15, 2024-12-16, 2024-12-17">
-                                    <p class="description"><?php _e('Enter dates separated by commas (YYYY-MM-DD format)', 'soe-gcal-booking'); ?></p>
+                                           placeholder="2024-12-26, 2024-12-27, 2024-12-28">
+                                    <p class="description"><?php _e('Comma-separated dates (YYYY-MM-DD)', 'soe-gcal-booking'); ?></p>
                                 </td>
                             </tr>
                             <tr>
                                 <th><label for="time_slots"><?php _e('Time Slots', 'soe-gcal-booking'); ?> *</label></th>
                                 <td>
-                                    <textarea id="time_slots" name="time_slots" rows="4" class="regular-text" required
-                                              placeholder="09:00&#10;10:30&#10;14:00&#10;15:30"></textarea>
-                                    <p class="description"><?php _e('Enter start times, one per line (24-hour format HH:MM)', 'soe-gcal-booking'); ?></p>
+                                    <textarea id="time_slots" name="time_slots" rows="3" class="regular-text" required
+                                              placeholder="09:00&#10;10:30&#10;14:00"></textarea>
+                                    <p class="description"><?php _e('One start time per line (HH:MM)', 'soe-gcal-booking'); ?></p>
                                 </td>
                             </tr>
                             <tr>
-                                <th><label for="max_capacity"><?php _e('Max Capacity', 'soe-gcal-booking'); ?></label></th>
-                                <td><input type="number" id="max_capacity" name="max_capacity" min="1" value="1" style="width: 80px;"></td>
+                                <th><label for="bulk_max_capacity"><?php _e('Capacity', 'soe-gcal-booking'); ?></label></th>
+                                <td><input type="number" id="bulk_max_capacity" name="bulk_max_capacity" min="1" value="1" style="width: 80px;"></td>
                             </tr>
                             <tr>
-                                <th><label for="location"><?php _e('Location', 'soe-gcal-booking'); ?></label></th>
-                                <td><input type="text" id="location" name="location" class="regular-text" placeholder="e.g., Room 101, Online, Zoom"></td>
+                                <th><label for="bulk_location"><?php _e('Location', 'soe-gcal-booking'); ?></label></th>
+                                <td><input type="text" id="bulk_location" name="bulk_location" class="regular-text" placeholder="e.g., Room 101, Online"></td>
                             </tr>
                         </table>
                         <p>
                             <button type="submit" name="soe_add_sessions" class="button button-primary">
-                                <?php _e('Create Sessions', 'soe-gcal-booking'); ?>
+                                <?php _e('Create All Sessions', 'soe-gcal-booking'); ?>
                             </button>
                         </p>
                     </form>
-                <?php endif; ?>
+                </div>
             </div>
+            <?php endif; ?>
 
             <!-- Filter -->
             <form method="get" style="margin-bottom: 15px;">

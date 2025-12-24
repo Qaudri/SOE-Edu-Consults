@@ -2044,7 +2044,7 @@ class Math_BigInteger {
         if ($this->_compare($result, false, $temp[MATH_BIGINTEGER_VALUE], $temp[MATH_BIGINTEGER_SIGN]) < 0) {
             $corrector_value = $this->_array_repeat(0, $n_length + 1);
             $corrector_value[] = 1;
-            $result = $this->_add($result, false, $corrector, false);
+            $result = $this->_add($result, false, $corrector_value, false);
             $result = $result[MATH_BIGINTEGER_VALUE];
         }
 

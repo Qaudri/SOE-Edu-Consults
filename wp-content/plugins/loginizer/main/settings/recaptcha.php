@@ -154,6 +154,7 @@ function loginizer_page_recaptcha(){
 			$option['captcha_register'] = (int) lz_optpost('captcha_register');
 			$option['captcha_comment'] = (int) lz_optpost('captcha_comment');
 			$option['captcha_wc_checkout'] = (int) lz_optpost('captcha_wc_checkout');
+			$option['captcha_wc_block_checkout'] = isset($_POST['captcha_wc_block_checkout']);
 			$option['captcha_wc_checkout_pos'] = lz_optpost('captcha_wc_checkout_pos');
 			
 			// Are we to use Math Captcha ?
@@ -389,7 +390,7 @@ input[type="text"], textarea, select {
 			<tr class="lz_google_cap">
 				<td scope="row" valign="top"><label><b><?php echo __('reCAPTCHA type', 'loginizer'); ?></b></label><br>
 				<?php echo __('Choose the type of reCAPTCHA', 'loginizer'); ?><br />
-				<?php echo __('<a href="https://g.co/recaptcha/sitetypes/" target="_blank">See Site Types for more details</a>', 'loginizer'); ?>
+				<?php echo __('<a href="https://developers.google.com/recaptcha/docs/versions" target="_blank">See Site Types for more details</a>', 'loginizer'); ?>
 				</td>
 				<td>
 					<input type="radio" value="v3" onchange="google_recaptcha_type()" <?php echo lz_POSTradio('captcha_type', 'v3', (!empty($loginizer['captcha_type']) ? $loginizer['captcha_type'] : '')); ?> name="captcha_type" id="captcha_type_v3" /> <label for="captcha_type_v3"><?php echo __('reCAPTCHA v3', 'loginizer'); ?></label><br /><br />
@@ -613,6 +614,10 @@ input[type="text"], textarea, select {
 						echo '<tr>
 							<td><label for="captcha_wc_checkout">'.__('WooCommerce Checkout', 'loginizer').'</label></td>
 							<td><input type="checkbox" value="1" name="captcha_wc_checkout" id="captcha_wc_checkout" '.lz_POSTchecked('captcha_wc_checkout', (empty($loginizer['captcha_wc_checkout']) ? false : true)).' /></td>
+						</tr>
+						<tr>
+							<td><label for="captcha_wc_block_checkout">'.__('WooCommerce Block based Checkout', 'loginizer').'</label></td>
+							<td><input type="checkbox" value="1" name="captcha_wc_block_checkout" id="captcha_wc_block_checkout" '.lz_POSTchecked('captcha_wc_block_checkout', (!empty($loginizer['captcha_wc_block_checkout']))).' /></td>
 						</tr>
 						
 						<tr>

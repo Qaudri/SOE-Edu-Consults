@@ -95,6 +95,9 @@ class Loginizer_Social_Base{
 
 		update_user_option($user_id, 'default_password_nag', true, true); // This will show alert to user to change the password.
 		$user = get_user_by('ID', $user_id);
+
+		// Following the default WordPress registration flow, we will notify user about the creation of new account.
+		do_action('register_new_user', $user_id);
 		
 		// Save avatar if possible.
 		$tried_to_download = get_user_meta($user->ID, 'loginizer_avatar_download', true);
